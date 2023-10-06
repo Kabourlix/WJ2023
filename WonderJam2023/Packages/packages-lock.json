@@ -12,12 +12,6 @@
       "source": "local",
       "dependencies": {}
     },
-    "com.rezoskour.rfile": {
-      "version": "file:C:/Users/black/Develop/Unity Projects/WJ2023/RPackage/RFile",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.rezoskour.wonderjam": {
       "version": "file:../../RPackage/WonderJamContent",
       "depth": 0,

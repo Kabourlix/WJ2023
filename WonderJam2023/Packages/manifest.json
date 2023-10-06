@@ -2,7 +2,6 @@
   "dependencies": {
     "com.dentedpixel.leantween": "file:C:/Users/black/Develop/Unity Projects/WJ2023/RPackage/LeanTween",
     "com.rezoskour.odinserializer": "file:C:/Users/black/Develop/Unity Projects/WJ2023/RPackage/Rezoskour.OdinSerializer",
-    "com.rezoskour.rfile": "file:C:/Users/black/Develop/Unity Projects/WJ2023/RPackage/RFile",
     "com.rezoskour.wonderjam": "file:../../RPackage/WonderJamContent",
     "com.unity.collab-proxy": "2.0.5",
     "com.unity.ide.rider": "3.0.25",
