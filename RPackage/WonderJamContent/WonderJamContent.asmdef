@@ -1,14 +1,17 @@
 {
-	"name": "WonderJamContent",
-	"rootNamespace": "Rezoskour.Content",
-	"references": [],
-	"includePlatforms": [],
-	"excludePlatforms": [],
-	"allowUnsafeCode": false,
-	"overrideReferences": false,
-	"precompiledReferences": [],
-	"autoReferenced": true,
-	"defineConstraints": [],
-	"versionDefines": [],
-	"noEngineReferences": false
+    "name": "WonderJamContent",
+    "rootNamespace": "Rezoskour.Content",
+    "references": [
+        "GUID:9ac1e58afdcf6a1772c26cddc6ff696d",
+        "GUID:97142aba33e6b174c90fc49ae9a72afe"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

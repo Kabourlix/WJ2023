@@ -7,8 +7,5 @@ using UnityEngine;
 
 namespace Rezoskour.Content
 {
-    public class GameManager : MonoBehaviour
-    {
-
-    }
+    public class GameManager : MonoBehaviour { }
 }
