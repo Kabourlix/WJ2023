@@ -1,0 +1,14 @@
+{
+    "name": "com.dentedpixel.leantween",
+    "version": "1.0.0",
+    "displayName": "Lean Tween",
+    "description": "Lean Tween is a lightweight tweening engine for Unity",
+    "unity": "2022.4",
+    "dependencies": {},
+    "keywords": [
+        "unity"
+    ],
+    "author": {
+        "name": "Dented Pixel"
+    }
+}

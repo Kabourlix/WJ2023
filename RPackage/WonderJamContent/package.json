@@ -1,0 +1,16 @@
+{
+    "name": "com.rezoskour.wonderjam",
+    "version": "1.0.0",
+    "displayName": "WonderJam",
+    "description": "Content for wonderjam 2023",
+    "unity": "2022.4",
+    "dependencies": {
+        "com.unity.inputsystem" : "1.6.3"
+    },
+    "keywords": [
+        "unity"
+    ],
+    "author": {
+        "name": "Rezoskour"
+    }
+}
