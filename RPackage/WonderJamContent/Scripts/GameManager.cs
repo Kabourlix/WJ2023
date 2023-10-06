@@ -1,4 +1,5 @@
-//Copyright by Rezoskour
+// Copyrighted by team Rézoskour
+// Created by Kabourlix Cendrée on 05
 
 #nullable enable
 

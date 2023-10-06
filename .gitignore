@@ -70,3 +70,6 @@ WonderJam2023/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 # Temporary auto-generated Android Assets
 WonderJam2023/[Aa]ssets/[Ss]treamingAssets/aa.meta
 WonderJam2023/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Rider
+WonderJam2023/.idea/
