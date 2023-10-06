@@ -1,13 +1,13 @@
 {
   "dependencies": {
     "com.dentedpixel.leantween": {
-      "version": "file:C:/Users/black/Develop/Unity Projects/WJ2023/RPackage/LeanTween",
+      "version": "file:../../RPackage/LeanTween",
       "depth": 0,
       "source": "local",
       "dependencies": {}
     },
     "com.rezoskour.odinserializer": {
-      "version": "file:C:/Users/black/Develop/Unity Projects/WJ2023/RPackage/Rezoskour.OdinSerializer",
+      "version": "file:../../RPackage/Rezoskour.OdinSerializer",
       "depth": 0,
       "source": "local",
       "dependencies": {}
