@@ -324,10 +324,35 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8969751917578820665, guid: e69ef513c220c0f4a8ddcf805c4308a3, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69ef513c220c0f4a8ddcf805c4308a3, type: 3}
+--- !u!114 &143614414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5617107225238881367, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 143614413}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43efd5ede79a40ee832edff4379ed69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &143614415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1345168382612994489, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 143614413}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb2ce99d4fc4f8ca83026446e2e3268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &196012031
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,10 +611,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasUI
       objectReference: {fileID: 0}
-    - target: {fileID: 457936310391917868, guid: 31ca4915676c2024d80bd12437e3f957,
+    - target: {fileID: 499017237171665766, guid: 31ca4915676c2024d80bd12437e3f957,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499017237171665766, guid: 31ca4915676c2024d80bd12437e3f957,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1724470782989918158, guid: 31ca4915676c2024d80bd12437e3f957,
         type: 3}
@@ -694,6 +724,26 @@ PrefabInstance:
     - target: {fileID: 1724470782989918158, guid: 31ca4915676c2024d80bd12437e3f957,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876894168929451982, guid: 31ca4915676c2024d80bd12437e3f957,
+        type: 3}
+      propertyPath: healthManager
+      value: 
+      objectReference: {fileID: 143614415}
+    - target: {fileID: 5745932365770711096, guid: 31ca4915676c2024d80bd12437e3f957,
+        type: 3}
+      propertyPath: oilComponent
+      value: 
+      objectReference: {fileID: 143614414}
+    - target: {fileID: 5800246577746581338, guid: 31ca4915676c2024d80bd12437e3f957,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800246577746581338, guid: 31ca4915676c2024d80bd12437e3f957,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8281674926345974447, guid: 31ca4915676c2024d80bd12437e3f957,
