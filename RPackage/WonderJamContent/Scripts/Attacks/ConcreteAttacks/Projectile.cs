@@ -3,6 +3,7 @@
 
 #nullable enable
 using System;
+using Rezoskour.Content.Misc;
 using UnityEngine;
 
 namespace Rezoskour.Content
@@ -51,7 +52,7 @@ namespace Rezoskour.Content
         private void OnCollisionEnter2D(Collision2D _other)
         {
             //Check if other belongs to layerMask
-            if (((1 << _other.gameObject.layer) & layerMask) == 0)
+            if (layerMask.HasNot(_other.gameObject.layer))
             {
                 return;
             }
