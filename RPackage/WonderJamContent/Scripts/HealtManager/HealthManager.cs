@@ -12,7 +12,7 @@ using UnityEngine.Serialization;
 
 namespace Rezoskour.Content
 {
-    public class HealthManager : MonoBehaviour
+    public class HealthManager : MonoBehaviour, IHealth
     {
         public event Action? OnDeath;
         public event Action? OnIncomingDamage;
