@@ -99,8 +99,9 @@ namespace Rezoskour.Content
             transform.Translate(speed * Time.fixedDeltaTime * Vector2.right);
         }
 
-        private void OnCollisionEnter2D(Collision2D _other)
+        private void OnTriggerEnter2D(Collider2D _other)
         {
+            Debug.Log($"Projectile hit something with layer {_other.gameObject.layer}");
             //Check if other belongs to layerMask
             if (layerMask.HasNot(_other.gameObject.layer))
             {

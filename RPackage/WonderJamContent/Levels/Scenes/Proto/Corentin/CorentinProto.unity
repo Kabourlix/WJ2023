@@ -453,6 +453,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6341747926633157092, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583994185966591971, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: startAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7498883097609141325, guid: e69ef513c220c0f4a8ddcf805c4308a3,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -462,6 +472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8906579394619519331, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -484,7 +499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1805828650}
   - component: {fileID: 1805828649}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EnemyPoolManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fcd4776e109ae4588b2a66b5ec6d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 3277487655782272068, guid: 050cd94cbf63ab94caac14c64dbda236,
+  friesPrefab: {fileID: 3277487655782272068, guid: 050cd94cbf63ab94caac14c64dbda236,
+    type: 3}
+  ketchupPrefab: {fileID: 7862203409757682670, guid: c5fedb2b3f5d27844bf0c94c64f07206,
     type: 3}
 --- !u!4 &1805828650
 Transform:

@@ -33,12 +33,12 @@ namespace Rezoskour.Content
             collectRange.radius = collectRangeRadius;
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void OnTriggerEnter2D(Collider2D _other)
         {
-            if (collectLayer.Has(other.gameObject.layer))
+            if (collectLayer.Has(_other.gameObject.layer))
             {
                 Debug.Log("Collecting item");
-                var obj = other.gameObject.GetComponent<CollectableItem>();
+                var obj = _other.gameObject.GetComponent<CollectableItem>();
                 switch (obj.Type)
                 {
                     case CollectableType.Experience:
