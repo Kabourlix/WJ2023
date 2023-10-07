@@ -2657,7 +2657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a0d757aee44cf198a27aab627a7253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton: {fileID: 860717120}
+  playButton: {fileID: 860717122}
   creditsButton: {fileID: 759257522}
   quitButton: {fileID: 1297414246}
   playButtonObj: {fileID: 860717120}
