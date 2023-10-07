@@ -115,7 +115,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1
         y: 8
-        width: 33
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,9 +134,9 @@ TextureImporter:
       name: Potato_Berserk_Walk_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 9
-        width: 34
+        width: 24
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -155,9 +155,9 @@ TextureImporter:
       name: Potato_Berserk_Walk_2
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 9
-        width: 34
+        width: 25
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -176,9 +176,9 @@ TextureImporter:
       name: Potato_Berserk_Walk_3
       rect:
         serializedVersion: 2
-        x: 121
+        x: 97
         y: 9
-        width: 33
+        width: 24
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -197,9 +197,9 @@ TextureImporter:
       name: Potato_Berserk_Walk_4
       rect:
         serializedVersion: 2
-        x: 161
+        x: 129
         y: 8
-        width: 33
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}

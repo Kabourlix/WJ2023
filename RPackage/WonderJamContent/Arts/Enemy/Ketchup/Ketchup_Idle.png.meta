@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3db50ba229cc3c439e556b60c1fe533
+guid: 7af23b2c6918f0f40aba387d76c7fab1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Potato_Normal_Idle_0
+      name: Ketchup_Idle_0
       rect:
         serializedVersion: 2
         x: 10
         y: 7
         width: 14
-        height: 14
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,41 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cef0df0e78d3efa448cd6c01f46702e5
-      internalID: -1346753488
+      spriteID: 990a73202f4b40d47a2b2d84cb43b28f
+      internalID: 1043695040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Potato_Normal_Idle_1
+      name: Ketchup_Idle_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 7
-        width: 16
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5d454c78f010924393a007d14efa5b0
-      internalID: -532075780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Potato_Normal_Idle_2
-      rect:
-        serializedVersion: 2
-        x: 74
+        x: 50
         y: 7
         width: 14
-        height: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906af4bcaa7b95e48a85aee63c91327a
-      internalID: -183285252
+      spriteID: e1bf29df9ce5e8c4b946e954342cc44f
+      internalID: 695915643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Potato_Normal_Idle_3
+      name: Ketchup_Idle_2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 16
-        width: 4
-        height: 4
+        x: 90
+        y: 7
+        width: 14
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 562cf52017a7b804288b2bdbbc0fc2ca
-      internalID: 499300641
+      spriteID: 647c1359d608ff04bb2868a91df27667
+      internalID: 1385539421
       vertices: []
       indices: 
       edges: []
@@ -196,7 +175,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1aaf8615293625f4798c53ea4b7d10bf
+    spriteID: 634735fc2bb15c94392f901defce445f
     internalID: 0
     vertices: []
     indices: 
@@ -204,10 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Potato_Normal_Idle_0: -1346753488
-      Potato_Normal_Idle_1: -532075780
-      Potato_Normal_Idle_2: -183285252
-      Potato_Normal_Idle_3: 499300641
+      Ketchup_Idle_0: 1043695040
+      Ketchup_Idle_1: 695915643
+      Ketchup_Idle_2: 1385539421
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

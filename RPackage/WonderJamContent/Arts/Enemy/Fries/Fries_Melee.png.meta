@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3db50ba229cc3c439e556b60c1fe533
+guid: 08ca9cd6b6f0f6d4c879207f5cc86fbe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Potato_Normal_Idle_0
+      name: Fries_Melee_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 9
         y: 7
-        width: 14
-        height: 14
+        width: 25
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cef0df0e78d3efa448cd6c01f46702e5
-      internalID: -1346753488
+      spriteID: 694f2ddcf0228da46b0556df26096ab9
+      internalID: -1089600627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Potato_Normal_Idle_1
+      name: Fries_Melee_1
       rect:
         serializedVersion: 2
-        x: 42
+        x: 49
         y: 7
-        width: 16
-        height: 12
+        width: 25
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5d454c78f010924393a007d14efa5b0
-      internalID: -532075780
+      spriteID: e0aec2b8d095fb547a4d4ff1213b0bbe
+      internalID: -268338070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Potato_Normal_Idle_2
+      name: Fries_Melee_2
       rect:
         serializedVersion: 2
-        x: 74
+        x: 90
         y: 7
-        width: 14
-        height: 13
+        width: 26
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 906af4bcaa7b95e48a85aee63c91327a
-      internalID: -183285252
+      spriteID: 8fc63b6469fd2b24d983a778ca534c2f
+      internalID: -1313316093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Potato_Normal_Idle_3
+      name: Fries_Melee_3
       rect:
         serializedVersion: 2
-        x: 88
-        y: 16
-        width: 4
-        height: 4
+        x: 130
+        y: 7
+        width: 29
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 562cf52017a7b804288b2bdbbc0fc2ca
-      internalID: 499300641
+      spriteID: f79f62df140522948be90498b969666c
+      internalID: -1443669615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_Melee_4
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 6
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704a5b8d88d22c1429e26e46362de7a9
+      internalID: -792359934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_Melee_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 7
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c73729d94e50c47b8eea62b3e1945b
+      internalID: 304520483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_Melee_6
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 7
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fd9337d7a9b2d4486be2a767a873a0
+      internalID: -309781916
       vertices: []
       indices: 
       edges: []
@@ -196,7 +259,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1aaf8615293625f4798c53ea4b7d10bf
+    spriteID: 286e2088e35784945866f57fb337477a
     internalID: 0
     vertices: []
     indices: 
@@ -204,10 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Potato_Normal_Idle_0: -1346753488
-      Potato_Normal_Idle_1: -532075780
-      Potato_Normal_Idle_2: -183285252
-      Potato_Normal_Idle_3: 499300641
+      Fries_Melee_0: -1089600627
+      Fries_Melee_1: -268338070
+      Fries_Melee_2: -1313316093
+      Fries_Melee_3: -1443669615
+      Fries_Melee_4: -792359934
+      Fries_Melee_5: 304520483
+      Fries_Melee_6: -309781916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

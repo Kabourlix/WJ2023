@@ -115,8 +115,8 @@ TextureImporter:
         serializedVersion: 2
         x: 10
         y: 7
-        width: 24
-        height: 19
+        width: 15
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Potato_Normal_To_Berserk_1
       rect:
         serializedVersion: 2
-        x: 50
+        x: 42
         y: 7
-        width: 24
-        height: 19
+        width: 15
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Potato_Normal_To_Berserk_2
       rect:
         serializedVersion: 2
-        x: 90
+        x: 74
         y: 7
-        width: 24
-        height: 19
+        width: 15
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Potato_Normal_To_Berserk_3
       rect:
         serializedVersion: 2
-        x: 130
+        x: 106
         y: 7
-        width: 24
-        height: 19
+        width: 17
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,9 +197,9 @@ TextureImporter:
       name: Potato_Normal_To_Berserk_4
       rect:
         serializedVersion: 2
-        x: 164
+        x: 132
         y: 7
-        width: 30
+        width: 21
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -218,9 +218,9 @@ TextureImporter:
       name: Potato_Normal_To_Berserk_5
       rect:
         serializedVersion: 2
-        x: 202
+        x: 162
         y: 7
-        width: 32
+        width: 27
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -239,9 +239,9 @@ TextureImporter:
       name: Potato_Normal_To_Berserk_6
       rect:
         serializedVersion: 2
-        x: 243
+        x: 195
         y: 7
-        width: 31
+        width: 22
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}

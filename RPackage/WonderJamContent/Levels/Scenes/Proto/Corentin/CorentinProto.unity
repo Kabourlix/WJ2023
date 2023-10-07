@@ -385,11 +385,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7878552194597191233, guid: 050cd94cbf63ab94caac14c64dbda236,
-        type: 3}
-      propertyPath: damage
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -538,11 +533,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7878552194597191233, guid: c5fedb2b3f5d27844bf0c94c64f07206,
-        type: 3}
-      propertyPath: damage
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -891,7 +881,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.19, y: 0.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -968,8 +958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb2ce99d4fc4f8ca83026446e2e3268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 0
-  MaxHealth: 50
+  health: 0
+  maxHealth: 50
 --- !u!95 &866768518
 Animator:
   serializedVersion: 5
@@ -1027,8 +1017,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.32}
-    newSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 0.14, y: 0.14}
+    newSize: {x: 0.19, y: 0.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1169,6 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c750daa35c5ac746b73b8ec5aa8e282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 866768514}
 --- !u!1 &1045989889
 GameObject:
   m_ObjectHideFlags: 0
