@@ -19,9 +19,11 @@ namespace Rezoskour.Content
     public class AttackData : ScriptableObject
     {
         public AttackName attackName;
-        public float damage;
-        [FormerlySerializedAs("maxRange")] public float range;
+        public int damage;
         [FormerlySerializedAs("attackRate")] public float attackCooldown;
+
+        [Header("Melee")] [FormerlySerializedAs("maxRange")]
+        public float range;
 
         [Tooltip("The range of the collider to use for hit detection.")]
         public float attackAreaRange;
