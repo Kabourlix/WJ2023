@@ -38,6 +38,31 @@ namespace Rezoskour.Content
             rb = GetComponent<Rigidbody2D>();
         }
 
+        private void Start()
+        {
+            if (GameManager.Instance == null)
+            {
+                Debug.LogError("GameManager.Instance is null !");
+                return;
+            }
+
+            GameManager.Instance.OnVictory += OnGameEnds;
+            GameManager.Instance.OnDefeat += OnGameEnds;
+        }
+
+        private void OnDestroy()
+        {
+            if (GameManager.Instance == null)
+            {
+                Debug.LogError("GameManager.Instance is null !");
+                return;
+            }
+
+            GameManager.Instance.OnVictory -= OnGameEnds;
+            GameManager.Instance.OnDefeat -= OnGameEnds;
+        }
+
+
         private void OnEnable()
         {
             input.Enable();
@@ -157,6 +182,11 @@ namespace Rezoskour.Content
             input.Player.Enable();
             input.PauseCtx.Disable();
             gameManager.ChangeState(stateBeforePause);
+        }
+
+        private void OnGameEnds()
+        {
+            input.Disable();
         }
     }
 }

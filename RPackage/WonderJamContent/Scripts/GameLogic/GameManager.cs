@@ -32,6 +32,8 @@ namespace Rezoskour.Content
         #endregion
 
         public event Action<bool>? OnBerserkModeChange;
+        public event Action? OnDefeat;
+        public event Action? OnVictory;
 
         [SerializeField] private Transform playerTransform = null!;
         public Transform PlayerTf => playerTransform;
@@ -52,15 +54,15 @@ namespace Rezoskour.Content
             },
             {GameStateName.Pause, new PauseState()},
             {GameStateName.LevelUp, new LevelUpState()},
-            {GameStateName.Defeat, new DefeatState()},
-            {GameStateName.Victory, new VictoryState()}
+            {GameStateName.Defeat, new DefeatState(() => Instance!.OnDefeat?.Invoke())},
+            {GameStateName.Victory, new VictoryState(() => Instance!.OnVictory?.Invoke())}
         };
 
         private bool[,] isStateSwitchPossible =
         {
             {false, true, false, false, false, false, false}, //Entry
-            {false, false, true, true, true, false, false}, //Main
-            {false, true, false, true, false, false, false}, //Berserk
+            {false, false, true, true, true, true, true}, //Main
+            {false, true, false, true, false, true, true}, //Berserk
             {false, true, true, false, false, false, false}, //Pause
             {false, true, false, false, false, false, false}, //LevelUp
             {true, false, false, false, false, false, false}, //Defeat
