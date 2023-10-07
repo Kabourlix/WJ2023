@@ -26,7 +26,7 @@ namespace Rezoskour.Content
         {
             if (PlayerTransform != null)
             {
-                Debug.LogError($"Cannot initialize twice player transform on {name}.");
+                Debug.LogError($"Cannot initialize twice Player transform on {name}.");
                 return;
             }
 
