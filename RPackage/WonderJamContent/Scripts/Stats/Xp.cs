@@ -33,6 +33,14 @@ namespace Rezoskour.Content
             }
         }
 
+        private void OnDestroy()
+        {
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.OnBerserkModeChange -= SwitchMode;
+            }
+        }
+
         private void SwitchMode(bool _obj)
         {
             isBerserk = _obj;
