@@ -10,15 +10,13 @@ using UnityEngine;
 
 namespace Rezoskour.Content.Collectable
 {
-    public class Crate : MonoBehaviour
+    public class Crate : MonoBehaviour, IHealth
     {
-        [SerializeField] private GameObject? oil;
         [Range(0, 1)] [SerializeField] private float oilSpawnProbability;
-        [SerializeField] private GameObject? experience;
         [Range(0, 1)] [SerializeField] private float expSpawnProbability;
 
         [ContextMenu("Destroy")]
-        private void Destory()
+        private void DestoryCrate()
         {
             Debug.Log("Crate destroyed");
             var range = oilSpawnProbability + expSpawnProbability;
@@ -35,6 +33,16 @@ namespace Rezoskour.Content.Collectable
             }
 
             Destroy(gameObject);
+        }
+
+        public void Heal(int _amount)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Damage(int _amount)
+        {
+            DestoryCrate();
         }
     }
 }
