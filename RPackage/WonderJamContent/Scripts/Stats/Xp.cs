@@ -45,6 +45,7 @@ namespace Rezoskour.Content
         public void AddXp(int _xp)
         {
             totalExperience += _xp;
+            xpBar.value = totalExperience;
             CheckForLevelUp();
         }
 
@@ -80,7 +81,7 @@ namespace Rezoskour.Content
             xpBar.minValue = start;
             xpBar.maxValue = end;
 
-            xpBar.value = totalExperience;
+            xpBar.value = previousLevelExperience;
         }
     }
 }
