@@ -25,6 +25,7 @@ namespace Rezoskour.Content
             currentlevel = 1;
             totalExperience = 0;
             isBerserk = false;
+            UpdateLevel();
 
             if (GameManager.Instance != null)
             {
@@ -80,11 +81,6 @@ namespace Rezoskour.Content
             xpBar.maxValue = end;
 
             xpBar.value = totalExperience;
-        }
-
-        public int GetLevel()
-        {
-            return currentlevel;
         }
     }
 }
