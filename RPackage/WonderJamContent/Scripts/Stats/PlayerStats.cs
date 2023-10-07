@@ -5,6 +5,7 @@
 
 using System;
 using UnityEngine;
+using TMPro;
 
 // Copyrighted by team Rézoskour
 // Created by alexandre buzon on 06
@@ -16,7 +17,12 @@ namespace Rezoskour.Content
         [SerializeField] private Stats? baseStats;
         private Stats? normalStats;
         private Stats? currentStats;
-        private bool isBerserk;
+        public Stats? CurrentStats => currentStats;
+
+        [SerializeField] private TextMeshProUGUI statsText;
+
+        //temp
+        public PlayerMovement playerMovement;
 
         private void Start()
         {
@@ -25,13 +31,22 @@ namespace Rezoskour.Content
                 throw new Exception("Stats not set in PlayerStats");
             }
 
-            //baseStats.SaveStatsToJson();
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.OnBerserkModeChange += SwitchMode;
+            }
+
+            //temp
+            playerMovement.onBerzerk += SwitchMode;
+
+
             currentStats = Instantiate(baseStats);
-            //currentStats.LoadStatsFromJson();
+            ShowStats();
         }
 
         private void SwitchMode(bool _isBerserk)
         {
+            Debug.Log("Switching mode");
             if (currentStats == null)
             {
                 throw new Exception("Stats not set in PlayerStats");
@@ -39,14 +54,22 @@ namespace Rezoskour.Content
 
             if (_isBerserk)
             {
-                Destroy(normalStats);
                 normalStats = Instantiate(currentStats);
                 currentStats.BerserkMode();
+                Debug.Log("<color=red>Is Berserk</color>");
             }
             else
             {
                 currentStats = normalStats;
             }
+
+            ShowStats();
+        }
+
+        private void ShowStats()
+        {
+            statsText.text = "Attack : " + currentStats.attack + "\n Speed : " + currentStats.speed + "\n Range : " +
+                             currentStats.range + "\n CollectRange : " + currentStats.collectRange;
         }
     }
 }
