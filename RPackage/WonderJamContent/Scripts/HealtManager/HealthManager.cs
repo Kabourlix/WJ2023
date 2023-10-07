@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 06
 
 #nullable enable
 
@@ -35,7 +35,7 @@ namespace Rezoskour.Content
                     return 0;
                 }
 
-                return (float) health / maxHealth;
+                return (float)health / maxHealth;
             }
         }
 
@@ -90,6 +90,12 @@ namespace Rezoskour.Content
             {
                 OnDeath?.Invoke();
             }
+        }
+
+        public void Heal(int _amount)
+        {
+            health = Mathf.Clamp(health + _amount, 0, maxHealth);
+            OnHealthChanged?.Invoke(health);
         }
     }
 }
