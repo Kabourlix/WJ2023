@@ -15,7 +15,7 @@ namespace Rezoskour.Content
         [SerializeField] protected AttackData data = null!;
 
         public AttackName Name => data.attackName;
-        public Transform? TargetTransform { get; set; }
+        public Transform? PlayerTransform { get; set; }
         protected GameManager? Manager => GameManager.Instance;
 
         protected LayerMask layerMask;
@@ -25,7 +25,7 @@ namespace Rezoskour.Content
 
         public virtual void Initialize(Transform _userTf, LayerMask _layerMask, bool _startCoroutine = true)
         {
-            if (TargetTransform != null)
+            if (PlayerTransform != null)
             {
                 Debug.LogError($"Cannot initialize twice Player transform on {name}.");
                 return;
@@ -33,7 +33,7 @@ namespace Rezoskour.Content
 
             layerMask = _layerMask;
             waitForAttackRefresh = new WaitForSeconds(data.attackCooldown);
-            TargetTransform = _userTf;
+            PlayerTransform = _userTf;
 
             if (_startCoroutine)
             {

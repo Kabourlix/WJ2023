@@ -3,6 +3,7 @@
 
 #nullable enable
 
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -26,7 +27,7 @@ namespace Rezoskour.Content
 
         public override IEnumerator PerformCoroutine()
         {
-            if (TargetTransform == null)
+            if (PlayerTransform == null)
             {
                 Debug.LogError("Player transform is null.");
                 yield break;
@@ -60,7 +61,7 @@ namespace Rezoskour.Content
 
         private void OnGetProjectile(Projectile _proj)
         {
-            if (TargetTransform == null)
+            if (PlayerTransform == null)
             {
                 return;
             }
@@ -72,14 +73,30 @@ namespace Rezoskour.Content
             }
 
             _proj.gameObject.SetActive(true);
-            _proj.transform.SetPositionAndRotation(TargetTransform.position + data.range
+
+            float angle = Vector2.SignedAngle(Vector2.right, Manager.PlayerLookDirection);
+
+            _proj.transform.SetPositionAndRotation(PlayerTransform.position + data.range
                 * Manager.PlayerLookDirection,
-                Quaternion.identity);
+                Quaternion.Euler(0, 0, angle));
         }
 
         private void OnReleaseProjectile(Projectile _proj)
         {
             _proj.gameObject.SetActive(false);
         }
+
+#if UNITY_EDITOR
+        private void OnDrawGizmos()
+        {
+            if (PlayerTransform == null || Manager == null)
+            {
+                return;
+            }
+
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(PlayerTransform.position + data.range * Manager.PlayerLookDirection, 0.2f);
+        }
+#endif
     }
 }

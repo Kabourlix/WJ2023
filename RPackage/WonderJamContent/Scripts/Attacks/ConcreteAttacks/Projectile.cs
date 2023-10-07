@@ -96,7 +96,7 @@ namespace Rezoskour.Content
                 Release();
             }
 
-            transform.Translate(speed * Time.fixedDeltaTime * GameManager.Instance!.PlayerLookDirection);
+            transform.Translate(speed * Time.fixedDeltaTime * Vector2.right);
         }
 
         private void OnCollisionEnter2D(Collision2D _other)

@@ -36,7 +36,7 @@ namespace Rezoskour.Content
         [SerializeField] private Transform playerTransform = null!;
         public Transform PlayerTf => playerTransform;
         private AttackManager playerAttack = null!;
-        public Vector3 PlayerLookDirection { get; set; }
+        public Vector3 PlayerLookDirection { get; set; } = Vector3.right;
 
 
         private GameStateName currentState = GameStateName.Entry;
