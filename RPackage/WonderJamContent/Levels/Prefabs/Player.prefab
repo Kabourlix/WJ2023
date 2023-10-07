@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2532363172494261197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0, z: -0.23}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -694,7 +694,7 @@ Transform:
   - {fileID: 2007571730743151670}
   - {fileID: 4335957039996360570}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4289451972231699181
 SpriteRenderer:
@@ -861,7 +861,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.32}
+    oldSize: {x: 0.14, y: 0.14}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -885,7 +885,10 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 384
-  allAttacks: []
+  allAttacks:
+  - {fileID: 9146795929773332143, guid: 86d574ec686bdab419e777449f7c7ae5, type: 3}
+  - {fileID: 5879188706866820869, guid: 76ec96c1084bf2f46871c277766b46d0, type: 3}
+  - {fileID: 3798810017300859789, guid: ada2aac1c20902141862de165435cdc8, type: 3}
 --- !u!1 &6440261533494645893
 GameObject:
   m_ObjectHideFlags: 0
