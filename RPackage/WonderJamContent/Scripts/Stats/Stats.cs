@@ -13,7 +13,22 @@ using UnityEngine;
 
 namespace Rezoskour.Content
 {
-    [CreateAssetMenu(fileName = "Stats", menuName = "Rézoskour/Stats Data", order = 0)]
+    public enum StatName
+    {
+        Health,
+        MaxHealth,
+        Oil,
+        MaxOil,
+        Attack,
+        CollectRange,
+        Range,
+        Speed,
+        GlobalDamageMultiplier,
+        GlobalDamageReductor,
+        GlobalAttackRateMultiplier
+    }
+
+    [CreateAssetMenu(fileName = "Stats", menuName = "Rezoskour/Stats Data", order = 0)]
     public class Stats : SerializedScriptableObject
     {
         public int health;
@@ -31,6 +46,10 @@ namespace Rezoskour.Content
         public int range;
 
         public float speed;
+
+        [HideInInspector] public float globalDamageMultiplier = 1;
+        [HideInInspector] public float globalDamageReductor = 1;
+        [HideInInspector] public float globalAttackRateMultiplier = 1;
 
         /*
          public void SaveStatsToJson()
