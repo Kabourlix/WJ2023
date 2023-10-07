@@ -49,6 +49,7 @@ namespace Rezoskour.Content
                 animator.SetFloat("Speed", MathF.Abs(direction.x));
             }
 
+            //Animation logic
             if (direction.x > 0 && !facingRight)
             {
                 Flip();
