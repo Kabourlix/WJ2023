@@ -18,6 +18,7 @@ namespace Rezoskour.Content
 {
     public class ChasingEnemy : MonoBehaviour, IHealth
     {
+        [SerializeField] private Projectile projectilePrefab = null!;
         [SerializeField] private float maxHealth = 1f;
         [SerializeField] private Transform? targetTransform;
         public float speed = 1f;
@@ -27,7 +28,7 @@ namespace Rezoskour.Content
         private bool isOut = true;
         public Animator animator;
         public int damage = 1;
-
+        
 
         private Action? releaseCallback;
         
@@ -53,7 +54,7 @@ namespace Rezoskour.Content
                 }
                 else
                 {
-                    // Perform attack logic here
+                    
                     triggerAttackArray[0] = true;
                 }
 
@@ -62,8 +63,9 @@ namespace Rezoskour.Content
                 // theScale.x *= enemyToPlayer.x < 0 ? -1 : 1;
                 // _transform.localScale = theScale;
             }
-        }
 
+            
+        }
         private TransformAccessArray transformAccessArray;
         private NativeArray<bool> triggerAttackArray;
         private JobHandle chasingJobHandle;

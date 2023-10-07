@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.Serialization;
 
+using Random = Unity.Mathematics.Random;
 namespace Rezoskour.Content
 {
     public enum EnemyType
@@ -18,29 +19,27 @@ namespace Rezoskour.Content
     }
     public class EnemyPoolManager : MonoBehaviour
     {
-        [FormerlySerializedAs("ketchupPrefab")] [SerializeField] private ChasingEnemy friesPrefab = null!;
+        [SerializeField] private ChasingEnemy friesPrefab = null!;
         [SerializeField] private ChasingEnemy ketchupPrefab = null!;
 
-        private ObjectPool<ChasingEnemy> enemyPool = null!;
         private Dictionary<EnemyType, ObjectPool<ChasingEnemy>> enemyPools = new();
         private void Awake()
         {
-            //enemyPools.Add(Fries, instanciation de la pool);
-            enemyPool = new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(friesPrefab), OnGetEnemy, OnReleaseEnemy);
+            enemyPools.Add( EnemyType.Fries, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(friesPrefab,EnemyType.Fries), OnGetEnemy, OnReleaseEnemy));
+            enemyPools.Add( EnemyType.Ketchup, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(ketchupPrefab,EnemyType.Ketchup), OnGetEnemy, OnReleaseEnemy));
         }
 
-
-        private ChasingEnemy OnCreateEnemyAbstract(ChasingEnemy _prefab)
+        private ChasingEnemy OnCreateEnemyAbstract(ChasingEnemy _prefab, EnemyType _type)
         {
-            if (GameManager.Instance == null)
+            if (GameManager.Instance == null)  
             {
                 Debug.LogError("GAMEMANAGER IS NULL!");
                 return default!;
             }
 
             ChasingEnemy enemy = Instantiate(_prefab, GameManager.Instance.transform).GetComponent<ChasingEnemy>();
-            enemy.name = $"Enemy {enemyPool.CountAll + 1}";
-            enemy.Init(() => enemyPool.Release(enemy));
+            enemy.name = $"Enemy {_prefab.name + 1}";
+            enemy.Init(() => enemyPools[_type].Release(enemy));
             return enemy;
         }
 
@@ -71,7 +70,11 @@ namespace Rezoskour.Content
 
         public ChasingEnemy GetEnemy()
         {
-            return enemyPool.Get();
+            Random random = new Random((uint) Environment.TickCount);
+            if (random.NextInt(0, 2) == 0)
+                return enemyPools[EnemyType.Ketchup].Get();
+            else
+                return enemyPools[EnemyType.Fries].Get();
         }
     }
 }
