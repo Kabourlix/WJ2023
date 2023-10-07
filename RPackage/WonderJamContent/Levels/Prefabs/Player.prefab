@@ -652,9 +652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8816bc9f1c3e54c818f01f8b248e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HungerBar: {fileID: 7663176106766081312}
-  maxHunger: 50
-  currentHunger: 50
+  oilComponent: {fileID: 5617107225238881367}
+  hungerBar: {fileID: 7663176106766081312}
   hungerTxt: {fileID: 2062523032935177541}
 --- !u!1 &5852949305833879436
 GameObject:
@@ -665,13 +664,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5170789662694799863}
+  - component: {fileID: 1441524344014977481}
+  - component: {fileID: 3238884439302999183}
+  - component: {fileID: 5503171510290900510}
   - component: {fileID: 3477831332902485690}
+  - component: {fileID: 6583994185966591971}
   - component: {fileID: 1345168382612994489}
+  - component: {fileID: 5617107225238881367}
   - component: {fileID: 4431885489422769236}
   - component: {fileID: 7872386338553982666}
-  - component: {fileID: 6583994185966591971}
-  - component: {fileID: 5503171510290900510}
-  - component: {fileID: 3238884439302999183}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -696,8 +697,81 @@ Transform:
   - {fileID: 4335957039996360570}
   - {fileID: 5996448272871680499}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1441524344014977481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852949305833879436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c27a440952455eb35e3ffcba40965e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oilLossSpeedNormal: 1
+  oilLossSpeedBerserk: 5
+--- !u!114 &3238884439302999183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852949305833879436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca0e51f384c4f15a4fbf11fa552ddc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseStats: {fileID: 11400000, guid: 3f8baf0504fbcb1479f93f2a1e486a4c, type: 2}
+--- !u!114 &5503171510290900510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852949305833879436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a3fc04a88547bba47a43748202035e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1.006646
+      value: 0
+      inSlope: 350.9491
+      outSlope: 350.9491
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.06301271
+    - serializedVersion: 3
+      time: 1.9999635
+      value: 199.8319
+      inSlope: 144.22115
+      outSlope: 144.22115
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.0837567
+      outWeight: 0.041482687
+    - serializedVersion: 3
+      time: 100.04623
+      value: 500608.7
+      inSlope: 14173.414
+      outSlope: 14173.414
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.09588013
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  xpBar: {fileID: 0}
 --- !u!114 &3477831332902485690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,6 +788,26 @@ MonoBehaviour:
   berserkSprite: {fileID: 1498947119, guid: c8ba5a90d6ebc094f92ce138121212ca, type: 3}
   animator: {fileID: 6213068741966506897}
   normalSprite: {fileID: -1346753488, guid: c3db50ba229cc3c439e556b60c1fe533, type: 3}
+--- !u!114 &6583994185966591971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852949305833879436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf2c3ca316b46f098025f5bd5145590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startAttack: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 384
+  allAttacks:
+  - {fileID: 9146795929773332143, guid: 86d574ec686bdab419e777449f7c7ae5, type: 3}
+  - {fileID: 5879188706866820869, guid: 76ec96c1084bf2f46871c277766b46d0, type: 3}
+  - {fileID: 3798810017300859789, guid: ada2aac1c20902141862de165435cdc8, type: 3}
 --- !u!114 &1345168382612994489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,8 +820,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb2ce99d4fc4f8ca83026446e2e3268, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 50
+--- !u!114 &5617107225238881367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852949305833879436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43efd5ede79a40ee832edff4379ed69d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &4431885489422769236
 Rigidbody2D:
   serializedVersion: 4
@@ -800,85 +904,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.20146188, y: 0.1647555}
   m_EdgeRadius: 0
---- !u!114 &6583994185966591971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5852949305833879436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf2c3ca316b46f098025f5bd5145590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startAttack: 1
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 384
-  allAttacks:
-  - {fileID: 9146795929773332143, guid: 86d574ec686bdab419e777449f7c7ae5, type: 3}
-  - {fileID: 5879188706866820869, guid: 76ec96c1084bf2f46871c277766b46d0, type: 3}
-  - {fileID: 3798810017300859789, guid: ada2aac1c20902141862de165435cdc8, type: 3}
---- !u!114 &5503171510290900510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5852949305833879436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a3fc04a88547bba47a43748202035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xpCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 1.006646
-      value: 0
-      inSlope: 350.9491
-      outSlope: 350.9491
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.06301271
-    - serializedVersion: 3
-      time: 1.9999635
-      value: 199.8319
-      inSlope: 144.22115
-      outSlope: 144.22115
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.0837567
-      outWeight: 0.041482687
-    - serializedVersion: 3
-      time: 100.04623
-      value: 500608.7
-      inSlope: 14173.414
-      outSlope: 14173.414
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.09588013
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  xpBar: {fileID: 0}
---- !u!114 &3238884439302999183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5852949305833879436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fca0e51f384c4f15a4fbf11fa552ddc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseStats: {fileID: 11400000, guid: 3f8baf0504fbcb1479f93f2a1e486a4c, type: 2}
 --- !u!1 &5999893763855081193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,9 +1509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpBar: {fileID: 7157327942221729262}
   healthManager: {fileID: 1345168382612994489}
-  maxHealth: 50
   healthTxt: {fileID: 4286494964417592643}
-  gameManager: {fileID: 0}
 --- !u!1 &8501317476613029028
 GameObject:
   m_ObjectHideFlags: 0

@@ -52,21 +52,19 @@ namespace Rezoskour.Content
             },
             {GameStateName.Pause, new PauseState()},
             {GameStateName.LevelUp, new LevelUpState()},
-            {GameStateName.GameEnd, new GameEndState()},
             {GameStateName.Defeat, new DefeatState()},
             {GameStateName.Victory, new VictoryState()}
         };
 
         private bool[,] isStateSwitchPossible =
         {
-            {false, true, false, false, false, false, false, false}, //Entry
-            {false, false, true, true, true, true, false, false}, //Main
-            {false, true, false, true, false, true, false, false}, //Berserk
-            {false, true, true, false, false, false, false, false}, //Pause
-            {false, true, false, false, false, false, false, false}, //LevelUp
-            {false, false, false, false, false, false, true, true}, //GameEnd
-            {true, false, false, false, false, false, false, false}, //Defeat
-            {true, false, false, false, false, false, false, false} //Victory
+            {false, true, false, false, false, false, false}, //Entry
+            {false, false, true, true, true, false, false}, //Main
+            {false, true, false, true, false, false, false}, //Berserk
+            {false, true, true, false, false, false, false}, //Pause
+            {false, true, false, false, false, false, false}, //LevelUp
+            {true, false, false, false, false, false, false}, //Defeat
+            {true, false, false, false, false, false, false} //Victory
         };
 
         private void Start()
@@ -89,8 +87,6 @@ namespace Rezoskour.Content
             }
 
             allGameStates[currentState].Exit();
-
-
             currentState = _stateName;
             allGameStates[currentState].Enter();
         }

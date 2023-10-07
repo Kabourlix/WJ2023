@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by alexandre buzon on 06
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
@@ -68,15 +68,20 @@ namespace Rezoskour.Content
 
         private void UpdateLevel()
         {
-            previousLevelExperience = (int)xpCurve.Evaluate(currentlevel);
-            nextLevelExperience = (int)xpCurve.Evaluate(currentlevel + 1);
+            previousLevelExperience = (int) xpCurve.Evaluate(currentlevel);
+            nextLevelExperience = (int) xpCurve.Evaluate(currentlevel + 1);
             UpdateUI();
         }
 
         private void UpdateUI()
         {
-            var start = previousLevelExperience;
-            var end = nextLevelExperience;
+            int start = previousLevelExperience;
+            int end = nextLevelExperience;
+
+            if (xpBar == null)
+            {
+                return;
+            }
 
             xpBar.minValue = start;
             xpBar.maxValue = end;

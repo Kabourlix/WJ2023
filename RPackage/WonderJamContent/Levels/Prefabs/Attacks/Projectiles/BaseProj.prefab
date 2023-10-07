@@ -49,9 +49,8 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 384
-  speed: 5
+  speed: 10
   damage: 0
-  targetDir: {x: 0, y: 0, z: 0}
   duration: 1.5
 --- !u!212 &2676881494687803149
 SpriteRenderer:
