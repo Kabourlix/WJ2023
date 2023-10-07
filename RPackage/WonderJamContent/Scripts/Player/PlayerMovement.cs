@@ -49,6 +49,7 @@ namespace Rezoskour.Content
 
             GameManager.Instance.OnVictory += OnGameEnds;
             GameManager.Instance.OnDefeat += OnGameEnds;
+            GameManager.Instance.OnBerserkModeChange += BerserkStatusChangedHandler;
         }
 
         private void OnDestroy()
@@ -139,17 +140,22 @@ namespace Rezoskour.Content
                 return;
             }
 
-            if (GameManager.CurrentState == GameStateName.Berserk)
+            GameManager.ChangeState(GameManager.CurrentState == GameStateName.Berserk
+                ? GameStateName.Main
+                : GameStateName.Berserk);
+        }
+
+        private void BerserkStatusChangedHandler(bool _isBerserkOn)
+        {
+            if (_isBerserkOn)
             {
-                GameManager.ChangeState(GameStateName.Main);
-                animator.SetBool("IsBerserk", false);
-                spriteRenderer.sprite = normalSprite;
+                animator.SetBool("IsBerserk", true);
+                spriteRenderer.sprite = berserkSprite;
             }
             else
             {
-                GameManager.ChangeState(GameStateName.Berserk);
-                animator.SetBool("IsBerserk", true);
-                spriteRenderer.sprite = berserkSprite;
+                animator.SetBool("IsBerserk", false);
+                spriteRenderer.sprite = normalSprite;
             }
         }
 
