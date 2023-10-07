@@ -9,7 +9,7 @@ namespace Rezoskour.Content
 {
     public class BerserkState : GameState
     {
-        public BerserkState(Action? _onEnterCallback, Action? _onExitCallback) :
+        public BerserkState(Action? _onEnterCallback = null, Action? _onExitCallback = null) :
             base(_onEnterCallback, _onExitCallback) { }
 
         public override void Enter()
@@ -24,10 +24,7 @@ namespace Rezoskour.Content
             Debug.Log("Enter BerserkState");
         }
 
-        public override void Process()
-        {
-            throw new NotImplementedException();
-        }
+        public override void Process() { }
 
         public override void Exit()
         {

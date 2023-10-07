@@ -30,7 +30,6 @@ namespace Rezoskour.Content
 
         #endregion
 
-        //ça marche pas chez Corentin c'est de LA MERDE !
         public event Action<bool>? OnBerserkModeChange;
 
         [SerializeField] private Transform playerTransform = null!;
@@ -39,6 +38,7 @@ namespace Rezoskour.Content
 
 
         private GameStateName currentState = GameStateName.Entry;
+        public GameStateName CurrentState => currentState;
 
         private readonly Dictionary<GameStateName, GameState> allGameStates = new()
         {
@@ -73,6 +73,11 @@ namespace Rezoskour.Content
             ChangeState(GameStateName.Main);
         }
 
+        private void Update()
+        {
+            allGameStates[currentState].Process();
+        }
+
         public void ChangeState(GameStateName _stateName)
         {
             if (!isStateSwitchPossible[(int) currentState, (int) _stateName])
@@ -83,32 +88,12 @@ namespace Rezoskour.Content
 
             allGameStates[currentState].Exit();
 
-            switch (_stateName)
-            {
-                case GameStateName.Entry:
-                    break;
-                case GameStateName.Main:
-                    break;
-                case GameStateName.Berserk:
-                    break;
-                case GameStateName.Pause:
-                    break;
-                case GameStateName.LevelUp:
-                    break;
-                case GameStateName.GameEnd:
-                    break;
-                case GameStateName.Defeat:
-                    break;
-                case GameStateName.Victory:
-                    break;
-                default:
-                    Debug.LogError($"Unknown state {_stateName}.");
-                    return;
-            }
 
             currentState = _stateName;
             allGameStates[currentState].Enter();
         }
+
+        #region ChangeStates Callbacks
 
         private void SetBerserk(bool _b)
         {
@@ -122,5 +107,7 @@ namespace Rezoskour.Content
                 playerAttack.TryRemoveAttack(AttackName.BerserkBurn);
             }
         }
+
+        #endregion
     }
 }

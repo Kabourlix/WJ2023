@@ -27,7 +27,7 @@ namespace Rezoskour.Content
         private Action? onEnterCallback;
         private Action? onExitCallback;
 
-        protected GameState(Action? _onEnterCallback = null, Action? _onExitCallback = null)
+        public GameState(Action? _onEnterCallback = null, Action? _onExitCallback = null)
         {
             onEnterCallback = _onEnterCallback;
             onExitCallback = _onExitCallback;

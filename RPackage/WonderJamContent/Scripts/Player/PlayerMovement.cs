@@ -28,6 +28,8 @@ namespace Rezoskour.Content
         private bool isBerserk = false;
         private bool facingRight = true;
 
+        private GameManager? gameManager => GameManager.Instance;
+
         private void Awake()
         {
             input = new CustomInput();
@@ -37,9 +39,14 @@ namespace Rezoskour.Content
         private void OnEnable()
         {
             input.Enable();
+            input.PauseCtx.Disable();
+
             input.Player.Movement.performed += OnMovementPerformed;
             input.Player.Movement.canceled += OnMovementCanceled;
             input.Player.Berserk.performed += OnBerzerkPerformed;
+
+            input.Player.Pause.performed += OnStartPause;
+            input.PauseCtx.Pause.performed += OnStopPause;
         }
 
 
@@ -49,6 +56,9 @@ namespace Rezoskour.Content
             input.Player.Movement.performed -= OnMovementPerformed;
             input.Player.Movement.canceled -= OnMovementCanceled;
             input.Player.Berserk.performed -= OnBerzerkPerformed;
+
+            input.Player.Pause.performed -= OnStartPause;
+            input.PauseCtx.Pause.performed -= OnStopPause;
         }
 
         private void FixedUpdate()
@@ -89,20 +99,55 @@ namespace Rezoskour.Content
 
         private void OnBerzerkPerformed(InputAction.CallbackContext _obj)
         {
+            if (gameManager == null)
+            {
+                Debug.LogError("GAME MANAGER IS NULL");
+                return;
+            }
+
             if (isBerserk)
             {
-                GameManager.Instance.ChangeState(GameStateName.Main);
+                gameManager.ChangeState(GameStateName.Main);
                 animator.SetBool("IsBerserk", false);
                 isBerserk = false;
                 transform.GetComponent<SpriteRenderer>().sprite = normalSprite;
             }
             else if (!isBerserk)
             {
-                GameManager.Instance.ChangeState(GameStateName.Berserk);
+                gameManager.ChangeState(GameStateName.Berserk);
                 animator.SetBool("IsBerserk", true);
                 isBerserk = true;
                 transform.GetComponent<SpriteRenderer>().sprite = berserkSprite;
             }
+        }
+
+        private GameStateName stateBeforePause;
+
+        private void OnStartPause(InputAction.CallbackContext _obj)
+        {
+            if (gameManager == null)
+            {
+                Debug.LogError("GAME MANAGER IS NULL");
+                return;
+            }
+
+            input.Player.Disable();
+            input.PauseCtx.Enable();
+            stateBeforePause = gameManager.CurrentState;
+            gameManager.ChangeState(GameStateName.Pause);
+        }
+
+        private void OnStopPause(InputAction.CallbackContext _obj)
+        {
+            if (gameManager == null)
+            {
+                Debug.LogError("GAME MANAGER IS NULL");
+                return;
+            }
+
+            input.Player.Enable();
+            input.PauseCtx.Disable();
+            gameManager.ChangeState(stateBeforePause);
         }
     }
 }

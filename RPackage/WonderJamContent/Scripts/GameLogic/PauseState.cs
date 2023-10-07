@@ -2,23 +2,28 @@
 // Created by Kabourlix Cendrée on 07
 
 #nullable enable
+using System;
+using UnityEngine;
+
 namespace Rezoskour.Content
 {
     public class PauseState : GameState
     {
+        public PauseState(Action? _onEnterCallback = null, Action? _onExitCallback = null) :
+            base(_onEnterCallback, _onExitCallback) { }
+
         public override void Enter()
         {
-            throw new System.NotImplementedException();
+            base.Enter();
+            Time.timeScale = 0f;
         }
 
-        public override void Process()
-        {
-            throw new System.NotImplementedException();
-        }
+        public override void Process() { }
 
         public override void Exit()
         {
-            throw new System.NotImplementedException();
+            base.Exit();
+            Time.timeScale = 1f;
         }
     }
 }
