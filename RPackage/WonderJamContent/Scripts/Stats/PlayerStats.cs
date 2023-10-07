@@ -21,9 +21,6 @@ namespace Rezoskour.Content
 
         [SerializeField] private TextMeshProUGUI statsText;
 
-        //temp
-        public PlayerMovement playerMovement;
-
         private void Start()
         {
             if (baseStats == null)
@@ -35,10 +32,6 @@ namespace Rezoskour.Content
             {
                 GameManager.Instance.OnBerserkModeChange += SwitchMode;
             }
-
-            //temp
-            playerMovement.onBerzerk += SwitchMode;
-
 
             currentStats = Instantiate(baseStats);
             ShowStats();
