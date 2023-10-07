@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: SuperBackground
+    uniqueID: 4021048541
+    locked: 0
   - name: Background
     uniqueID: 27595921
     locked: 0
@@ -50,6 +53,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2846922477
+    locked: 0
+  - name: Projectiles
+    uniqueID: 2133450943
     locked: 0
   - name: Foreground1
     uniqueID: 3199170239
