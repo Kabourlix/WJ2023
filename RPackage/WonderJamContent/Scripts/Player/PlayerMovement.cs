@@ -55,7 +55,7 @@ namespace Rezoskour.Content
         {
             if (GameManager.Instance == null)
             {
-                Debug.LogError("GameManager.Instance is null !");
+                Debug.LogError($"GameManager.Instance is null OnDestroy:{nameof(PlayerMovement)}!");
                 return;
             }
 
@@ -75,7 +75,7 @@ namespace Rezoskour.Content
             input.Player.Pause.performed += OnStartPause;
             input.PauseCtx.Pause.performed += OnStopPause;
         }
-        
+
 
         private void OnDisable()
         {
