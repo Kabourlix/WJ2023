@@ -2419,11 +2419,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1387031603191196329, guid: 337065e35dd4c8c459f1d60eca2a4c9b,
-        type: 3}
-      propertyPath: hp
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2453999430460961629, guid: 337065e35dd4c8c459f1d60eca2a4c9b,
         type: 3}
       propertyPath: m_RootOrder
@@ -2483,11 +2478,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate
-      objectReference: {fileID: 0}
-    - target: {fileID: 8423750886786867795, guid: 337065e35dd4c8c459f1d60eca2a4c9b,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

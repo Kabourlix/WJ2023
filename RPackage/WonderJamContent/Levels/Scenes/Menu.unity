@@ -820,7 +820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: effaf07d68aab6946b5ab178c78ced79, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2176,10 +2176,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.8396226, g: 0.35169095, b: 0.35169095, a: 1}
+    m_PressedColor: {r: 0.6037736, g: 0, b: 0, a: 1}
+    m_SelectedColor: {r: 0.8392157, g: 0.3529412, b: 0.3529412, a: 1}
+    m_DisabledColor: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2657,12 +2657,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a0d757aee44cf198a27aab627a7253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playButton: {fileID: 860717122}
+  playButton: {fileID: 860717120}
   creditsButton: {fileID: 759257522}
   quitButton: {fileID: 1297414246}
+  playButtonObj: {fileID: 860717120}
+  backButton: {fileID: 1491121272}
   creditsPanel: {fileID: 1149188515}
   KeyboardControls: {fileID: 1428553487}
   GamepadControls: {fileID: 535770121}
+  eventSystem: {fileID: 423843096}
 --- !u!1 &1927158780
 GameObject:
   m_ObjectHideFlags: 0
