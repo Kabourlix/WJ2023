@@ -1,5 +1,5 @@
 // Copyrighted by team Rézoskour
-// Created by corentin vernel on 06
+// Created by Kabourlix Cendrée on 07
 
 using System;
 using UnityEngine;
@@ -14,15 +14,10 @@ namespace Rezoskour.Content
         public HealthManager healthManager;
         public float maxHealth = 50;
         public Text healthTxt;
-        public GameManager gameManager;
-
-        private bool isBerzerk = false;
+        public GameObject gameManager;
 
         // Start is called before the first frame update
-        private void Start()
-        {
-            gameManager.OnBerserkModeChange += Switch;
-        }
+        private void Start() { }
 
         private void OnEnable()
         {
@@ -37,22 +32,17 @@ namespace Rezoskour.Content
         private void UpdateHealth(int _obj)
         {
             healthTxt.text = _obj.ToString();
-            if (healthManager.Health <= 0)
+            if (healthManager.health <= 0)
             {
                 healthTxt.text = "0";
+                hpBar.value = 0;
             }
             else
             {
-                hpBar.value = healthManager.Health / maxHealth;
+                hpBar.value = healthManager.health / maxHealth;
                 Debug.Log(hpBar.value);
-                healthTxt.text = $"{healthManager.Health}/{maxHealth}";
+                healthTxt.text = $"{healthManager.health}/{maxHealth}";
             }
-        }
-
-
-        private void Switch(bool value)
-        {
-            isBerzerk = value;
         }
     }
 }

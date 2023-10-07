@@ -26,6 +26,6 @@ MonoBehaviour:
   oil: 100
   maxOil: 100
   attack: 1
-  collectRange: 2
+  collectRange: 5
   range: 2
   speed: 2

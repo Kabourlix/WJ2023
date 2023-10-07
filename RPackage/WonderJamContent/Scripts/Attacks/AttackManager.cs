@@ -26,7 +26,7 @@ namespace Rezoskour.Content
 
         private void Start()
         {
-            TryAddAttack(AttackName.Basic);
+            TryAddAttack(AttackName.Range);
         }
 
         public void ResumeAttacking()

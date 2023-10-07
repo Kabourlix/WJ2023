@@ -5,6 +5,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 // Copyrighted by team Rézoskour
 // Created by alexandre buzon on 06
@@ -13,16 +14,18 @@ namespace Rezoskour.Content
 {
     public class Xp : MonoBehaviour
     {
-        private int level;
-        private int xp;
+        private int currentlevel, totalExperience;
+        private int previousLevelExperience, nextLevelExperience;
         private bool isBerserk;
         [SerializeField] private AnimationCurve xpCurve;
+        [SerializeField] private Slider xpBar;
 
         private void Start()
         {
-            level = 1;
-            xp = 0;
+            currentlevel = 1;
+            totalExperience = 0;
             isBerserk = false;
+            UpdateLevel();
 
             if (GameManager.Instance != null)
             {
@@ -33,29 +36,51 @@ namespace Rezoskour.Content
         private void SwitchMode(bool _obj)
         {
             isBerserk = _obj;
+            if (!isBerserk)
+            {
+                CheckForLevelUp();
+            }
         }
 
-        public bool AddXp(int _xp)
+        public void AddXp(int _xp)
         {
-            xp += xp;
-            if (xp >= xpCurve.Evaluate(level))
+            totalExperience += _xp;
+            CheckForLevelUp();
+        }
+
+        private void CheckForLevelUp()
+        {
+            if (totalExperience >= nextLevelExperience)
             {
                 if (isBerserk)
                 {
-                    return false;
+                    return;
                 }
 
-                level++;
-                //event
-                return true;
-            }
+                currentlevel++;
+                UpdateLevel();
+                //sound
 
-            return false;
+                //Loot
+            }
         }
 
-        public int GetLevel()
+        private void UpdateLevel()
         {
-            return level;
+            previousLevelExperience = (int)xpCurve.Evaluate(currentlevel);
+            nextLevelExperience = (int)xpCurve.Evaluate(currentlevel + 1);
+            UpdateUI();
+        }
+
+        private void UpdateUI()
+        {
+            var start = previousLevelExperience;
+            var end = nextLevelExperience;
+
+            xpBar.minValue = start;
+            xpBar.maxValue = end;
+
+            xpBar.value = totalExperience;
         }
     }
 }

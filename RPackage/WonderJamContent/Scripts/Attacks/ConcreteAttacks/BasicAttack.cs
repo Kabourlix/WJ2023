@@ -31,8 +31,13 @@ namespace Rezoskour.Content
 
                 foreach (Collider2D col in hits)
                 {
-                    Debug.Log($"Deal {data.damage} damage to {col.name}.");
-                    //TODO : PerformCoroutine damage
+                    if (!col.gameObject.TryGetComponent(out HealthManager health))
+                    {
+                        yield return waitForAttackRefresh;
+                        continue;
+                    }
+
+                    health.Damage(data.damage);
                 }
 
                 yield return waitForAttackRefresh;

@@ -1,10 +1,11 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by corentin vernel on 06
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 // Copyrighted by team Rézoskour
 // Created by corentin vernel on 06
@@ -13,75 +14,79 @@ namespace Rezoskour.Content
 {
     public class HealthManager : MonoBehaviour
     {
-        public int Health { get; private set; }
+        // public int Health { get; private set; }
+        //
+        // public int MaxHealth { get; private set; }
+        public event Action? OnDeath;
+        public event Action? OnIncomingDamage;
+        public event Action<int>? OnHealthChanged;
 
-        public int MaxHealth { get; private set; }
+        [FormerlySerializedAs("Health")] public int health = 0;
+        [FormerlySerializedAs("MaxHealth")] public int maxHealth = 50;
+
 
         public float HealthPercent
         {
             get
             {
-                if (MaxHealth == 0)
+                if (maxHealth == 0)
                 {
-                    throw new NullReferenceException("Max Health has not been set.");
+                    Debug.LogError("Max Health has not been set.");
+                    return 0;
                 }
 
-                return (float) Health / MaxHealth;
+                return (float) health / maxHealth;
             }
         }
 
         private void Start()
         {
             // int healthPlayer = GetComponents<PlayerStats>();
-            if (MaxHealth == 0)
+            if (maxHealth == 0)
             {
                 throw new NullReferenceException("Max Health has not been set.");
             }
 
-            Health = MaxHealth;
+            health = maxHealth;
         }
 
-        public void Init(int maxHealth)
+        public void Init(int _maxHealth)
         {
-            if (MaxHealth != 0)
+            if (maxHealth != 0)
             {
                 throw new Exception("Max health has already been set.");
             }
 
-            if (maxHealth <= 0)
+            if (_maxHealth <= 0)
             {
                 throw new Exception("Max health must be greater than 0.");
             }
 
-            MaxHealth = maxHealth;
-            Health = MaxHealth;
+            maxHealth = _maxHealth;
+            health = maxHealth;
         }
 
-        public event Action OnDeath;
-        public event Action OnIncomingDamage;
-        public event Action<int> OnHealthChanged;
-
-        public void Damage(int damage)
+        public void Damage(int _damage)
         {
-            if (MaxHealth == 0)
+            if (maxHealth == 0)
             {
                 throw new NullReferenceException("Max Health has not been set.");
             }
 
-            if (damage < 0)
+            if (_damage < 0)
             {
                 throw new Exception("Damage amount must be greater than 0.");
             }
 
-            if (Health == 0)
+            if (health == 0)
             {
                 return;
             }
 
             OnIncomingDamage?.Invoke();
-            Health = Mathf.Clamp(Health - damage, 0, MaxHealth);
-            OnHealthChanged?.Invoke(Health);
-            if (Health == 0)
+            health = Mathf.Clamp(health - _damage, 0, maxHealth);
+            OnHealthChanged?.Invoke(health);
+            if (health == 0)
             {
                 OnDeath?.Invoke();
             }

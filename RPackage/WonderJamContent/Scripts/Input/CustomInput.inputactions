@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Berzerk",
+                    "name": "Berserk",
                     "type": "Button",
                     "id": "8a266cf6-6ce2-4b4f-bd6b-2b8d91c96a73",
                     "expectedControlType": "Button",
@@ -197,7 +197,7 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Berzerk",
+                    "action": "Berserk",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -208,7 +208,7 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Berzerk",
+                    "action": "Berserk",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

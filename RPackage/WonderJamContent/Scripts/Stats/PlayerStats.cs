@@ -19,7 +19,7 @@ namespace Rezoskour.Content
         private Stats? currentStats;
         public Stats? CurrentStats => currentStats;
 
-        [SerializeField] private TextMeshProUGUI statsText;
+        //[SerializeField] private TextMeshProUGUI statsText;
 
         private void Start()
         {
@@ -34,7 +34,6 @@ namespace Rezoskour.Content
             }
 
             currentStats = Instantiate(baseStats);
-            ShowStats();
         }
 
         private void SwitchMode(bool _isBerserk)
@@ -55,14 +54,12 @@ namespace Rezoskour.Content
             {
                 currentStats = normalStats;
             }
-
-            ShowStats();
         }
 
         private void ShowStats()
         {
-            statsText.text = "Attack : " + currentStats.attack + "\n Speed : " + currentStats.speed + "\n Range : " +
-                             currentStats.range + "\n CollectRange : " + currentStats.collectRange;
+            //statsText.text = "Attack : " + currentStats.attack + "\n Speed : " + currentStats.speed + "\n Range : " +
+            //currentStats.range + "\n CollectRange : " + currentStats.collectRange;
         }
     }
 }
