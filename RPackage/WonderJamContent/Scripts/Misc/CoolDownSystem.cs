@@ -79,7 +79,7 @@ namespace Rezoskour.Content.Misc
             if (!ContainsTimer(_timerName))
             {
                 Debug.LogError($"[REZOSKOUR] {_timerName} is not registered in the cd system.");
-                return false;
+                return true;
             }
 
             return registeredCoolDowns[_timerName];

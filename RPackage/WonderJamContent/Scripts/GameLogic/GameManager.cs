@@ -34,6 +34,7 @@ namespace Rezoskour.Content
         #endregion
 
         public const string GAME_TIMER = "GameTimer";
+        public const string BERSERK_TIMER = "BerserkTimer";
 
         public event Action<bool>? OnBerserkModeChange;
         public event Action? OnDefeat;
@@ -41,6 +42,7 @@ namespace Rezoskour.Content
 
 
         [SerializeField] private int durationToSurviveInMinutes = 5;
+        [SerializeField] private int berserkCdInSeconds = 3;
 
         public int DurationToSurviveInSeconds => durationToSurviveInMinutes * 60;
         [SerializeField] private Transform playerTransform = null!;
@@ -89,6 +91,7 @@ namespace Rezoskour.Content
             CoolDownSystem.Instance.OnCoolDownDone += CoolDownDoneHandler;
             //Init game timer
             CoolDownSystem.Instance.TryRegisterCoolDown(GAME_TIMER, DurationToSurviveInSeconds, true);
+            CoolDownSystem.Instance.TryRegisterCoolDown(BERSERK_TIMER, berserkCdInSeconds);
             CoolDownSystem.Instance.StartTimer(GAME_TIMER, false);
 
             ChangeState(GameStateName.Main);
@@ -109,7 +112,6 @@ namespace Rezoskour.Content
             allGameStates[currentState].Process();
         }
 
-        
 
         public void ChangeState(GameStateName _stateName)
         {
@@ -117,6 +119,18 @@ namespace Rezoskour.Content
             {
                 Debug.Log($"Switch from {currentState} to {_stateName} is impossible.");
                 return;
+            }
+
+            if (CoolDownSystem.Instance == null)
+            {
+                Debug.LogError("CoolDownSystem.Instance is null !");
+                return;
+            }
+
+            if (_stateName == GameStateName.Berserk && !CoolDownSystem.Instance.IsCoolDownDone(BERSERK_TIMER))
+            {
+                //TODO : Add feedback
+                return; //Berserk in cooldown
             }
 
             allGameStates[currentState].Exit();
@@ -128,6 +142,12 @@ namespace Rezoskour.Content
 
         private void SetBerserk(bool _b)
         {
+            if (CoolDownSystem.Instance == null)
+            {
+                Debug.LogError("CoolDownSystem.Instance. is null !");
+                return;
+            }
+
             OnBerserkModeChange?.Invoke(_b);
             if (_b)
             {
@@ -136,6 +156,7 @@ namespace Rezoskour.Content
             else
             {
                 playerAttack.TryRemoveAttack(AttackName.BerserkBurn);
+                CoolDownSystem.Instance.StartTimer(BERSERK_TIMER);
             }
         }
 
