@@ -88,10 +88,8 @@ namespace Rezoskour.Content
                 case GameStateName.Entry:
                     break;
                 case GameStateName.Main:
-                    SetBerserk(false);
                     break;
                 case GameStateName.Berserk:
-                    SetBerserk(true);
                     break;
                 case GameStateName.Pause:
                     break;

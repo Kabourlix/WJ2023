@@ -14,6 +14,7 @@ namespace Rezoskour.Content
 
         public override void Enter()
         {
+            base.Enter();
             if (Manager == null)
             {
                 Debug.LogError("CRITICAL !!! GameManager is null.");
@@ -35,6 +36,8 @@ namespace Rezoskour.Content
                 Debug.LogError("CRITICAL !!! GameManager is null.");
                 return;
             }
+
+            base.Exit();
         }
     }
 }
