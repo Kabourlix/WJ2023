@@ -18,7 +18,7 @@ namespace Rezoskour.Content
         private int previousLevelExperience, nextLevelExperience;
         private bool isBerserk;
         [SerializeField] private AnimationCurve xpCurve;
-        [SerializeField] private Slider xpBar;
+        [SerializeField] private Slider? xpBar;
 
         private void Start()
         {

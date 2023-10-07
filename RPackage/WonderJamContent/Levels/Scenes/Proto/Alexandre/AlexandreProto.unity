@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 128039}
   - component: {fileID: 128041}
   - component: {fileID: 128042}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Collectable
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2544,7 +2544,7 @@ GameObject:
   - component: {fileID: 1784876567}
   - component: {fileID: 1784876568}
   - component: {fileID: 1784876569}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: Collectable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2789,6 +2789,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 958088754914685989, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: collectLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5170789662694799863, guid: e69ef513c220c0f4a8ddcf805c4308a3,
         type: 3}
       propertyPath: m_RootOrder
@@ -2851,13 +2856,83 @@ PrefabInstance:
       objectReference: {fileID: 1431893246}
     - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
         type: 3}
+      propertyPath: xpCurve.m_Curve.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[0].time
+      value: 1.0000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
       propertyPath: xpCurve.m_Curve.Array.data[1].time
       value: 1.9999993
       objectReference: {fileID: 0}
     - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
         type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[2].time
+      value: 3.0000277
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[3].time
+      value: 100.04623
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
       propertyPath: xpCurve.m_Curve.Array.data[1].value
       value: 199.8319
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[2].value
+      value: 402.96155
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[3].value
+      value: 500608.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[2].inSlope
+      value: 162.82791
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[3].inSlope
+      value: 14173.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[2].outSlope
+      value: 162.82791
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[3].inWeight
+      value: 0.09588013
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[3].outSlope
+      value: 14173.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503171510290900510, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: xpCurve.m_Curve.Array.data[2].outWeight
+      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 5852949305833879436, guid: e69ef513c220c0f4a8ddcf805c4308a3,
         type: 3}
