@@ -14,14 +14,11 @@ namespace Rezoskour.Content
         public HealthManager healthManager;
         public float maxHealth = 50;
         public Text healthTxt;
-        public GameManager gameManager;
-
-        private bool isBerzerk = false;
+        public GameObject gameManager;
 
         // Start is called before the first frame update
         private void Start()
         {
-            gameManager.OnBerserkModeChange += Switch;
         }
 
         private void OnEnable()
@@ -40,6 +37,7 @@ namespace Rezoskour.Content
             if (healthManager.Health <= 0)
             {
                 healthTxt.text = "0";
+                hpBar.value = 0;
             }
             else
             {
@@ -47,12 +45,6 @@ namespace Rezoskour.Content
                 Debug.Log(hpBar.value);
                 healthTxt.text = $"{healthManager.Health}/{maxHealth}";
             }
-        }
-
-
-        private void Switch(bool value)
-        {
-            isBerzerk = value;
         }
     }
 }

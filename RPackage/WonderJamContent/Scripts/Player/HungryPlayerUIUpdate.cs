@@ -13,21 +13,19 @@ namespace Rezoskour.Content
         public int maxHunger = 50;
         public float currentHunger = 50;
         public Text hungerTxt;
-        public GameManager gameManager;
-
-        private bool isBerzerk = false;
+        private bool isBerserk = false;
 
         // Start is called before the first frame update
         private void Start()
         {
-            gameManager.OnBerserkModeChange += Switch;
+            GameManager.Instance.OnBerserkModeChange += Switch;
         }
 
         private void Update()
         {
             if (currentHunger >= 0)
             {
-                if (isBerzerk)
+                if (isBerserk)
                 {
                     currentHunger -= 4 * Time.deltaTime;
                     hungerTxt.text = currentHunger.ToString("F0");
@@ -44,7 +42,7 @@ namespace Rezoskour.Content
 
         private void Switch(bool value)
         {
-            isBerzerk = value;
+            isBerserk = value;
         }
     }
 }

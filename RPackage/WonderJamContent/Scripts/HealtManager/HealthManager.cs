@@ -13,9 +13,11 @@ namespace Rezoskour.Content
 {
     public class HealthManager : MonoBehaviour
     {
-        public int Health { get; private set; }
-
-        public int MaxHealth { get; private set; }
+        // public int Health { get; private set; }
+        //
+        // public int MaxHealth { get; private set; }
+        public int Health = 0;
+        public int MaxHealth = 50;
 
         public float HealthPercent
         {
