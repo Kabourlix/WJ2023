@@ -22,7 +22,7 @@ namespace Rezoskour.Content
         public float speed;
         [HideInInspector] public int damage;
         public float duration;
-
+        public Animator animator;
         private bool isMoving;
 
         private Action? releaseCallback;

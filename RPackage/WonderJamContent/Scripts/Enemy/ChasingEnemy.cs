@@ -14,8 +14,9 @@ using UnityEngine.Jobs;
 
 namespace Rezoskour.Content
 {
-    public class ChasingEnemy : MonoBehaviour
+    public class ChasingEnemy : MonoBehaviour, IHealth
     {
+        [SerializeField] private float maxHealth = 1f;
         [SerializeField] private Transform? targetTransform;
         public float speed = 1f;
         public float attackRange = 1f;
@@ -24,7 +25,7 @@ namespace Rezoskour.Content
         private bool isOut = true;
         public Animator animator;
         public int damage = 1;
-
+        
         private struct ChasingEnemyJob : IJobParallelForTransform
         {
             //Use only value types here
@@ -88,7 +89,6 @@ namespace Rezoskour.Content
 
         private void OnDestroy()
         {
-            
             chasingJobHandle.Complete();
             transformAccessArray.Dispose();
         }
@@ -122,7 +122,10 @@ namespace Rezoskour.Content
             animator.SetBool("isAttacking", true);
             if (!isDistanceEnemy)
             {
-                other.GetComponent<HealthManager>().Damage(damage);
+                if (other.TryGetComponent(out IHealth health))
+                {
+                    health.Damage(damage);
+                }
             }
 
             yield return new WaitForSeconds(0.5f);
@@ -136,6 +139,21 @@ namespace Rezoskour.Content
 
         public void Init(Action action)
         {
+            
+        }
+
+        public void Heal(int _amount)
+        {
+            
+        }
+
+        public void Damage(int _amount)
+        {
+            maxHealth -= _amount;
+            if (maxHealth <= 0)
+            {
+                
+            }
             
         }
     }
