@@ -25,6 +25,9 @@ namespace Rezoskour.Content
         private bool isOut = true;
         public Animator animator;
         public int damage = 1;
+
+
+        private Action? releaseCallback;
         
         private struct ChasingEnemyJob : IJobParallelForTransform
         {
@@ -137,9 +140,9 @@ namespace Rezoskour.Content
             }
         }
 
-        public void Init(Action action)
+        public void Init(Action? _action)
         {
-            
+            releaseCallback = _action;
         }
 
         public void Heal(int _amount)
@@ -152,7 +155,7 @@ namespace Rezoskour.Content
             maxHealth -= _amount;
             if (maxHealth <= 0)
             {
-                
+                releaseCallback?.Invoke();
             }
             
         }
