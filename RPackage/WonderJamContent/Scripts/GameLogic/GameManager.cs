@@ -1,5 +1,5 @@
 // Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 05
+// Created by alexandre buzon on 06
 
 #nullable enable
 
@@ -28,37 +28,38 @@ namespace Rezoskour.Content
 
         #endregion
 
+        //ça marche pas chez Corentin c'est de LA MERDE !
         public event Action<bool>? OnBerserkModeChange;
 
         private GameStateName currentState = GameStateName.Entry;
 
         private readonly Dictionary<GameStateName, GameState> allGameStates = new()
         {
-            {GameStateName.Entry, new EntryState()},
-            {GameStateName.Main, new MainState()},
-            {GameStateName.Berserk, new BerserkState()},
-            {GameStateName.Pause, new PauseState()},
-            {GameStateName.LevelUp, new LevelUpState()},
-            {GameStateName.GameEnd, new GameEndState()},
-            {GameStateName.Defeat, new DefeatState()},
-            {GameStateName.Victory, new VictoryState()}
+            { GameStateName.Entry, new EntryState() },
+            { GameStateName.Main, new MainState() },
+            { GameStateName.Berserk, new BerserkState() },
+            { GameStateName.Pause, new PauseState() },
+            { GameStateName.LevelUp, new LevelUpState() },
+            { GameStateName.GameEnd, new GameEndState() },
+            { GameStateName.Defeat, new DefeatState() },
+            { GameStateName.Victory, new VictoryState() }
         };
 
         private bool[,] isStateSwitchPossible =
         {
-            {false, true, false, false, false, false, false, false}, //Entry
-            {false, false, true, true, true, true, false, false}, //Main
-            {false, true, false, true, false, true, false, false}, //Berserk
-            {false, true, true, false, false, false, false, false}, //Pause
-            {false, true, false, false, false, false, false, false}, //LevelUp
-            {false, false, false, false, false, false, true, true}, //GameEnd
-            {true, false, false, false, false, false, false, false}, //Defeat
-            {true, false, false, false, false, false, false, false} //Victory
+            { false, true, false, false, false, false, false, false }, //Entry
+            { false, false, true, true, true, true, false, false }, //Main
+            { false, true, false, true, false, true, false, false }, //Berserk
+            { false, true, true, false, false, false, false, false }, //Pause
+            { false, true, false, false, false, false, false, false }, //LevelUp
+            { false, false, false, false, false, false, true, true }, //GameEnd
+            { true, false, false, false, false, false, false, false }, //Defeat
+            { true, false, false, false, false, false, false, false } //Victory
         };
 
         public void ChangeState(GameStateName _stateName)
         {
-            if (!isStateSwitchPossible[(int) currentState, (int) _stateName])
+            if (!isStateSwitchPossible[(int)currentState, (int)_stateName])
             {
                 Debug.Log($"Switch from {currentState} to {_stateName} is impossible.");
                 return;
