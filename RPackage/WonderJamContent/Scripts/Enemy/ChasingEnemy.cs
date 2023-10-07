@@ -5,6 +5,8 @@
 
 using System;
 using System.Collections;
+using Rezoskour.Content.Misc;
+using Unity.Collections;
 using Unity.Jobs;
 using UnityEngine;
 using UnityEngine.Jobs;
@@ -29,13 +31,14 @@ namespace Rezoskour.Content
 
         private Action? releaseCallback;
         
-        private struct ChasingEnemyJob : IJobParallelForTransform
+        protected struct ChasingEnemyJob : IJobParallelForTransform
         {
             //Use only value types here
             public Vector3 playerPosition;
             public float speed;
             public float attackRange;
             public float deltaTime;
+            public NativeArray<bool> triggerAttackArray;
 
             public void Execute(int _index, TransformAccess _transform)
             {
@@ -46,10 +49,12 @@ namespace Rezoskour.Content
                 {
                     Vector3 direction = (playerPosition - _transform.position).normalized;
                     _transform.position += direction * speed * deltaTime;
+                    triggerAttackArray[0] = false;
                 }
                 else
                 {
                     // Perform attack logic here
+                    triggerAttackArray[0] = true;
                 }
 
                 //Update flip logic here
@@ -60,20 +65,20 @@ namespace Rezoskour.Content
         }
 
         private TransformAccessArray transformAccessArray;
+        private NativeArray<bool> triggerAttackArray;
         private JobHandle chasingJobHandle;
 
         private void Start()
         {
             player = FindObjectOfType<PlayerMovement>().gameObject;
             transformAccessArray = new TransformAccessArray(1);
+            triggerAttackArray = new NativeArray<bool>(1, Allocator.Persistent);
             transformAccessArray.Add(transform);
             targetTransform = player.transform;
         }
 
         private void Update()
         {
-            chasingJobHandle.Complete();
-
             if (targetTransform == null)
             {
                 return;
@@ -84,16 +89,43 @@ namespace Rezoskour.Content
                 playerPosition = targetTransform.position,
                 speed = speed,
                 attackRange = attackRange,
-                deltaTime = Time.deltaTime
+                deltaTime = Time.deltaTime,
+                triggerAttackArray = triggerAttackArray
             };
 
             chasingJobHandle = chasingJob.Schedule(transformAccessArray);
+        }
+
+        private void LateUpdate()
+        {
+            chasingJobHandle.Complete();
+            if(triggerAttackArray[0])
+            {
+                animator.SetBool("isAttacking", true);
+                if (!isDistanceEnemy)
+                {
+                    if (player.TryGetComponent(out IHealth health))
+                    {
+                        health.Damage(damage);
+                    }
+                }
+            }
+            else
+            {
+                animator.SetBool("isAttacking", false);
+            }
+        }
+
+        protected virtual void PerformAttack()
+        {
+
         }
 
         private void OnDestroy()
         {
             chasingJobHandle.Complete();
             transformAccessArray.Dispose();
+            triggerAttackArray.Dispose();
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
