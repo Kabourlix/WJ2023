@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 17793d78843601a4b91885bc9114ac04
+guid: df184e47ec51ab5419c7a770ed1a1fb4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,106 +136,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Potato_Normal_Walk_0
+      name: Potato_Berserk_HitReactpng_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 8
-        width: 14
-        height: 14
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39df8ed25ef84504da0eebe5ea0b3c61
-      internalID: -1425790795
+      spriteID: fbf594e4177708b4fa7764b218429c9a
+      internalID: 1302710384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Potato_Normal_Walk_1
+      name: Potato_Berserk_HitReactpng_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 9
-        width: 16
-        height: 13
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3076f52bdb46f246b8dfcf5f787744d
-      internalID: -458351140
+      spriteID: 28a5d25c10497a1438e1ac192c54ed59
+      internalID: 1155767278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Potato_Normal_Walk_2
+      name: Potato_Berserk_HitReactpng_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 9
-        width: 19
-        height: 17
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e81725f4cd4a802458ac9e076272b632
-      internalID: -172100707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Potato_Normal_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 9
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9c0e166b8982b845b839d6273e46453
-      internalID: -719607650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Potato_Normal_Walk_5
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 8
-        width: 17
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33acfef803a322844ab3cc8393a26212
-      internalID: 2145534954
+      spriteID: 4e19dc7da2dca48458e5a43f15dfa088
+      internalID: -1236140010
       vertices: []
       indices: 
       edges: []
@@ -243,7 +201,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3e700e9f4b31afc48945c96a768f6d02
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -251,12 +209,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Potato_Normal_Walk_0: -1425790795
-      Potato_Normal_Walk_1: -458351140
-      Potato_Normal_Walk_2: -172100707
-      Potato_Normal_Walk_3: -2104286299
-      Potato_Normal_Walk_4: -719607650
-      Potato_Normal_Walk_5: 2145534954
+      Potato_Berserk_HitReactpng_0: 1302710384
+      Potato_Berserk_HitReactpng_1: 1155767278
+      Potato_Berserk_HitReactpng_2: -1236140010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

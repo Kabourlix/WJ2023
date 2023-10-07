@@ -5,6 +5,7 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,37 +21,58 @@ namespace Rezoskour.Content.Misc
         [SerializeField] private Button creditsButton;
         [SerializeField] private Button quitButton;
 
+        [SerializeField] private GameObject playButtonObj;
+        [SerializeField] private GameObject backButton;
+
         [SerializeField] private GameObject creditsPanel;
         [SerializeField] private GameObject KeyboardControls;
         [SerializeField] private GameObject GamepadControls;
 
         private bool isUsingGamepad = false;
+        private string currentController = null;
+
+        [SerializeField] private EventSystem eventSystem;
 
         private void Start()
         {
-            KeyboardControls.gameObject.SetActive(false);
+            KeyboardControls.gameObject.SetActive(true);
             GamepadControls.gameObject.SetActive(false);
         }
 
         private void Update()
         {
-            var controllerUsed = Gamepad.current.wasUpdatedThisFrame;
+            if (Gamepad.current != null && Keyboard.current != null)
+            {
+                if (isUsingGamepad && currentController != "Keyboard")
+                {
+                    if (Keyboard.current.wasUpdatedThisFrame)
+                    {
+                        isUsingGamepad = false;
+                        currentController = "Keyboard";
+                        eventSystem.SetSelectedGameObject(playButtonObj);
+                    }
+                }
+                else if (!isUsingGamepad && currentController != "Gamepad")
+                {
+                    if (Gamepad.current.wasUpdatedThisFrame)
+                    {
+                        isUsingGamepad = true;
+                        currentController = "Gamepad";
+                        eventSystem.SetSelectedGameObject(playButtonObj);
+                    }
+                }
 
-            if (controllerUsed && !isUsingGamepad)
-            {
-                // Si la manette est utilisée et que le joueur ne l'utilisait pas précédemment,
-                // activez l'image du contrôleur et désactivez l'image du clavier
-                GamepadControls.gameObject.SetActive(true);
-                KeyboardControls.gameObject.SetActive(false);
-                isUsingGamepad = true;
-            }
-            else if (!controllerUsed && isUsingGamepad)
-            {
-                // Si le clavier est utilisé et que le joueur utilisait précédemment un contrôleur,
-                // activez l'image du clavier et désactivez l'image du contrôleur
-                GamepadControls.gameObject.SetActive(false);
-                KeyboardControls.gameObject.SetActive(true);
-                isUsingGamepad = false;
+                switch (currentController)
+                {
+                    case "Keyboard":
+                        KeyboardControls.gameObject.SetActive(true);
+                        GamepadControls.gameObject.SetActive(false);
+                        break;
+                    case "Gamepad":
+                        KeyboardControls.gameObject.SetActive(false);
+                        GamepadControls.gameObject.SetActive(true);
+                        break;
+                }
             }
         }
 
@@ -61,12 +83,20 @@ namespace Rezoskour.Content.Misc
 
         public void Credits()
         {
+            playButton.interactable = false;
+            creditsButton.interactable = false;
+            quitButton.interactable = false;
             creditsPanel.SetActive(true);
+            eventSystem.SetSelectedGameObject(backButton);
         }
 
         public void Back()
         {
+            playButton.interactable = true;
+            creditsButton.interactable = true;
+            quitButton.interactable = true;
             creditsPanel.SetActive(false);
+            eventSystem.SetSelectedGameObject(playButtonObj);
         }
 
         public void Quit()
