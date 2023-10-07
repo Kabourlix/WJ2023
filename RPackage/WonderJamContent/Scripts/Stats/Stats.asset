@@ -29,3 +29,6 @@ MonoBehaviour:
   collectRange: 0.25
   range: 2
   speed: 2
+  globalDamageMultiplier: 1
+  globalDamageReductor: 1
+  globalAttackRateMultiplier: 1
