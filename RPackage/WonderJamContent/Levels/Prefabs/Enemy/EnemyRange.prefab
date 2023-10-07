@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7878552194597191233}
   - component: {fileID: 4112316790723560370}
   - component: {fileID: 7886552022525197843}
-  - component: {fileID: 5803472808949600037}
+  - component: {fileID: 4936459711333204654}
   m_Layer: 7
-  m_Name: EnemyCAC
+  m_Name: EnemyRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8272780438318070906
 SpriteRenderer:
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1256109768, guid: f1bc970846853ae4ba481ea6d6ddac93, type: 3}
+  m_Sprite: {fileID: -898908895, guid: a26119db335bc124e803217c2e92624c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,11 +102,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 1
-  isDistanceEnemy: 0
+  isDistanceEnemy: 1
   maxHealth: 20
   currentHealth: 0
   damage: 10
-  animator: {fileID: 5803472808949600037}
+  animator: {fileID: 4936459711333204654}
 --- !u!50 &4112316790723560370
 Rigidbody2D:
   serializedVersion: 4
@@ -166,20 +166,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.044135563, y: 0.0013792999}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.24, y: 0.22}
+    oldSize: {x: 0.14, y: 0.23}
     newSize: {x: 2.56, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16620351, y: 0.23590216}
+  m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
---- !u!95 &5803472808949600037
+--- !u!95 &4936459711333204654
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ Animator:
   m_GameObject: {fileID: 707601012864278628}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 302dc53d9dd9969409d576e13f633631, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7de2597d97ec39d4496163dd2bcac100, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

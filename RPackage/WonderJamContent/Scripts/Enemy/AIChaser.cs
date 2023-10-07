@@ -1,5 +1,5 @@
 // Copyrighted by team Rézoskour
-// Created by corentin vernel on 06
+// Created by corentin vernel on 07
 
 using System;
 using System.Collections;
@@ -16,9 +16,11 @@ namespace Rezoskour.Content
         private float distance = 1f;
         public int maxHealth = 20;
         public int currentHealth;
-        public LayerMask targetLayer;
-        public int damage = 10;
-        public bool isOut = true;
+        public int damage = 1;
+        private bool isOut = true;
+        public Animator animator;
+
+        private bool facingRight = true;
 
         // Start is called before the first frame update
         private void Start()
@@ -30,31 +32,51 @@ namespace Rezoskour.Content
         private void Update()
         {
             distance = Vector2.Distance(transform.position, player.transform.position);
+            Vector2 direction = player.transform.position - transform.position;
             if (isDistanceEnemy)
             {
-                if (distance > 5f)
+                if (isOut)
                 {
-                    Vector2 direction = player.transform.position - transform.position;
                     transform.position =
                         Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+                    animator.SetFloat("Speed", MathF.Abs(direction.x));
                 }
             }
             else
             {
-                Vector2 direction = player.transform.position - transform.position;
                 transform.position =
                     Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+                animator.SetFloat("Speed", MathF.Abs(direction.x));
             }
+
+            if (direction.x > 0 && !facingRight)
+            {
+                Flip();
+            }
+            else if (direction.x < 0 && facingRight)
+            {
+                Flip();
+            }
+        }
+
+        private void Flip()
+        {
+            var theScale = transform.localScale;
+            theScale.x *= -1;
+            facingRight = !facingRight;
+            transform.localScale = theScale;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             Debug.Log("Trigger");
-            isOut = false;
+
             if (other.CompareTag("Player"))
             {
-                other.GetComponent<HealthManager>().Damage(damage);
-                StartCoroutine(StayInRange());
+                animator.SetFloat("Speed", 0);
+                isOut = false;
+
+                StartCoroutine(StayInRange(other));
             }
         }
 
@@ -62,16 +84,27 @@ namespace Rezoskour.Content
         private void OnTriggerExit2D(Collider2D other)
         {
             Debug.Log("Exit");
-            isOut = true;
+
             if (other.CompareTag("Player"))
             {
-                StopCoroutine(StayInRange());
+                animator.SetBool("isAttacking", false);
+                isOut = true;
+                StopCoroutine(StayInRange(other));
             }
         }
 
-        private IEnumerator StayInRange()
+        private IEnumerator StayInRange(Collider2D other)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
+            animator.SetBool("isAttacking", true);
+            if (!isDistanceEnemy)
+            {
+                other.GetComponent<HealthManager>().Damage(damage);
+            }
+
+            yield return new WaitForSeconds(0.5f);
+            animator.SetBool("isAttacking", false);
+            yield return new WaitForSeconds(2f);
             if (!isOut)
             {
                 OnTriggerEnter2D(player.GetComponent<Collider2D>());
