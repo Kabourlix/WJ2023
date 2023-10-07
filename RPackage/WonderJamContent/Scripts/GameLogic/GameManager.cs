@@ -40,6 +40,7 @@ namespace Rezoskour.Content
 
 
         [SerializeField] private int durationToSurviveInMinutes = 5;
+
         public int DurationToSurviveInSeconds => durationToSurviveInMinutes * 60;
         [SerializeField] private Transform playerTransform = null!;
         public Transform PlayerTf => playerTransform;

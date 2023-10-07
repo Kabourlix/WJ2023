@@ -17,9 +17,8 @@ namespace Rezoskour.Content
         Berserk = 2,
         Pause = 3,
         LevelUp = 4,
-        GameEnd = 5,
-        Defeat = 6,
-        Victory = 7
+        Defeat = 5,
+        Victory = 6
     }
 
     public abstract class GameState

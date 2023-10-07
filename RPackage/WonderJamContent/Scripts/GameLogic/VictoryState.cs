@@ -3,6 +3,7 @@
 
 #nullable enable
 using System;
+using UnityEngine;
 
 namespace Rezoskour.Content
 {
@@ -13,17 +14,13 @@ namespace Rezoskour.Content
 
         public override void Enter()
         {
-            throw new NotImplementedException();
+            base.Enter();
+            Debug.Log("Enter VictoryState");
+            Time.timeScale = 0;
         }
 
-        public override void Process()
-        {
-            throw new NotImplementedException();
-        }
+        public override void Process() { }
 
-        public override void Exit()
-        {
-            throw new NotImplementedException();
-        }
+        public override void Exit() { }
     }
 }
