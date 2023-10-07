@@ -31,15 +31,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Spawn",
-                    "type": "Button",
-                    "id": "38256db7-6dde-43e5-a5d8-a83778bcbe98",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -249,17 +240,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "78298068-a24a-4de8-8f1a-ecccbe97c74c",
-                    "path": "<Keyboard>/g",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Spawn",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
