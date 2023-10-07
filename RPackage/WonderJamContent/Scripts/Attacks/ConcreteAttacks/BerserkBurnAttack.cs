@@ -2,15 +2,16 @@
 // Created by Kabourlix Cendrée on 07
 
 #nullable enable
+
 using System;
 using System.Collections;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.XR;
+
 
 namespace Rezoskour.Content
 {
-    public class BasicAttack : RAttack
+    public class BerserkBurnAttack : RAttack
     {
         public override IEnumerator PerformCoroutine()
         {
@@ -22,10 +23,10 @@ namespace Rezoskour.Content
 
             while (true)
             {
-                Vector3 targetPos = PlayerTransform.position + data.range * PlayerTransform.forward.normalized;
+                Collider2D[] hits =
+                    Physics2D.OverlapCircleAll(PlayerTransform.position, data.attackAreaRange, layerMask);
 
-                Collider2D[] hits = Physics2D.OverlapCircleAll(targetPos, data.attackAreaRange, layerMask);
-                if (hits.Length == 0) //No hit
+                if (hits.Length == 0)
                 {
                     yield return waitForAttackRefresh;
                     continue;
@@ -35,7 +36,6 @@ namespace Rezoskour.Content
                 {
                     if (!col.gameObject.TryGetComponent(out HealthManager health))
                     {
-                        yield return waitForAttackRefresh;
                         continue;
                     }
 
@@ -47,18 +47,19 @@ namespace Rezoskour.Content
         }
 
 #if UNITY_EDITOR
-        private void OnDrawGizmosSelected()
+        private void OnDrawGizmos()
         {
             if (PlayerTransform == null)
             {
                 return;
             }
 
-            Gizmos.color = Color.green;
-            Vector3 targetPos = PlayerTransform.position + data.range * PlayerTransform.forward.normalized;
-            Gizmos.DrawWireSphere(targetPos, data.attackAreaRange);
-            Handles.color = Color.green;
-            Handles.Label(targetPos, "Attack Range");
+            Gizmos.color = Color.red;
+            Vector3 position = PlayerTransform.position;
+
+            Gizmos.DrawWireSphere(position, data.attackAreaRange);
+            Handles.color = Color.red;
+            Handles.Label(position + data.attackAreaRange * Vector3.up, "berserk");
             Handles.color = Color.white;
             Gizmos.color = Color.white;
         }

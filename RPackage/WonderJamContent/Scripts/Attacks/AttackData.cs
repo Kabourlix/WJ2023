@@ -12,6 +12,7 @@ namespace Rezoskour.Content
     {
         Basic,
         Range,
+        BerserkBurn,
         LaMortQuiTue
     }
 

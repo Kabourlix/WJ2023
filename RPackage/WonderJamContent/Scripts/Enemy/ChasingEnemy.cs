@@ -12,20 +12,19 @@ using UnityEngine.Jobs;
 
 namespace Rezoskour.Content
 {
-    public class ChasingEnemyJobSystem : MonoBehaviour
+    public class ChasingEnemy : MonoBehaviour
     {
-        private Transform? Player => GameManager.Instance == null ? null : GameManager.Instance.PlayerTf;
+        [SerializeField] private Transform? targetTransform;
         public float speed = 1f;
         public float attackRange = 1f;
 
-
         private struct ChasingEnemyJob : IJobParallelForTransform
         {
+            //Use only value types here
             public Vector3 playerPosition;
             public float speed;
             public float attackRange;
             public float deltaTime;
-
 
             public void Execute(int _index, TransformAccess _transform)
             {
@@ -40,6 +39,8 @@ namespace Rezoskour.Content
                 {
                     // Perform attack logic here
                 }
+
+                //Update flip logic here
             }
         }
 
@@ -56,14 +57,14 @@ namespace Rezoskour.Content
         {
             chasingJobHandle.Complete();
 
-            if (Player == null)
+            if (targetTransform == null)
             {
                 return;
             }
 
             ChasingEnemyJob chasingJob = new()
             {
-                playerPosition = Player.position,
+                playerPosition = targetTransform.position,
                 speed = speed,
                 attackRange = attackRange,
                 deltaTime = Time.deltaTime

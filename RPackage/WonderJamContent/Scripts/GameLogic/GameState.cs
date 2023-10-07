@@ -3,6 +3,8 @@
 
 #nullable enable
 
+using System;
+
 // Copyrighted by team Rézoskour
 // Created by Kabourlix Cendrée on 07
 
@@ -22,12 +24,27 @@ namespace Rezoskour.Content
 
     public abstract class GameState
     {
+        private Action? onEnterCallback;
+        private Action? onExitCallback;
+
+        protected GameState(Action? _onEnterCallback = null, Action? _onExitCallback = null)
+        {
+            onEnterCallback = _onEnterCallback;
+            onExitCallback = _onExitCallback;
+        }
+
         protected GameManager? Manager => GameManager.Instance;
 
-        public abstract void Enter();
+        public virtual void Enter()
+        {
+            onEnterCallback?.Invoke();
+        }
 
         public abstract void Process();
 
-        public abstract void Exit();
+        public virtual void Exit()
+        {
+            onExitCallback?.Invoke();
+        }
     }
 }

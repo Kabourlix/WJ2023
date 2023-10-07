@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 4431885489422769236}
   - component: {fileID: 4695770713133890203}
   - component: {fileID: 7872386338553982666}
+  - component: {fileID: 6583994185966591971}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -693,7 +694,7 @@ Transform:
   - {fileID: 2007571730743151670}
   - {fileID: 4335957039996360570}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4289451972231699181
 SpriteRenderer:
@@ -869,6 +870,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.20146188, y: 0.1647555}
   m_EdgeRadius: 0
+--- !u!114 &6583994185966591971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5852949305833879436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf2c3ca316b46f098025f5bd5145590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 384
+  allAttacks: []
 --- !u!1 &6440261533494645893
 GameObject:
   m_ObjectHideFlags: 0

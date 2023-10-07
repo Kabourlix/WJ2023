@@ -24,6 +24,8 @@ namespace Rezoskour.Content
             }
 
             Instance = this;
+
+            playerAttack = PlayerTf.GetComponent<AttackManager>();
         }
 
         #endregion
@@ -33,6 +35,8 @@ namespace Rezoskour.Content
 
         [SerializeField] private Transform playerTransform = null!;
         public Transform PlayerTf => playerTransform;
+        private AttackManager playerAttack = null!;
+
 
         private GameStateName currentState = GameStateName.Entry;
 
@@ -40,7 +44,10 @@ namespace Rezoskour.Content
         {
             {GameStateName.Entry, new EntryState()},
             {GameStateName.Main, new MainState()},
-            {GameStateName.Berserk, new BerserkState()},
+            {
+                GameStateName.Berserk,
+                new BerserkState(() => Instance!.SetBerserk(true), () => Instance!.SetBerserk(false))
+            },
             {GameStateName.Pause, new PauseState()},
             {GameStateName.LevelUp, new LevelUpState()},
             {GameStateName.GameEnd, new GameEndState()},
@@ -60,6 +67,12 @@ namespace Rezoskour.Content
             {true, false, false, false, false, false, false, false} //Victory
         };
 
+        private void Start()
+        {
+            //TODO : REMOVE THIS
+            ChangeState(GameStateName.Main);
+        }
+
         public void ChangeState(GameStateName _stateName)
         {
             if (!isStateSwitchPossible[(int) currentState, (int) _stateName])
@@ -75,8 +88,10 @@ namespace Rezoskour.Content
                 case GameStateName.Entry:
                     break;
                 case GameStateName.Main:
+                    SetBerserk(false);
                     break;
                 case GameStateName.Berserk:
+                    SetBerserk(true);
                     break;
                 case GameStateName.Pause:
                     break;
@@ -97,9 +112,17 @@ namespace Rezoskour.Content
             allGameStates[currentState].Enter();
         }
 
-        public void SetBerserk(bool _b)
+        private void SetBerserk(bool _b)
         {
             OnBerserkModeChange?.Invoke(_b);
+            if (_b)
+            {
+                playerAttack.TryAddAttack(AttackName.BerserkBurn);
+            }
+            else
+            {
+                playerAttack.TryRemoveAttack(AttackName.BerserkBurn);
+            }
         }
     }
 }

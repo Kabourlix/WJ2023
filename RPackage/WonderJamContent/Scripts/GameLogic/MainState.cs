@@ -2,23 +2,24 @@
 // Created by Kabourlix Cendrée on 07
 
 #nullable enable
+using UnityEngine;
+
 namespace Rezoskour.Content
 {
     public class MainState : GameState
     {
         public override void Enter()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Enter MainState");
         }
 
         public override void Process()
         {
-            throw new System.NotImplementedException();
         }
 
         public override void Exit()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Exit MainState");
         }
     }
 }

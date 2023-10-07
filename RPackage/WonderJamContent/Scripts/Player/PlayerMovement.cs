@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by corentin vernel on 06
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
@@ -76,7 +76,7 @@ namespace Rezoskour.Content
 
         private void Flip()
         {
-            var theScale = transform.localScale;
+            Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             facingRight = !facingRight;
             transform.localScale = theScale;
@@ -91,14 +91,14 @@ namespace Rezoskour.Content
         {
             if (isBerserk)
             {
-                GameManager.Instance.SetBerserk(false);
+                GameManager.Instance.ChangeState(GameStateName.Main);
                 animator.SetBool("IsBerserk", false);
                 isBerserk = false;
                 transform.GetComponent<SpriteRenderer>().sprite = normalSprite;
             }
             else if (!isBerserk)
             {
-                GameManager.Instance.SetBerserk(true);
+                GameManager.Instance.ChangeState(GameStateName.Berserk);
                 animator.SetBool("IsBerserk", true);
                 isBerserk = true;
                 transform.GetComponent<SpriteRenderer>().sprite = berserkSprite;
