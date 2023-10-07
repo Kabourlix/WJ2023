@@ -12,15 +12,15 @@ namespace Rezoskour.Content
         public Slider HungerBar;
         public int maxHunger = 50;
         public float currentHunger = 50;
-        public Text HungerPercentage;
-        public PlayerMovement playerMovement;
+        public Text hungerTxt;
+        public GameManager gameManager;
 
         private bool isBerzerk = false;
 
         // Start is called before the first frame update
         private void Start()
         {
-            playerMovement.onBerzerk += Switch;
+            gameManager.OnBerserkModeChange += Switch;
         }
 
         private void Update()
@@ -30,13 +30,13 @@ namespace Rezoskour.Content
                 if (isBerzerk)
                 {
                     currentHunger -= 4 * Time.deltaTime;
-                    HungerPercentage.text = currentHunger.ToString("F0");
+                    hungerTxt.text = currentHunger.ToString("F0");
                     HungerBar.value = currentHunger / maxHunger;
                 }
                 else
                 {
                     currentHunger -= 1 * Time.deltaTime;
-                    HungerPercentage.text = currentHunger.ToString("F0");
+                    hungerTxt.text = currentHunger.ToString("F0");
                     HungerBar.value = currentHunger / maxHunger;
                 }
             }
@@ -44,7 +44,6 @@ namespace Rezoskour.Content
 
         private void Switch(bool value)
         {
-            Debug.Log(value);
             isBerzerk = value;
         }
     }
