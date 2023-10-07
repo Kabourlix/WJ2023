@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by alexandre buzon on 06
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
@@ -30,7 +30,7 @@ namespace Rezoskour.Content
 
         public int range;
 
-        public int speed;
+        public float speed;
 
         /*
          public void SaveStatsToJson()
@@ -39,12 +39,12 @@ namespace Rezoskour.Content
              //string filePath = Application.persistentDataPath+"/stats.json";
              //System.IO.File.WriteAllText(filePath, jsonStr);
              //Debug.Log("Stats saved.");
- 
+
              PlayerPrefs.SetString("Stats", jsonStr);
              PlayerPrefs.Save();
              Debug.Log("Stats saved.");
          }
- 
+
          public bool LoadStatsFromJson()
          {
              var jsonString = PlayerPrefs.GetString("Stats", "");
@@ -53,16 +53,16 @@ namespace Rezoskour.Content
              {
                  return false;
              }
- 
+
              JsonUtility.FromJsonOverwrite(jsonString, this);
              return true;
          }
- 
+
          public void LoadStats()
          {
              var filePath = Application.persistentDataPath + "/stats.json";
              var jsonString = System.IO.File.ReadAllText(filePath);
- 
+
              JsonUtility.FromJsonOverwrite(jsonString, this);
          }
          */

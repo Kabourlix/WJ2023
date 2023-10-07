@@ -28,8 +28,15 @@ namespace Rezoskour.Content.Misc
 
         #endregion
 
+        public event Action<string>? OnCoolDownDone;
+        public event Action<string, float>? OnCoolDownUpdates;
+
         private Dictionary<string, bool> registeredCoolDowns = new();
         private Dictionary<string, float> registeredCoolDownDurations = new();
+
+        private Dictionary<string, bool>
+            registeredCdWithNotification = new(); //The list of cd that will notify each time it is updated.
+
 
         private Dictionary<string, float> registeredCoolDownTimers = new();
 
@@ -38,7 +45,7 @@ namespace Rezoskour.Content.Misc
             return registeredCoolDowns.ContainsKey(_timerName) || registeredCoolDownDurations.ContainsKey(_timerName);
         }
 
-        public bool TryRegisterCoolDown(string _timerName, float _duration)
+        public bool TryRegisterCoolDown(string _timerName, float _duration, bool _notifyOnUpdate = false)
         {
             if (ContainsTimer(_timerName))
             {
@@ -48,6 +55,8 @@ namespace Rezoskour.Content.Misc
 
             registeredCoolDowns.Add(_timerName, true);
             registeredCoolDownDurations.Add(_timerName, _duration);
+            registeredCdWithNotification.Add(_timerName, _notifyOnUpdate);
+
             return true;
         }
 
@@ -61,6 +70,7 @@ namespace Rezoskour.Content.Misc
             registeredCoolDowns.Remove(_timerName);
             registeredCoolDownDurations.Remove(_timerName);
             registeredCoolDownTimers.Remove(_timerName);
+            registeredCdWithNotification.Remove(_timerName);
             return true;
         }
 
@@ -92,7 +102,7 @@ namespace Rezoskour.Content.Misc
 
             //We start timer anyway here
 
-            float timeTarget = Time.realtimeSinceStartup + registeredCoolDownDurations[_timerName];
+            float timeTarget = registeredCoolDownDurations[_timerName];
 
             if (registeredCoolDownTimers.ContainsKey(_timerName))
             {
@@ -119,22 +129,23 @@ namespace Rezoskour.Content.Misc
 
         private void Update()
         {
-            float currentTime = Time.realtimeSinceStartup;
-            List<string> toRemove = new();
-            foreach (KeyValuePair<string, float> kv in registeredCoolDownTimers)
+            Dictionary<string, float>? iterationDict = new(registeredCoolDownTimers);
+            foreach (KeyValuePair<string, float> kv in iterationDict)
             {
-                if (!(currentTime > kv.Value))
+                if (registeredCdWithNotification[kv.Key] && Time.timeScale > 0)
                 {
+                    OnCoolDownUpdates?.Invoke(kv.Key, kv.Value);
+                }
+
+                if (kv.Value > 0)
+                {
+                    registeredCoolDownTimers[kv.Key] -= Time.deltaTime;
                     continue;
                 }
 
                 registeredCoolDowns[kv.Key] = true;
-                toRemove.Add(kv.Key);
-            }
-
-            foreach (string key in toRemove)
-            {
-                registeredCoolDownTimers.Remove(key);
+                OnCoolDownDone?.Invoke(kv.Key);
+                registeredCoolDownTimers.Remove(kv.Key);
             }
         }
     }

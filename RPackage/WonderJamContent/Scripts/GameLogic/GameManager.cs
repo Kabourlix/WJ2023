@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using Rezoskour.Content.Misc;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -31,10 +32,15 @@ namespace Rezoskour.Content
 
         #endregion
 
+        public const string GAME_TIMER = "GameTimer";
+
         public event Action<bool>? OnBerserkModeChange;
         public event Action? OnDefeat;
         public event Action? OnVictory;
 
+
+        [SerializeField] private int durationToSurviveInMinutes = 5;
+        public int DurationToSurviveInSeconds => durationToSurviveInMinutes * 60;
         [SerializeField] private Transform playerTransform = null!;
         public Transform PlayerTf => playerTransform;
         private AttackManager playerAttack = null!;
@@ -72,7 +78,28 @@ namespace Rezoskour.Content
         private void Start()
         {
             //TODO : REMOVE THIS
+            if (CoolDownSystem.Instance == null)
+            {
+                Debug.LogError("CoolDownSystem.Instance is null !");
+                return;
+            }
+
+            CoolDownSystem.Instance.OnCoolDownDone += CoolDownDoneHandler;
+            //Init game timer
+            CoolDownSystem.Instance.TryRegisterCoolDown(GAME_TIMER, DurationToSurviveInSeconds, true);
+            CoolDownSystem.Instance.StartTimer(GAME_TIMER, false);
+
             ChangeState(GameStateName.Main);
+        }
+
+        private void CoolDownDoneHandler(string _cdName)
+        {
+            if (!_cdName.Equals(GAME_TIMER))
+            {
+                return;
+            }
+
+            ChangeState(GameStateName.Victory);
         }
 
         private void Update()

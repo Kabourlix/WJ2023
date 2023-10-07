@@ -3,6 +3,7 @@
 
 #nullable enable
 using System;
+using Rezoskour.Content.Misc;
 using UnityEngine;
 
 namespace Rezoskour.Content
@@ -14,6 +15,8 @@ namespace Rezoskour.Content
 
         public override void Enter()
         {
+            base.Enter();
+
             Debug.Log("Enter MainState");
         }
 

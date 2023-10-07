@@ -19,23 +19,24 @@ namespace Rezoskour.Content
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer spriteRenderer = null!;
+        [SerializeField] private PlayerStats playerStats = null!;
 
-        public Sprite berserkSprite = null;
-        public Animator animator;
-        public Sprite normalSprite = null;
-        private CustomInput input = null;
+        public Sprite berserkSprite = null!;
+        public Animator animator = null!;
+        public Sprite normalSprite = null!;
+        private CustomInput input = null!;
         private Vector2 moveVector = Vector2.zero;
-        private Rigidbody2D rb = null;
-        private float moveSpeed = 10f;
-        private bool isBerserk = false;
+        private Rigidbody2D rb = null!;
         private bool facingRight = true;
 
-        private GameManager? gameManager => GameManager.Instance;
+
+        private GameManager? GameManager => GameManager.Instance;
 
         private void Awake()
         {
             input = new CustomInput();
             rb = GetComponent<Rigidbody2D>();
+            playerStats = GetComponent<PlayerStats>();
         }
 
         private void Start()
@@ -90,7 +91,7 @@ namespace Rezoskour.Content
 
         private void FixedUpdate()
         {
-            rb.velocity = moveVector * moveSpeed;
+            rb.velocity = playerStats.CurrentStats.speed * moveVector;
         }
 
         private void Update()
@@ -100,14 +101,14 @@ namespace Rezoskour.Content
 
         private void OnMovementPerformed(InputAction.CallbackContext _ctx)
         {
-            if (gameManager == null)
+            if (GameManager == null)
             {
                 Debug.LogError("GAME MANAGER IS NULL");
                 return;
             }
 
             moveVector = _ctx.ReadValue<Vector2>();
-            gameManager.PlayerLookDirection = moveVector.normalized;
+            GameManager.PlayerLookDirection = moveVector.normalized;
             if (moveVector.x > 0 && !facingRight)
             {
                 Flip();
@@ -133,24 +134,22 @@ namespace Rezoskour.Content
 
         private void OnBerzerkPerformed(InputAction.CallbackContext _obj)
         {
-            if (gameManager == null)
+            if (GameManager == null)
             {
                 Debug.LogError("GAME MANAGER IS NULL");
                 return;
             }
 
-            if (isBerserk)
+            if (GameManager.CurrentState == GameStateName.Berserk)
             {
-                gameManager.ChangeState(GameStateName.Main);
+                GameManager.ChangeState(GameStateName.Main);
                 animator.SetBool("IsBerserk", false);
-                isBerserk = false;
                 spriteRenderer.sprite = normalSprite;
             }
-            else if (!isBerserk)
+            else
             {
-                gameManager.ChangeState(GameStateName.Berserk);
+                GameManager.ChangeState(GameStateName.Berserk);
                 animator.SetBool("IsBerserk", true);
-                isBerserk = true;
                 spriteRenderer.sprite = berserkSprite;
             }
         }
@@ -159,7 +158,7 @@ namespace Rezoskour.Content
 
         private void OnStartPause(InputAction.CallbackContext _obj)
         {
-            if (gameManager == null)
+            if (GameManager == null)
             {
                 Debug.LogError("GAME MANAGER IS NULL");
                 return;
@@ -167,13 +166,13 @@ namespace Rezoskour.Content
 
             input.Player.Disable();
             input.PauseCtx.Enable();
-            stateBeforePause = gameManager.CurrentState;
-            gameManager.ChangeState(GameStateName.Pause);
+            stateBeforePause = GameManager.CurrentState;
+            GameManager.ChangeState(GameStateName.Pause);
         }
 
         private void OnStopPause(InputAction.CallbackContext _obj)
         {
-            if (gameManager == null)
+            if (GameManager == null)
             {
                 Debug.LogError("GAME MANAGER IS NULL");
                 return;
@@ -181,7 +180,7 @@ namespace Rezoskour.Content
 
             input.Player.Enable();
             input.PauseCtx.Disable();
-            gameManager.ChangeState(stateBeforePause);
+            GameManager.ChangeState(stateBeforePause);
         }
 
         private void OnGameEnds()
