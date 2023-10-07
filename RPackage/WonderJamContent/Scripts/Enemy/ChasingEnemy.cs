@@ -28,7 +28,8 @@ namespace Rezoskour.Content
 
             public void Execute(int _index, TransformAccess _transform)
             {
-                float sqrDistance = Vector3.SqrMagnitude(playerPosition - _transform.position);
+                Vector3 enemyToPlayer = -playerPosition + _transform.position;
+                float sqrDistance = Vector3.SqrMagnitude(enemyToPlayer);
 
                 if (sqrDistance > attackRange * attackRange)
                 {
@@ -41,6 +42,7 @@ namespace Rezoskour.Content
                 }
 
                 //Update flip logic here
+                _transform.localScale *= enemyToPlayer.x < 0 ? -1 : 1;
             }
         }
 
