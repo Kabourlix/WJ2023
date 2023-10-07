@@ -5,6 +5,7 @@
 
 using System;
 using Rezoskour.Content.Collectable;
+using Rezoskour.Content.Misc;
 using UnityEngine;
 
 // Copyrighted by team Rézoskour
@@ -31,10 +32,10 @@ namespace Rezoskour.Content
             collectRange.radius = collectRangeRadius;
         }
 
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             Debug.Log("Collision");
-            if (other.gameObject.layer == collectLayer)
+            if (collectLayer.Has(other.gameObject.layer))
             {
                 Debug.Log("Collecting item");
                 var obj = other.gameObject.GetComponent<CollectableItem>();
