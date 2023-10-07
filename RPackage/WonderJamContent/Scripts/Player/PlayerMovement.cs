@@ -24,7 +24,7 @@ namespace Rezoskour.Content
         private Rigidbody2D rb = null;
         private float moveSpeed = 10f;
         private bool isBerzerk = false;
-        public event Action<bool> onBerzerk;
+        public GameManager gameManager;
 
         private void Awake()
         {
@@ -68,14 +68,14 @@ namespace Rezoskour.Content
         {
             if (isBerzerk)
             {
+                gameManager.SetBerserk(false);
                 isBerzerk = false;
-                onBerzerk?.Invoke(isBerzerk);
                 transform.GetComponent<SpriteRenderer>().sprite = normalSprite;
             }
             else if (!isBerzerk)
             {
+                gameManager.SetBerserk(true);
                 isBerzerk = true;
-                onBerzerk?.Invoke(isBerzerk);
                 transform.GetComponent<SpriteRenderer>().sprite = berzerkSprite;
             }
         }

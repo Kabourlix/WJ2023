@@ -16,62 +16,56 @@ namespace Rezoskour.Content
     [CreateAssetMenu(fileName = "Stats", menuName = "Rézoskour/Stats Data", order = 0)]
     public class Stats : SerializedScriptableObject
     {
-        [SerializeField] private int health;
-        public int Health => health;
+        public int health;
 
-        [SerializeField] private int maxHealth;
-        public int MaxHealth => maxHealth;
+        public int maxHealth;
 
-        [SerializeField] private int oil;
-        public int Oil => oil;
+        public int oil;
 
-        [SerializeField] private int maxOil;
-        public int MaxOil => maxOil;
+        public int maxOil;
 
-        [SerializeField] private int attack;
-        public int Attack => attack;
+        public int attack;
 
-        [SerializeField] private int collectRange;
-        public int CollectRange => collectRange;
+        public int collectRange;
 
-        [SerializeField] private int range;
-        public int Range => range;
+        public int range;
 
-        [SerializeField] private int speed;
-        public int Speed => speed;
+        public int speed;
 
-        public void SaveStatsToJson()
-        {
-            var jsonStr = JsonUtility.ToJson(this);
-            /*string filePath = Application.persistentDataPath+"/stats.json";
-            System.IO.File.WriteAllText(filePath, jsonStr);
-            Debug.Log("Stats saved.");*/
-
-            PlayerPrefs.SetString("Stats", jsonStr);
-            PlayerPrefs.Save();
-            Debug.Log("Stats saved.");
-        }
-
-        public bool LoadStatsFromJson()
-        {
-            var jsonString = PlayerPrefs.GetString("Stats", "");
-            Debug.Log("ALEX : " + jsonString);
-            if (jsonString is "" or "{}" or "null")
-            {
-                return false;
-            }
-
-            JsonUtility.FromJsonOverwrite(jsonString, this);
-            return true;
-        }
-
-        public void LoadStats()
-        {
-            var filePath = Application.persistentDataPath + "/stats.json";
-            var jsonString = System.IO.File.ReadAllText(filePath);
-
-            JsonUtility.FromJsonOverwrite(jsonString, this);
-        }
+        /*
+         public void SaveStatsToJson()
+         {
+             var jsonStr = JsonUtility.ToJson(this);
+             //string filePath = Application.persistentDataPath+"/stats.json";
+             //System.IO.File.WriteAllText(filePath, jsonStr);
+             //Debug.Log("Stats saved.");
+ 
+             PlayerPrefs.SetString("Stats", jsonStr);
+             PlayerPrefs.Save();
+             Debug.Log("Stats saved.");
+         }
+ 
+         public bool LoadStatsFromJson()
+         {
+             var jsonString = PlayerPrefs.GetString("Stats", "");
+             Debug.Log("ALEX : " + jsonString);
+             if (jsonString is "" or "{}" or "null")
+             {
+                 return false;
+             }
+ 
+             JsonUtility.FromJsonOverwrite(jsonString, this);
+             return true;
+         }
+ 
+         public void LoadStats()
+         {
+             var filePath = Application.persistentDataPath + "/stats.json";
+             var jsonString = System.IO.File.ReadAllText(filePath);
+ 
+             JsonUtility.FromJsonOverwrite(jsonString, this);
+         }
+         */
 
         public void BerserkMode()
         {
