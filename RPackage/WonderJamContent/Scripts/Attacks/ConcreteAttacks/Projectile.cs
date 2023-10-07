@@ -107,7 +107,7 @@ namespace Rezoskour.Content
                 return;
             }
 
-            if (!_other.gameObject.TryGetComponent(out HealthManager health))
+            if (!_other.gameObject.TryGetComponent(out IHealth health))
             {
                 return;
             }

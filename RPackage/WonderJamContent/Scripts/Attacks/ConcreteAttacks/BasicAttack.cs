@@ -40,7 +40,7 @@ namespace Rezoskour.Content
                 Debug.Log("Deal damage");
                 foreach (Collider2D col in hits)
                 {
-                    if (!col.gameObject.TryGetComponent(out HealthManager health))
+                    if (!col.gameObject.TryGetComponent(out IHealth health))
                     {
                         continue;
                     }

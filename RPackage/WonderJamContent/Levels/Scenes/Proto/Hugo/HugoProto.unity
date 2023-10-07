@@ -200,6 +200,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &6035512
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -365,6 +369,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &9464392
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -503,6 +511,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &13588497
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -695,6 +707,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &13931300
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -860,6 +876,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &22281708
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1025,6 +1045,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &27351017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1190,6 +1214,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &27588468
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1328,6 +1356,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &30577887
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1520,6 +1552,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &31386270
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1658,6 +1694,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &31741930
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1850,6 +1890,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &32584450
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2015,6 +2059,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &32697408
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2180,6 +2228,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &36724796
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2345,6 +2397,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &43425749
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2510,6 +2566,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &45900862
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2675,6 +2735,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &46870448
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2840,6 +2904,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &48590630
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3005,6 +3073,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &55362579
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3170,6 +3242,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &56717966
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3335,6 +3411,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &61941173
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3473,6 +3553,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &62028425
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3665,6 +3749,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &68361312
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3830,6 +3918,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &71519184
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3995,6 +4087,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &73577636
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4133,6 +4229,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &79196154
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4325,6 +4425,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &79712068
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4463,6 +4567,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &80081937
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4628,6 +4736,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &80659336
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4820,6 +4932,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &80916003
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4958,6 +5074,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &89140781
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5150,6 +5270,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &99577934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5315,6 +5439,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &100687025
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5480,6 +5608,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &102173137
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5645,6 +5777,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &110552860
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5810,6 +5946,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &113379427
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6093,6 +6233,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &117709050
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6258,6 +6402,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &120530772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6423,6 +6571,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &124886402
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6588,6 +6740,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &130237652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6753,6 +6909,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &135619633
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6918,6 +7078,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &136067893
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7083,6 +7247,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &137107086
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7248,6 +7416,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &138085033
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7413,6 +7585,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &140885879
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7578,6 +7754,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &142410502
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7743,6 +7923,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &145854665
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7908,6 +8092,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &150130336
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8073,6 +8261,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &152812608
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8238,6 +8430,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &162644846
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8403,6 +8599,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &163240731
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8568,6 +8768,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &164590403
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8733,6 +8937,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &164916427
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8898,6 +9106,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &166636720
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9063,6 +9275,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &168172302
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9228,6 +9444,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &172187133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9393,6 +9613,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &179741152
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9531,6 +9755,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &181095572
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9808,6 +10036,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &185748330
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9973,6 +10205,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &186475790
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10138,6 +10374,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &187701768
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10303,6 +10543,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &188881088
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10468,6 +10712,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &193553073
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10606,6 +10854,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &194927804
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10771,6 +11023,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &195073994
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10936,6 +11192,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &200452271
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11128,6 +11388,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &201313152
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11293,6 +11557,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &209037530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11431,6 +11699,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &209564689
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11623,6 +11895,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &212780063
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11788,6 +12064,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &213714250
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11953,6 +12233,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &216076022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12091,6 +12375,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &221752228
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12283,6 +12571,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &222940897
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12448,6 +12740,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &229060109
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12613,6 +12909,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &232242863
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12778,6 +13078,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &245551977
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12916,6 +13220,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &247072600
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13081,6 +13389,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &252227198
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13273,6 +13585,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &254028697
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13411,6 +13727,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &255810891
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13603,6 +13923,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &257728971
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13741,6 +14065,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &259144858
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13906,6 +14234,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &262441948
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14098,6 +14430,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &262621387
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14236,6 +14572,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &268626190
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14401,6 +14741,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &271662635
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14593,6 +14937,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &271996179
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14758,6 +15106,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &272955804
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14923,6 +15275,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &278129280
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15088,6 +15444,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &279231729
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15253,6 +15613,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &279382876
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15418,6 +15782,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &284674679
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15556,6 +15924,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &288135233
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15748,6 +16120,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &291396353
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15913,6 +16289,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &293593121
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16078,6 +16458,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &294142956
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16216,6 +16600,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &294978112
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16408,6 +16796,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &296132832
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16573,6 +16965,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &302548470
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16738,6 +17134,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &318913649
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16876,6 +17276,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &325652165
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17068,6 +17472,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &330956022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17233,6 +17641,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &334954834
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17398,6 +17810,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &335985628
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17563,6 +17979,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &336852172
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17728,6 +18148,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &340580006
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17893,6 +18317,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &341075210
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18031,6 +18459,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &341696060
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18223,6 +18655,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &341745483
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18388,6 +18824,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &348870161
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18526,6 +18966,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &354062193
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18718,6 +19162,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &358153326
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18883,6 +19331,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &366644492
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19048,6 +19500,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &366962684
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19186,6 +19642,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &369702971
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19378,6 +19838,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &371812146
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19516,6 +19980,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &374727629
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19708,6 +20176,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &376075264
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19873,6 +20345,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &378299490
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20038,6 +20514,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &386729491
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20176,6 +20656,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &389569451
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20341,6 +20825,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &400024931
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20533,6 +21021,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &405616495
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20671,6 +21163,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &405736411
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20836,6 +21332,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &406968130
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21028,6 +21528,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &408446532
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21193,6 +21697,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &412363836
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21331,6 +21839,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &414221034
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21496,6 +22008,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &416894076
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21688,6 +22204,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &426552215
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21853,6 +22373,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &443641403
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21991,6 +22515,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &447807674
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22183,6 +22711,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &448446275
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22348,6 +22880,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &450296117
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22513,6 +23049,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &452378256
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22678,6 +23218,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &457876912
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22816,6 +23360,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &459628816
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23008,6 +23556,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &465867095
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23146,6 +23698,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &466110009
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23338,6 +23894,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &466250873
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23503,6 +24063,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &470972056
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23668,6 +24232,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &472929450
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23833,6 +24401,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &481020172
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23998,6 +24570,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &483018884
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24163,6 +24739,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &483148524
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24328,6 +24908,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &485663077
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24466,6 +25050,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &486127206
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24658,6 +25246,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &500688156
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24796,6 +25388,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &501273640
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24988,6 +25584,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &501284360
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25153,6 +25753,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &501797857
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25318,6 +25922,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &511375106
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25483,6 +26091,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &516151207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25648,6 +26260,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &517641417
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25786,6 +26402,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &522897851
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25978,6 +26598,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &523318528
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26143,6 +26767,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &535896066
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26308,6 +26936,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &535905618
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26446,6 +27078,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &535941192
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26638,6 +27274,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &538961560
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26776,6 +27416,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &539208137
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26968,6 +27612,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &540242369
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27133,6 +27781,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &543613491
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27298,6 +27950,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &546951129
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27463,6 +28119,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &547752328
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27628,6 +28288,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &550683123
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27766,6 +28430,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &552486590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27958,6 +28626,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &558885769
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28123,6 +28795,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &561490004
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28288,6 +28964,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &566656619
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28453,6 +29133,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &569389721
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28591,6 +29275,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &570606661
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28756,6 +29444,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &574280831
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28948,6 +29640,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &576273535
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29086,6 +29782,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &577786729
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29278,6 +29978,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &582849277
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29443,6 +30147,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &584284337
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29608,6 +30316,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &585493242
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29773,6 +30485,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &587407520
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29938,6 +30654,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &593489488
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30076,6 +30796,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &596764686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30241,6 +30965,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &608590716
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30433,6 +31161,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &610732461
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30598,6 +31330,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &611597400
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30763,6 +31499,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &612630264
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30928,6 +31668,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &613758974
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31066,6 +31810,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &614333842
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31258,6 +32006,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &618329985
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31423,6 +32175,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &623139130
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31588,6 +32344,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &625165812
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31753,6 +32513,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &626102382
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31918,6 +32682,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &629622595
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32083,6 +32851,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &635936930
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32221,6 +32993,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &638676242
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32386,6 +33162,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &640938303
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32551,6 +33331,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &642262740
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32743,6 +33527,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &649136833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32908,6 +33696,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &651960369
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33073,6 +33865,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &652671582
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33211,6 +34007,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &653134352
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33376,6 +34176,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &665202374
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33568,6 +34372,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &665553835
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33706,6 +34514,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &666981705
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33871,6 +34683,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &667593633
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34063,6 +34879,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &672041312
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34228,6 +35048,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &673581594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34393,6 +35217,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &673825556
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34558,6 +35386,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &674313485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34696,6 +35528,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &675998577
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34861,6 +35697,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &676393177
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35026,6 +35866,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &677977207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35191,6 +36035,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &678054134
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35383,6 +36231,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &678167286
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35548,6 +36400,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &685534167
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35713,6 +36569,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &686721150
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35851,6 +36711,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &688363273
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36016,6 +36880,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &689463208
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36913,6 +37781,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &696481877
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37078,6 +37950,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &697496894
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37270,6 +38146,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &703683570
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37435,6 +38315,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &704240807
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37600,6 +38484,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &704997076
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37765,6 +38653,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &707834302
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37930,6 +38822,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &709080373
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38095,6 +38991,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &709627788
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38260,6 +39160,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &717047433
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38425,6 +39329,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &717115483
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38563,6 +39471,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &719858419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38755,6 +39667,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &721057040
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38893,6 +39809,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &726084241
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39085,6 +40005,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &729896761
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39250,6 +40174,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &734167569
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39415,6 +40343,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &735624956
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39553,6 +40485,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &738410185
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39745,6 +40681,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &739998549
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39910,6 +40850,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &756655754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40048,6 +40992,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &758136409
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40240,6 +41188,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &760336586
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40405,6 +41357,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &763535878
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40570,6 +41526,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &764793296
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40735,6 +41695,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &766201485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40841,11 +41805,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 958088754914685989, guid: e69ef513c220c0f4a8ddcf805c4308a3,
-        type: 3}
-      propertyPath: collectRangeRadius
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5170789662694799863, guid: e69ef513c220c0f4a8ddcf805c4308a3,
         type: 3}
       propertyPath: m_RootOrder
@@ -40916,11 +41875,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8906579394619519331, guid: e69ef513c220c0f4a8ddcf805c4308a3,
-        type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40976,6 +41930,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &771138386
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41168,6 +42126,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &771608737
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41306,6 +42268,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &774090270
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41498,6 +42464,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &776240849
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41636,6 +42606,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &788381162
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41801,6 +42775,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &790588041
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41966,6 +42944,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &795214733
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42131,6 +43113,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &801738112
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42323,6 +43309,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &802757725
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42488,6 +43478,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &803384193
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42653,6 +43647,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &806390105
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42818,6 +43816,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &808230838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -42956,6 +43958,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &808231588
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43148,6 +44154,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &810282459
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43313,6 +44323,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &815544726
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43478,6 +44492,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &818135240
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43643,6 +44661,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &820294154
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43781,6 +44803,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &823900426
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -43973,6 +44999,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &826060076
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44138,6 +45168,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &828366657
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44303,6 +45337,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &829299608
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44468,6 +45506,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &831417298
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44633,6 +45675,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &834607768
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44771,6 +45817,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &835565614
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44963,6 +46013,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &840556517
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45128,6 +46182,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &842390174
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45293,6 +46351,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &842685395
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45431,6 +46493,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &845594561
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45623,6 +46689,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &847011849
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45788,6 +46858,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &848996860
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -45953,6 +47027,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &849523767
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46091,6 +47169,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &851331662
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46256,6 +47338,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &852294906
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46448,6 +47534,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &853772752
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46613,6 +47703,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &855201267
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46751,6 +47845,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &861731633
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -46916,6 +48014,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &863835433
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47108,6 +48210,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &864093712
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47273,6 +48379,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &865864514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47438,6 +48548,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &866106827
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47603,6 +48717,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &878755576
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47741,6 +48859,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &880124393
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -47906,6 +49028,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &882807528
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48098,6 +49224,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &884506587
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48263,6 +49393,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &884697898
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48401,6 +49535,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &895207289
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48566,6 +49704,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &896833892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48758,6 +49900,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &897152902
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -48923,6 +50069,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &900332822
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49088,6 +50238,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &902985228
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49253,6 +50407,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &915205516
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49391,6 +50549,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &920060813
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49583,6 +50745,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &921969220
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49748,6 +50914,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &922382637
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -49913,6 +51083,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &925571310
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50078,6 +51252,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &925908819
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50243,6 +51421,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &927390750
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50408,6 +51590,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &930938961
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50546,6 +51732,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &933615514
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50738,6 +51928,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &940141787
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -50903,6 +52097,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &941072282
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51041,6 +52239,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &954071396
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51206,6 +52408,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &957306198
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51371,6 +52577,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &958619284
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51563,6 +52773,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &981622785
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51701,6 +52915,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &986602017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51893,6 +53111,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &989391538
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52058,6 +53280,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &991381145
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52223,6 +53449,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &992132595
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52361,6 +53591,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &993189157
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52553,6 +53787,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &996965014
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52718,6 +53956,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &997941448
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -52883,6 +54125,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1000647854
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53048,6 +54294,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1003676339
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53186,6 +54436,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1004439174
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53378,6 +54632,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1004995062
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53516,6 +54774,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1007682241
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53708,6 +54970,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1011391008
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -53873,6 +55139,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1012304669
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54038,6 +55308,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1013828233
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54176,6 +55450,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1015556222
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54368,6 +55646,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1015951778
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54594,6 +55876,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!50 &1018821319
 Rigidbody2D:
   serializedVersion: 4
@@ -54698,6 +55984,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1020644947
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -54863,6 +56153,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1021254010
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55028,6 +56322,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1025716140
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55166,6 +56464,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1028012588
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55358,6 +56660,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1034746744
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55523,6 +56829,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1037975638
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55661,6 +56971,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1039626435
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -55826,6 +57140,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1043035771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56018,6 +57336,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1045027171
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56183,6 +57505,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1050221458
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56348,6 +57674,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1053423736
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56513,6 +57843,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1053820777
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56678,6 +58012,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1059640596
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -56843,6 +58181,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1072629703
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57008,6 +58350,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1078890685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57146,6 +58492,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1079628800
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57338,6 +58688,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1095062356
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57503,6 +58857,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1095625293
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57668,6 +59026,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1103652662
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57833,6 +59195,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1107692131
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -57998,6 +59364,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1108410384
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58163,6 +59533,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1110380649
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58328,6 +59702,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1110479378
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58466,6 +59844,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1112495767
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58658,6 +60040,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1119778035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58823,6 +60209,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1121103146
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -58988,6 +60378,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1124146328
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59153,6 +60547,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1127597482
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59318,6 +60716,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1135155763
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59483,6 +60885,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1138105336
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59648,6 +61054,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1139142484
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59813,6 +61223,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1140284017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -59978,6 +61392,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1146160474
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60143,6 +61561,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1146722924
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60281,6 +61703,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1149627213
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60473,6 +61899,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1151972797
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60638,6 +62068,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1156026825
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60803,6 +62237,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1161049417
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -60968,6 +62406,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1161554033
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61133,6 +62575,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1163132342
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61298,6 +62744,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1168769855
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61463,6 +62913,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1176786862
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61601,6 +63055,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1179386714
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61793,6 +63251,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1186499594
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -61958,6 +63420,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1191103598
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62123,6 +63589,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1194298054
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62288,6 +63758,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1194872020
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62426,6 +63900,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1197350789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62618,6 +64096,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1199173808
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62783,6 +64265,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1200866234
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81130,6 +82616,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1203838925
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81295,6 +82785,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1207066189
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81460,6 +82954,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1207466419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81598,6 +83096,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1207756243
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81790,6 +83292,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1210651613
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81928,6 +83434,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1212763805
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82120,6 +83630,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1215126441
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82258,6 +83772,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1221997955
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82450,6 +83968,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1223386475
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82615,6 +84137,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1224201071
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82780,6 +84306,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1232928050
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -82918,6 +84448,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1233660724
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83110,6 +84644,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1241747484
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83275,6 +84813,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1243873637
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83440,6 +84982,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1244257840
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83605,6 +85151,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1245013144
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83770,6 +85320,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1249785029
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83908,6 +85462,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1249961173
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84100,6 +85658,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1259440916
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84265,6 +85827,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1260811252
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84403,6 +85969,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1262465406
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84595,6 +86165,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1262924207
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84733,6 +86307,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1264816320
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -84925,6 +86503,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1266596665
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -85090,6 +86672,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1266990570
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -85255,6 +86841,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1267963968
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -85393,6 +86983,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1268795311
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -85585,6 +87179,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1271361229
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -85750,6 +87348,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1272923118
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -85915,6 +87517,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1274726934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -86053,6 +87659,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1275612000
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -86245,6 +87855,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1279022782
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -86410,6 +88024,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1280357703
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -86548,6 +88166,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1281362359
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -86713,6 +88335,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1282333648
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -86905,6 +88531,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1282451714
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87043,6 +88673,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1282746428
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87235,6 +88869,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1289749765
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87373,6 +89011,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1291213862
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87538,6 +89180,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1297020160
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87730,6 +89376,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1297420932
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -87895,6 +89545,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1301858168
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88033,6 +89687,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1302328945
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88225,6 +89883,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1303626122
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88390,6 +90052,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1309894709
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88555,6 +90221,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1312266053
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88693,6 +90363,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1314252800
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -88885,6 +90559,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1314867248
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89050,6 +90728,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1316458139
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89215,6 +90897,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1316605824
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89380,6 +91066,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1322667666
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89518,6 +91208,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1325566829
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89710,6 +91404,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1340747474
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -89848,6 +91546,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1342808324
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90040,6 +91742,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1343675133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90178,6 +91884,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1347110999
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90370,6 +92080,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1351527738
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90535,6 +92249,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1351789318
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90700,6 +92418,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1354157654
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -90838,6 +92560,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1358538102
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91030,6 +92756,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1358610725
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91195,6 +92925,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1361435121
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91333,6 +93067,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1366518418
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91498,6 +93236,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1368974151
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91690,6 +93432,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1369872511
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -91855,6 +93601,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1377279159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92020,6 +93770,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1378554015
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92185,6 +93939,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1384199103
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92323,6 +94081,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1386704042
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92515,6 +94277,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1389770038
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92653,6 +94419,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1390521014
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -92845,6 +94615,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1392196115
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93010,6 +94784,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1398956340
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93148,6 +94926,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1405733088
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93340,6 +95122,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1411644700
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93505,6 +95291,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1412099305
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93643,6 +95433,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1412108826
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -93835,6 +95629,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1415482515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94000,6 +95798,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1417439908
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94138,6 +95940,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1417529118
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94330,6 +96136,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1419247781
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94495,6 +96305,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1419912879
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94660,6 +96474,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1420917772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94825,6 +96643,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1423524564
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -94963,6 +96785,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1427151009
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -95155,6 +96981,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1427531982
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -95293,6 +97123,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1440398421
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -95485,6 +97319,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1452994889
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -95623,6 +97461,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1461799893
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -95788,6 +97630,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1469570551
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -95980,6 +97826,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1470233450
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96145,6 +97995,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1470336575
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96310,6 +98164,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1470867202
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96448,6 +98306,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1471505671
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96640,6 +98502,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1471927456
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96778,6 +98644,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1480872754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -96970,6 +98840,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1483180289
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97108,6 +98982,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1496494533
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97300,6 +99178,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1500461739
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97465,6 +99347,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1502502017
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97603,6 +99489,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1503052560
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97768,6 +99658,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1503919530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -97960,6 +99854,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1508056763
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98125,6 +100023,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1512717270
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98290,6 +100192,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1513136081
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98455,6 +100361,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1514522968
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98593,6 +100503,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1514984666
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98758,6 +100672,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1518860854
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -98950,6 +100868,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1520439024
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99088,6 +101010,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1520723845
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99280,6 +101206,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1521226252
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99418,6 +101348,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1523099766
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99583,6 +101517,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1524676637
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99775,6 +101713,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1537640960
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -99940,6 +101882,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1538134454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100105,6 +102051,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1540196741
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100243,6 +102193,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1540307950
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100435,6 +102389,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1540964087
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100600,6 +102558,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1543124749
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100765,6 +102727,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1544566872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -100930,6 +102896,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1544847495
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101095,6 +103065,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1545177240
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101233,6 +103207,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1545907728
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101425,6 +103403,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1547791915
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101590,6 +103572,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1550471772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101728,6 +103714,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1559992009
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -101920,6 +103910,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1563295611
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102085,6 +104079,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1565694010
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102223,6 +104221,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1567131133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102388,6 +104390,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1571235143
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102553,6 +104559,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1572088330
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102718,6 +104728,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1575769357
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -102883,6 +104897,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1577731279
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103048,6 +105066,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1579514549
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103213,6 +105235,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1581866840
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103405,6 +105431,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1583103521
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103543,6 +105573,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1586627225
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103708,6 +105742,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1589786013
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -103900,6 +105938,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1590255205
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104065,6 +106107,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1593642523
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104230,6 +106276,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1597586177
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104395,6 +106445,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1603623385
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104560,6 +106614,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1607291209
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104698,6 +106756,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1608334821
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -104890,6 +106952,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1613995212
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105055,6 +107121,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1618461156
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105220,6 +107290,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1621594919
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105385,6 +107459,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1625718850
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105550,6 +107628,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1626782977
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105688,6 +107770,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1628295533
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -105859,6 +107945,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1643402863
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -106051,6 +108141,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1643904429
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -106216,6 +108310,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1647102743
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -106381,6 +108479,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1647850601
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -106546,6 +108648,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1656551639
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -106684,6 +108790,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1657759127
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -106876,6 +108986,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1662422479
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107041,6 +109155,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1663800525
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107179,6 +109297,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1664580256
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107371,6 +109493,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1669238189
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107536,6 +109662,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1669960059
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107674,6 +109804,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1673299241
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -107866,6 +110000,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1674380882
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108031,6 +110169,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1675845955
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108169,6 +110311,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1676779852
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108361,6 +110507,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1679193811
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108526,6 +110676,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1680529134
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108664,6 +110818,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1681430310
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108856,6 +111014,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1684155063
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -109021,6 +111183,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1684691055
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -109186,6 +111352,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1684846464
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -109351,6 +111521,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1687347581
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -109489,6 +111663,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1688507136
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -109681,6 +111859,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1689269927
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -109846,6 +112028,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1695261084
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110011,6 +112197,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1699044197
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110176,6 +112366,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1700262872
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110341,6 +112535,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1707633830
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110506,6 +112704,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1709295013
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110644,6 +112846,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1718527178
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -110809,6 +113015,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1723212410
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111001,6 +113211,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1724431665
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111166,6 +113380,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1728870266
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111304,6 +113522,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1733045817
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111469,6 +113691,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1734231587
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111661,6 +113887,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1735969919
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111826,6 +114056,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1736692335
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -111991,6 +114225,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1736725212
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112156,6 +114394,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1738553527
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112321,6 +114563,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1740140740
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112486,6 +114732,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1745465687
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112651,6 +114901,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1747797667
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112816,6 +115070,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1750209269
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112981,6 +115239,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1751558833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113146,6 +115408,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1754637612
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113311,6 +115577,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1755989349
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113449,6 +115719,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1757093089
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113614,6 +115888,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1757754679
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113806,6 +116084,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1762265772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113971,6 +116253,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1764351797
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114109,6 +116395,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1766955645
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114301,6 +116591,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1775610958
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114439,6 +116733,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1775782063
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114604,6 +116902,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1776843812
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114769,6 +117071,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1777071932
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114934,6 +117240,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1778035555
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115126,6 +117436,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1779205398
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115291,6 +117605,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1780613056
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115456,6 +117774,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1784494848
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115594,6 +117916,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1787264721
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115786,6 +118112,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1788774869
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115951,6 +118281,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1800099457
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116116,6 +118450,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1802840833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116254,6 +118592,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1804185431
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116446,6 +118788,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1806188285
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116611,6 +118957,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1808040392
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116776,6 +119126,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1811127064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116941,6 +119295,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1815947245
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117106,6 +119464,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1816627876
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117271,6 +119633,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1816699349
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117436,6 +119802,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1817047389
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117574,6 +119944,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1818646632
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117766,6 +120140,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1818657506
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -117931,6 +120309,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1823226467
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -118096,6 +120478,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1823980217
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -118234,6 +120620,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1825097348
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -118426,6 +120816,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1832309111
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -118591,6 +120985,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1837573793
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -118756,6 +121154,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1841116609
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -118921,6 +121323,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1841453575
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -119086,6 +121492,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1844789794
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -119224,6 +121634,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1845716405
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -119416,6 +121830,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1846170521
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -119581,6 +121999,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1849624370
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -119746,6 +122168,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1852321770
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -119911,6 +122337,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1860493725
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120076,6 +122506,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1860948826
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120241,6 +122675,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1862682053
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120406,6 +122844,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1865560687
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120544,6 +122986,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1867532719
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120736,6 +123182,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1870530871
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -120901,6 +123351,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1870606615
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121066,6 +123520,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1871761962
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121231,6 +123689,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1872732608
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121396,6 +123858,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1874452422
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121534,6 +124000,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1875233151
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121726,6 +124196,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1876333654
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -121864,6 +124338,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1877366175
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122056,6 +124534,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1878644522
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122194,6 +124676,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1880710679
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122386,6 +124872,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1882969390
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122551,6 +125041,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1883299371
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122689,6 +125183,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1886364114
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -122854,6 +125352,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1887492699
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123046,6 +125548,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1894652159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123211,6 +125717,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1896890076
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123376,6 +125886,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1905672200
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123541,6 +126055,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1907345146
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123706,6 +126224,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1907486000
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -123844,6 +126366,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1908127959
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124036,6 +126562,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1908269515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124201,6 +126731,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1908639219
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124366,6 +126900,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1914941919
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124531,6 +127069,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1915380317
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124696,6 +127238,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1919740701
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124834,6 +127380,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1920157463
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -124999,6 +127549,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1921122262
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -125191,6 +127745,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1926672497
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -125356,6 +127914,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1927040528
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -125494,6 +128056,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1929655772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -125686,6 +128252,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1931004471
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -125824,6 +128394,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1940896991
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126016,6 +128590,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1944572449
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126181,6 +128759,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1956188930
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126346,6 +128928,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1957531752
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126484,6 +129070,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1961882513
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126676,6 +129266,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1966486052
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -126841,6 +129435,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1967447727
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127006,6 +129604,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1971874402
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127171,6 +129773,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1973221234
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127336,6 +129942,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1976741174
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127474,6 +130084,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1980858269
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127666,6 +130280,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1981948029
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127831,6 +130449,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1985975655
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -127996,6 +130618,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1991610062
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128161,6 +130787,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1992479857
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128299,6 +130929,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &1993939173
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128491,6 +131125,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2004523388
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128656,6 +131294,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2008473167
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128821,6 +131463,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2011727764
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128986,6 +131632,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2012249252
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -129151,6 +131801,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2021496189
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -129289,6 +131943,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2022974328
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -129481,6 +132139,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2023580559
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -129646,6 +132308,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2028625353
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -129784,6 +132450,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2035839870
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -129976,6 +132646,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2041396970
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130141,6 +132815,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2041805485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130279,6 +132957,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2042755059
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130471,6 +133153,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2044092718
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130636,6 +133322,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2047460225
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130801,6 +133491,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2050151937
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130966,6 +133660,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2050924610
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131131,6 +133829,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2052414049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131296,6 +133998,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2052570951
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131461,6 +134167,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2053458487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131626,6 +134336,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2061612934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131791,6 +134505,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2062908584
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131956,6 +134674,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2068164799
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132094,6 +134816,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2071874511
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132286,6 +135012,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2073838730
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132424,6 +135154,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2087387440
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132616,6 +135350,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2096512474
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132781,6 +135519,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2096976882
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132919,6 +135661,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2105357063
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133111,6 +135857,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2107962593
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133249,6 +135999,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2108310156
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133441,6 +136195,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2108576862
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133606,6 +136364,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2112362489
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133771,6 +136533,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2121274974
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -133936,6 +136702,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2130105878
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134101,6 +136871,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2130686841
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134266,6 +137040,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2143974338
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134431,6 +137209,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2144620953
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134596,6 +137378,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2144760640
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134761,6 +137547,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2145935147
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -134926,6 +137716,10 @@ MonoBehaviour:
   targetTransform: {fileID: 1631544568}
   speed: 5
   attackRange: 1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 0}
+  damage: 1
 --- !u!58 &2146045280
 CircleCollider2D:
   m_ObjectHideFlags: 0
