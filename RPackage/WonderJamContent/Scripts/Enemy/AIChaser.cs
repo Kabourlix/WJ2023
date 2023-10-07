@@ -19,7 +19,8 @@ namespace Rezoskour.Content
         public int damage = 1;
         private bool isOut = true;
         public Animator animator;
-
+        private float nextSpawn;
+        public float spawnRate = 5f;
         private bool facingRight = true;
 
         // Start is called before the first frame update
@@ -58,6 +59,7 @@ namespace Rezoskour.Content
             {
                 Flip();
             }
+            
         }
 
         private void Flip()
@@ -110,6 +112,11 @@ namespace Rezoskour.Content
             {
                 OnTriggerEnter2D(player.GetComponent<Collider2D>());
             }
+        }
+
+        private void Destroy()
+        {
+            
         }
     }
 }

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pealer_Melee_Berserk_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 12
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afa9de20997378478e697a7d429097e
+      internalID: -427036349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Berserk_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 12
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efd546783bc1ee4883267241e2e7c17
+      internalID: 429823185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Berserk_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 12
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176bc7a30cb753141bf815e9c9604a32
+      internalID: 1704163924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Berserk_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 11
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9f2ca290ea8da45b3018e4b332d01a
+      internalID: 853227730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Berserk_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 6
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca868595f5dd5964fa020d50368fba0c
+      internalID: -1755032597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Berserk_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 7
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d98ad1c1d08ed14097b9a11001c3da3
+      internalID: -632354503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Berserk_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 7
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a807151073d9484991337cee0a4abe5
+      internalID: -1524625903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pealer_Melee_Berserk_0: -427036349
+      Pealer_Melee_Berserk_1: 429823185
+      Pealer_Melee_Berserk_2: 1704163924
+      Pealer_Melee_Berserk_3: 853227730
+      Pealer_Melee_Berserk_4: -1755032597
+      Pealer_Melee_Berserk_5: -632354503
+      Pealer_Melee_Berserk_6: -74637460
+      Pealer_Melee_Berserk_7: -1524625903
+      Pealer_Melee_Berserk_8: 569651633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

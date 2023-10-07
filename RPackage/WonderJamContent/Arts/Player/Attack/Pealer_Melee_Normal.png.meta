@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pealer_Melee_Normal_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 12
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c833e30bd9c3194f81768189ba83a28
+      internalID: 1897982115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Normal_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 12
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4a975ff1bedbe4aa2be99eb79a4f58
+      internalID: 1305733311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Normal_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 12
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfef64bfb3ce72f4f8faf544085396e9
+      internalID: -2064651980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Normal_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 11
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f345bb5fe6e7e4b962ee1f67d50834
+      internalID: 190558029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Normal_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 5
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fecded0a3bd498428d81354aed5528f
+      internalID: 432796015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Normal_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 12
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da8c68c0ebe57b45a3cf765651665f8
+      internalID: -928822421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pealer_Melee_Normal_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 7
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207d6fd8b4c49e641be101fd488494b2
+      internalID: -621047368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pealer_Melee_Normal_0: 1897982115
+      Pealer_Melee_Normal_1: 1305733311
+      Pealer_Melee_Normal_2: -2064651980
+      Pealer_Melee_Normal_3: 190558029
+      Pealer_Melee_Normal_4: 432796015
+      Pealer_Melee_Normal_5: 1289727950
+      Pealer_Melee_Normal_6: -928822421
+      Pealer_Melee_Normal_7: -621047368
+      Pealer_Melee_Normal_8: 2010742420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

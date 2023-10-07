@@ -3,6 +3,8 @@
 
 #nullable enable
 
+using System;
+using System.Collections;
 using Unity.Jobs;
 using UnityEngine;
 using UnityEngine.Jobs;
@@ -17,6 +19,11 @@ namespace Rezoskour.Content
         [SerializeField] private Transform? targetTransform;
         public float speed = 1f;
         public float attackRange = 1f;
+        public GameObject player;
+        public bool isDistanceEnemy = false;
+        private bool isOut = true;
+        public Animator animator;
+        public int damage = 1;
 
         private struct ChasingEnemyJob : IJobParallelForTransform
         {
@@ -42,7 +49,9 @@ namespace Rezoskour.Content
                 }
 
                 //Update flip logic here
-                _transform.localScale *= enemyToPlayer.x < 0 ? -1 : 1;
+                // var theScale = _transform.localScale;
+                // theScale.x *= enemyToPlayer.x < 0 ? -1 : 1;
+                // _transform.localScale = theScale;
             }
         }
 
@@ -51,8 +60,10 @@ namespace Rezoskour.Content
 
         private void Start()
         {
+            player = FindObjectOfType<PlayerMovement>().gameObject;
             transformAccessArray = new TransformAccessArray(1);
             transformAccessArray.Add(transform);
+            targetTransform = player.transform;
         }
 
         private void Update()
@@ -77,8 +88,55 @@ namespace Rezoskour.Content
 
         private void OnDestroy()
         {
+            
             chasingJobHandle.Complete();
             transformAccessArray.Dispose();
+        }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            Debug.Log("Trigger");
+
+            if (other.CompareTag("Player"))
+            {
+                animator.SetFloat("Speed", 0);
+                isOut = false;
+
+                StartCoroutine(StayInRange(other));
+            }
+        }
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            Debug.Log("Exit");
+
+            if (other.CompareTag("Player"))
+            {
+                animator.SetBool("isAttacking", false);
+                isOut = true;
+                StopCoroutine(StayInRange(other));
+            }
+        }
+
+        private IEnumerator StayInRange(Collider2D other)
+        {
+            yield return new WaitForSeconds(0.5f);
+            animator.SetBool("isAttacking", true);
+            if (!isDistanceEnemy)
+            {
+                other.GetComponent<HealthManager>().Damage(damage);
+            }
+
+            yield return new WaitForSeconds(0.5f);
+            animator.SetBool("isAttacking", false);
+            yield return new WaitForSeconds(2f);
+            if (!isOut)
+            {
+                OnTriggerEnter2D(player.GetComponent<Collider2D>());
+            }
+        }
+
+        public void Init(Action action)
+        {
+            
         }
     }
 }

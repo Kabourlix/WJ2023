@@ -9,6 +9,7 @@ using Rezoskour.Content.Misc;
 using UnityEngine;
 using UnityEngine.Serialization;
 
+
 namespace Rezoskour.Content
 {
     public class GameManager : MonoBehaviour
@@ -107,6 +108,8 @@ namespace Rezoskour.Content
         {
             allGameStates[currentState].Process();
         }
+
+        
 
         public void ChangeState(GameStateName _stateName)
         {

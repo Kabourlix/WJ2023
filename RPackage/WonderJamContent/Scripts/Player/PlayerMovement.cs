@@ -28,7 +28,7 @@ namespace Rezoskour.Content
         private Vector2 moveVector = Vector2.zero;
         private Rigidbody2D rb = null!;
         private bool facingRight = true;
-
+        public GameObject enemyPrefab;
 
         private GameManager? GameManager => GameManager.Instance;
 
@@ -68,7 +68,6 @@ namespace Rezoskour.Content
         {
             input.Enable();
             input.PauseCtx.Disable();
-
             input.Player.Movement.performed += OnMovementPerformed;
             input.Player.Movement.canceled += OnMovementCanceled;
             input.Player.Berserk.performed += OnBerzerkPerformed;
@@ -76,7 +75,7 @@ namespace Rezoskour.Content
             input.Player.Pause.performed += OnStartPause;
             input.PauseCtx.Pause.performed += OnStopPause;
         }
-
+        
 
         private void OnDisable()
         {
