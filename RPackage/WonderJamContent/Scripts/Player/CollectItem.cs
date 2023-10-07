@@ -34,7 +34,6 @@ namespace Rezoskour.Content
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("Collision");
             if (collectLayer.Has(other.gameObject.layer))
             {
                 Debug.Log("Collecting item");
@@ -44,9 +43,15 @@ namespace Rezoskour.Content
                     case CollectableType.Experience:
                         _xp.AddXp(obj.Value);
                         break;
+                    case CollectableType.Health:
+                        _healthManager.Heal(obj.Value);
+                        break;
+                    case CollectableType.Oil:
+                        //oil manager
+                        break;
                 }
 
-                Destroy(other.gameObject);
+                obj.ReturnToPool();
             }
         }
     }
