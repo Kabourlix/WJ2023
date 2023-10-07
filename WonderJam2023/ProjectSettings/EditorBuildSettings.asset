@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Packages/com.rezoskour.wonderjam/Levels/Scenes/Proto/Hugo/HugoProto.unity
-    guid: 4bbb4c6ac01873d4ca6140dc1ef5c663
+    path: Packages/com.rezoskour.wonderjam/Levels/Scenes/Menu.unity
+    guid: 33216430fc2ed534dbe75ff9ad761248
+  - enabled: 1
+    path: Packages/com.rezoskour.wonderjam/Levels/Scenes/Main.unity
+    guid: 0481159d4204e164da4f48f3872be757
   m_configObjects: {}
