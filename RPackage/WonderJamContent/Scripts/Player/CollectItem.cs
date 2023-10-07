@@ -21,6 +21,7 @@ namespace Rezoskour.Content
         private PlayerStats _stats;
         private HealthManager _healthManager;
         private Xp _xp;
+        private OilComponent _oil;
 
         private void Start()
         {
@@ -47,7 +48,7 @@ namespace Rezoskour.Content
                         _healthManager.Heal(obj.Value);
                         break;
                     case CollectableType.Oil:
-                        //oil manager
+                        _oil.RefillOil(obj.Value);
                         break;
                 }
 
