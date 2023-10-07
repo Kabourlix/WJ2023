@@ -1908,9 +1908,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 4294490895890060636}
+  playerStats: {fileID: 0}
   berserkSprite: {fileID: 1498947119, guid: c8ba5a90d6ebc094f92ce138121212ca, type: 3}
   animator: {fileID: 8703923357076955551}
   normalSprite: {fileID: -1346753488, guid: c3db50ba229cc3c439e556b60c1fe533, type: 3}
+  enemyPrefab: {fileID: 0}
 --- !u!114 &2344559531754335375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2376,7 +2378,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1448044819
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1346753488, guid: c3db50ba229cc3c439e556b60c1fe533, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2417,6 +2419,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1387031603191196329, guid: 337065e35dd4c8c459f1d60eca2a4c9b,
+        type: 3}
+      propertyPath: hp
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2453999430460961629, guid: 337065e35dd4c8c459f1d60eca2a4c9b,
         type: 3}
       propertyPath: m_RootOrder
@@ -2476,6 +2483,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8423750886786867795, guid: 337065e35dd4c8c459f1d60eca2a4c9b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

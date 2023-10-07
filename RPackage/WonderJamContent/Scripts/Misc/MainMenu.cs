@@ -24,12 +24,34 @@ namespace Rezoskour.Content.Misc
         [SerializeField] private GameObject KeyboardControls;
         [SerializeField] private GameObject GamepadControls;
 
-        private string inputDevice;
-        private string currentDevice;
+        private bool isUsingGamepad = false;
 
-        // Init inputDevice with the current device
+        private void Start()
+        {
+            KeyboardControls.gameObject.SetActive(false);
+            GamepadControls.gameObject.SetActive(false);
+        }
+
         private void Update()
         {
+            var controllerUsed = Gamepad.current.wasUpdatedThisFrame;
+
+            if (controllerUsed && !isUsingGamepad)
+            {
+                // Si la manette est utilisée et que le joueur ne l'utilisait pas précédemment,
+                // activez l'image du contrôleur et désactivez l'image du clavier
+                GamepadControls.gameObject.SetActive(true);
+                KeyboardControls.gameObject.SetActive(false);
+                isUsingGamepad = true;
+            }
+            else if (!controllerUsed && isUsingGamepad)
+            {
+                // Si le clavier est utilisé et que le joueur utilisait précédemment un contrôleur,
+                // activez l'image du clavier et désactivez l'image du contrôleur
+                GamepadControls.gameObject.SetActive(false);
+                KeyboardControls.gameObject.SetActive(true);
+                isUsingGamepad = false;
+            }
         }
 
         public void Play()

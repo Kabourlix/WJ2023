@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 07
 
 #nullable enable
 
@@ -15,7 +15,7 @@ namespace Rezoskour.Content.Collectable
         [Range(0, 1)] [SerializeField] private float oilSpawnProbability;
         [Range(0, 1)] [SerializeField] private float expSpawnProbability;
 
-        [SerializeField] private int hp = 100;
+        [SerializeField] private int hp = 50;
 
         [ContextMenu("Destroy")]
         private void DestoryCrate()
@@ -27,23 +27,25 @@ namespace Rezoskour.Content.Collectable
             }
 
             Debug.Log("Crate destroyed");
-            float range = oilSpawnProbability + expSpawnProbability;
-            float rand = Random.Range(0, range);
+            var range = oilSpawnProbability + expSpawnProbability;
+            var rand = Random.Range(0, range);
             if (rand <= oilSpawnProbability)
             {
-                Transform transform1 = transform;
+                var transform1 = transform;
                 CollectableManager.Instance.SpawnOil(transform1.position, transform1.rotation);
             }
             else
             {
-                Transform transform1 = transform;
+                var transform1 = transform;
                 CollectableManager.Instance.SpawnXp(transform1.position, transform1.rotation);
             }
 
             Destroy(gameObject);
         }
 
-        public void Heal(int _amount) { }
+        public void Heal(int _amount)
+        {
+        }
 
         public void Damage(int _amount)
         {

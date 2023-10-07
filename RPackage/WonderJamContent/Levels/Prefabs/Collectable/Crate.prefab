@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4101872334922525263}
   m_Layer: 8
   m_Name: Crate
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,11 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d7f2f1159534598be65566a24b3f08c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oil: {fileID: 4490768163608041154, guid: 6041ccf25d9ff4941b6a053456cfbb91, type: 3}
   oilSpawnProbability: 0.6
-  experience: {fileID: 8666260828580205355, guid: 77c3f0b1b1994bf4c87552012b5b5437,
-    type: 3}
   expSpawnProbability: 0.4
+  hp: 10
 --- !u!58 &4101872334922525263
 CircleCollider2D:
   m_ObjectHideFlags: 0

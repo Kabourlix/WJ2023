@@ -28,6 +28,7 @@ namespace Rezoskour.Content
             _stats = GetComponentInParent<PlayerStats>();
             _healthManager = GetComponentInParent<HealthManager>();
             _xp = GetComponentInParent<Xp>();
+            _oil = GetComponentInParent<OilComponent>();
 
             collectRangeRadius = _stats.CurrentStats.collectRange;
             collectRange.radius = collectRangeRadius;
