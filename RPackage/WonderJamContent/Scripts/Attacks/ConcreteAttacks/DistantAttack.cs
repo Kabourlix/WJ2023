@@ -33,9 +33,20 @@ namespace Rezoskour.Content
                 yield break;
             }
 
+            if (Manager == null)
+            {
+                Debug.LogError("GAMEMANAGER IS NULL!");
+                yield break;
+            }
+
             while (true)
             {
                 Projectile proj = projectilesPool.Get();
+                float angle = Vector2.SignedAngle(Vector2.right, Manager.PlayerLookDirection);
+
+                proj.transform.SetPositionAndRotation(PlayerTransform.position + data.range
+                    * Manager.PlayerLookDirection,
+                    Quaternion.Euler(0, 0, angle));
                 proj.Fire();
                 yield return waitForAttackRefresh;
             }
@@ -61,24 +72,7 @@ namespace Rezoskour.Content
 
         private void OnGetProjectile(Projectile _proj)
         {
-            if (PlayerTransform == null)
-            {
-                return;
-            }
-
-            if (Manager == null)
-            {
-                Debug.LogError("GAMEMANAGER IS NULL!");
-                return;
-            }
-
             _proj.gameObject.SetActive(true);
-
-            float angle = Vector2.SignedAngle(Vector2.right, Manager.PlayerLookDirection);
-
-            _proj.transform.SetPositionAndRotation(PlayerTransform.position + data.range
-                * Manager.PlayerLookDirection,
-                Quaternion.Euler(0, 0, angle));
         }
 
         private void OnReleaseProjectile(Projectile _proj)
