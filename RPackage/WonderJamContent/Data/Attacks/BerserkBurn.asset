@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BerserkBurn
   m_EditorClassIdentifier: 
   attackName: 2
-  damage: 100
-  attackCooldown: 3
+  damage: 1000
+  attackCooldown: 1.5
   range: 6
   attackAreaRange: 2.15
