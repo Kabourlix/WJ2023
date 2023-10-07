@@ -14,15 +14,21 @@ namespace Rezoskour.Content
     {
         public override IEnumerator PerformCoroutine()
         {
-            if (PlayerTransform == null)
+            if (TargetTransform == null)
             {
                 Debug.LogError("Player transform is null.");
                 yield break;
             }
 
+            if (Manager == null)
+            {
+                Debug.LogError("GAME MANAGER IS NULL");
+                yield break;
+            }
+
             while (true)
             {
-                Vector3 targetPos = PlayerTransform.position + data.range * PlayerTransform.forward.normalized;
+                Vector3 targetPos = TargetTransform.position + data.range * Manager.PlayerLookDirection;
 
                 Collider2D[] hits = Physics2D.OverlapCircleAll(targetPos, data.attackAreaRange, layerMask);
                 if (hits.Length == 0) //No hit
@@ -31,11 +37,11 @@ namespace Rezoskour.Content
                     continue;
                 }
 
+                Debug.Log("Deal damage");
                 foreach (Collider2D col in hits)
                 {
                     if (!col.gameObject.TryGetComponent(out HealthManager health))
                     {
-                        yield return waitForAttackRefresh;
                         continue;
                     }
 
@@ -47,18 +53,18 @@ namespace Rezoskour.Content
         }
 
 #if UNITY_EDITOR
-        private void OnDrawGizmosSelected()
+        private void OnDrawGizmos()
         {
-            if (PlayerTransform == null)
+            if (TargetTransform == null || Manager == null)
             {
                 return;
             }
 
             Gizmos.color = Color.green;
-            Vector3 targetPos = PlayerTransform.position + data.range * PlayerTransform.forward.normalized;
+            Vector3 targetPos = TargetTransform.position + data.range * Manager.PlayerLookDirection;
             Gizmos.DrawWireSphere(targetPos, data.attackAreaRange);
             Handles.color = Color.green;
-            Handles.Label(targetPos, "Attack Range");
+            Handles.Label(targetPos, "Attack Basic");
             Handles.color = Color.white;
             Gizmos.color = Color.white;
         }

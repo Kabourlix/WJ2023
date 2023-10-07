@@ -3,13 +3,31 @@
 
 #nullable enable
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Rezoskour.Content.Misc
 {
-    public class TimerSystem : MonoBehaviour
+    public class CoolDownSystem : MonoBehaviour
     {
+        #region Singleton
+
+        public static CoolDownSystem? Instance;
+
+        private void Awake()
+        {
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            Instance = this;
+        }
+
+        #endregion
+
         private Dictionary<string, bool> registeredCoolDowns = new();
         private Dictionary<string, float> registeredCoolDownDurations = new();
 
@@ -20,7 +38,7 @@ namespace Rezoskour.Content.Misc
             return registeredCoolDowns.ContainsKey(_timerName) || registeredCoolDownDurations.ContainsKey(_timerName);
         }
 
-        public bool TryAddCoolDown(string _timerName, float _duration)
+        public bool TryRegisterCoolDown(string _timerName, float _duration)
         {
             if (ContainsTimer(_timerName))
             {
@@ -30,6 +48,19 @@ namespace Rezoskour.Content.Misc
 
             registeredCoolDowns.Add(_timerName, true);
             registeredCoolDownDurations.Add(_timerName, _duration);
+            return true;
+        }
+
+        public bool TryUnRegisterCoolDown(string _timerName)
+        {
+            if (!ContainsTimer(_timerName))
+            {
+                return false;
+            }
+
+            registeredCoolDowns.Remove(_timerName);
+            registeredCoolDownDurations.Remove(_timerName);
+            registeredCoolDownTimers.Remove(_timerName);
             return true;
         }
 
@@ -89,6 +120,7 @@ namespace Rezoskour.Content.Misc
         private void Update()
         {
             float currentTime = Time.realtimeSinceStartup;
+            List<string> toRemove = new();
             foreach (KeyValuePair<string, float> kv in registeredCoolDownTimers)
             {
                 if (!(currentTime > kv.Value))
@@ -97,7 +129,12 @@ namespace Rezoskour.Content.Misc
                 }
 
                 registeredCoolDowns[kv.Key] = true;
-                registeredCoolDownTimers.Remove(kv.Key);
+                toRemove.Add(kv.Key);
+            }
+
+            foreach (string key in toRemove)
+            {
+                registeredCoolDownTimers.Remove(key);
             }
         }
     }

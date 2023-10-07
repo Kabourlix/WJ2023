@@ -11,42 +11,92 @@ namespace Rezoskour.Content
     [RequireComponent(typeof(Collider2D))]
     public class Projectile : MonoBehaviour
     {
+        private const string TIMER_PREFIX = "Projectile_";
+        private int currentAmount;
+        private static int amount;
+        private CoolDownSystem? CdSystem => CoolDownSystem.Instance;
+
+        private string TimerName => TIMER_PREFIX + currentAmount;
+
         [SerializeField] private LayerMask layerMask;
         public float speed;
         [HideInInspector] public int damage;
         public float duration;
 
         private bool isMoving;
-        private float releaseTime;
 
         private Action? releaseCallback;
 
+        private void OnDestroy()
+        {
+            amount--;
+            if (CdSystem == null)
+            {
+                Debug.LogError("CRITICAL !!! CoolDownSystem is null.");
+                return;
+            }
+
+            CdSystem.TryUnRegisterCoolDown(TimerName);
+        }
+
         public void Init(Action _releaseMethod)
         {
+            amount++;
+            currentAmount = amount;
             releaseCallback = _releaseMethod;
+            if (CdSystem == null)
+            {
+                Debug.LogError("CRITICAL !!! CoolDownSystem is null.");
+                return;
+            }
+
+            CdSystem.TryRegisterCoolDown(TimerName, duration);
         }
 
         public void Fire()
         {
             isMoving = true;
-            releaseTime = Time.realtimeSinceStartup + duration;
+            if (CdSystem == null)
+            {
+                Debug.LogError("CRITICAL !!! CoolDownSystem is null.");
+                return;
+            }
+
+            CdSystem.StartTimer(TimerName);
         }
 
         private void Release()
         {
             isMoving = false;
-            releaseTime = 0;
+            if (CdSystem == null)
+            {
+                Debug.LogError("CRITICAL !!! CoolDownSystem is null.");
+                return;
+            }
+
+            CdSystem.StopTimer(TimerName);
             releaseCallback?.Invoke();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (!isMoving)
             {
                 return;
             }
 
-            transform.Translate(speed * Time.deltaTime * transform.forward);
+            if (CdSystem == null)
+            {
+                Debug.LogError("CRITICAL !!! CoolDownSystem is null.");
+                return;
+            }
+
+            if (CdSystem.IsCoolDownDone(TimerName))
+            {
+                Release();
+            }
+
+            transform.Translate(speed * Time.fixedDeltaTime * GameManager.Instance!.PlayerLookDirection);
         }
 
         private void OnCollisionEnter2D(Collision2D _other)

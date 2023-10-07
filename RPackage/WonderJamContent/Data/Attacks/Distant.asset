@@ -15,5 +15,5 @@ MonoBehaviour:
   attackName: 1
   damage: 30
   attackCooldown: 2
-  range: 6
+  range: 4.05
   attackAreaRange: 3

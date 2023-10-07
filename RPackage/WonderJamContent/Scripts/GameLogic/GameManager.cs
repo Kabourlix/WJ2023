@@ -6,6 +6,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Rezoskour.Content
 {
@@ -35,6 +36,7 @@ namespace Rezoskour.Content
         [SerializeField] private Transform playerTransform = null!;
         public Transform PlayerTf => playerTransform;
         private AttackManager playerAttack = null!;
+        public Vector3 PlayerLookDirection { get; set; }
 
 
         private GameStateName currentState = GameStateName.Entry;

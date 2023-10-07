@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackName: 0
   damage: 50
-  maxRange: 2
-  attackRate: 4
-  attackAreaRange: 3
+  attackCooldown: 4
+  range: 1.04
+  attackAreaRange: 0.53

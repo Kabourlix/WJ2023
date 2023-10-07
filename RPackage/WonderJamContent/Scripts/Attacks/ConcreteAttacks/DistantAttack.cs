@@ -23,9 +23,10 @@ namespace Rezoskour.Content
                 true, 5, 40);
         }
 
+
         public override IEnumerator PerformCoroutine()
         {
-            if (PlayerTransform == null)
+            if (TargetTransform == null)
             {
                 Debug.LogError("Player transform is null.");
                 yield break;
@@ -42,7 +43,13 @@ namespace Rezoskour.Content
 
         private Projectile OnCreateProjectile()
         {
-            Projectile proj = Instantiate(projectilePrefab, transform).GetComponent<Projectile>();
+            if (Manager == null)
+            {
+                Debug.LogError("GAMEMANAGER IS NULL!");
+                return default!;
+            }
+
+            Projectile proj = Instantiate(projectilePrefab, Manager.transform).GetComponent<Projectile>();
             proj.name = $"Projectile {projectilesPool.CountAll + 1}";
             proj.Init(() => projectilesPool.Release(proj));
 
@@ -53,13 +60,20 @@ namespace Rezoskour.Content
 
         private void OnGetProjectile(Projectile _proj)
         {
-            if (PlayerTransform == null)
+            if (TargetTransform == null)
             {
                 return;
             }
 
+            if (Manager == null)
+            {
+                Debug.LogError("GAMEMANAGER IS NULL!");
+                return;
+            }
+
             _proj.gameObject.SetActive(true);
-            _proj.transform.SetPositionAndRotation(PlayerTransform.position + 0.2f * PlayerTransform.forward,
+            _proj.transform.SetPositionAndRotation(TargetTransform.position + data.range
+                * Manager.PlayerLookDirection,
                 Quaternion.identity);
         }
 

@@ -18,6 +18,8 @@ namespace Rezoskour.Content
 {
     public class PlayerMovement : MonoBehaviour
     {
+        [SerializeField] private SpriteRenderer spriteRenderer = null!;
+
         public Sprite berserkSprite = null;
         public Animator animator;
         public Sprite normalSprite = null;
@@ -71,9 +73,16 @@ namespace Rezoskour.Content
             animator.SetFloat("Speed", MathF.Abs(moveVector.x));
         }
 
-        private void OnMovementPerformed(InputAction.CallbackContext ctx)
+        private void OnMovementPerformed(InputAction.CallbackContext _ctx)
         {
-            moveVector = ctx.ReadValue<Vector2>();
+            if (gameManager == null)
+            {
+                Debug.LogError("GAME MANAGER IS NULL");
+                return;
+            }
+
+            moveVector = _ctx.ReadValue<Vector2>();
+            gameManager.PlayerLookDirection = moveVector.normalized;
             if (moveVector.x > 0 && !facingRight)
             {
                 Flip();
@@ -92,7 +101,7 @@ namespace Rezoskour.Content
             transform.localScale = theScale;
         }
 
-        private void OnMovementCanceled(InputAction.CallbackContext ctx)
+        private void OnMovementCanceled(InputAction.CallbackContext _ctx)
         {
             moveVector = Vector2.zero;
         }
@@ -110,14 +119,14 @@ namespace Rezoskour.Content
                 gameManager.ChangeState(GameStateName.Main);
                 animator.SetBool("IsBerserk", false);
                 isBerserk = false;
-                transform.GetComponent<SpriteRenderer>().sprite = normalSprite;
+                spriteRenderer.sprite = normalSprite;
             }
             else if (!isBerserk)
             {
                 gameManager.ChangeState(GameStateName.Berserk);
                 animator.SetBool("IsBerserk", true);
                 isBerserk = true;
-                transform.GetComponent<SpriteRenderer>().sprite = berserkSprite;
+                spriteRenderer.sprite = berserkSprite;
             }
         }
 

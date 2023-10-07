@@ -11,6 +11,7 @@ namespace Rezoskour.Content
 {
     public class AttackManager : MonoBehaviour
     {
+        [SerializeField] private AttackName startAttack;
         [SerializeField] private LayerMask layerMask;
         [SerializeField] private RAttack[] allAttacks = null!;
         private readonly Dictionary<AttackName, RAttack> allPrefabAttacksDict = new();
@@ -26,7 +27,7 @@ namespace Rezoskour.Content
 
         private void Start()
         {
-            TryAddAttack(AttackName.Range);
+            TryAddAttack(startAttack);
         }
 
         public void ResumeAttacking()
