@@ -10,11 +10,9 @@ namespace Rezoskour.Content
 {
     public class HealthPlayerUIUpdate : MonoBehaviour
     {
-        public Slider hpBar;
-        public HealthManager healthManager;
-        public float maxHealth = 50;
-        public Text healthTxt;
-        public GameObject gameManager;
+        [SerializeField] private Slider hpBar;
+        [SerializeField] private HealthManager healthManager;
+        [SerializeField] private Text healthTxt;
 
         // Start is called before the first frame update
         private void Start() { }
@@ -29,19 +27,19 @@ namespace Rezoskour.Content
             healthManager.OnHealthChanged -= UpdateHealth;
         }
 
-        private void UpdateHealth(int _obj)
+        private void UpdateHealth(int _newHealth)
         {
-            healthTxt.text = _obj.ToString();
-            if (healthManager.health <= 0)
+            healthTxt.text = _newHealth.ToString();
+            if (healthManager.Health <= 0)
             {
                 healthTxt.text = "0";
                 hpBar.value = 0;
             }
             else
             {
-                hpBar.value = healthManager.health / maxHealth;
+                hpBar.value = healthManager.HealthPercent;
                 Debug.Log(hpBar.value);
-                healthTxt.text = $"{healthManager.health}/{maxHealth}";
+                healthTxt.text = $"{_newHealth}/{healthManager.MaxHealth}";
             }
         }
     }

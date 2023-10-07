@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by alexandre buzon on 06
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
@@ -16,24 +16,27 @@ namespace Rezoskour.Content
     {
         [SerializeField] private Stats? baseStats;
         private Stats? normalStats;
-        private Stats? currentStats;
-        public Stats? CurrentStats => currentStats;
+        private Stats currentStats = null!;
+        public Stats CurrentStats => currentStats;
 
         //[SerializeField] private TextMeshProUGUI statsText;
 
-        private void Start()
+        private void Awake()
         {
             if (baseStats == null)
             {
                 throw new Exception("Stats not set in PlayerStats");
             }
 
+            currentStats = Instantiate(baseStats);
+        }
+
+        private void Start()
+        {
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.OnBerserkModeChange += SwitchMode;
             }
-
-            currentStats = Instantiate(baseStats);
         }
 
         private void SwitchMode(bool _isBerserk)

@@ -14,82 +14,107 @@ namespace Rezoskour.Content
 {
     public class HealthManager : MonoBehaviour
     {
-        // public int Health { get; private set; }
-        //
-        // public int MaxHealth { get; private set; }
         public event Action? OnDeath;
         public event Action? OnIncomingDamage;
         public event Action<int>? OnHealthChanged;
 
-        [FormerlySerializedAs("Health")] public int health = 0;
-        [FormerlySerializedAs("MaxHealth")] public int maxHealth = 50;
+        private PlayerStats stats = null!;
+
+        public int Health
+        {
+            get => stats.CurrentStats.health;
+            set => stats.CurrentStats.health = value;
+        }
+
+        public int MaxHealth => stats.CurrentStats.maxHealth;
 
 
         public float HealthPercent
         {
             get
             {
-                if (maxHealth == 0)
+                if (MaxHealth == 0)
                 {
                     Debug.LogError("Max Health has not been set.");
                     return 0;
                 }
 
-                return (float) health / maxHealth;
+                return (float) Health / MaxHealth;
             }
         }
 
         private void Start()
         {
-            // int healthPlayer = GetComponents<PlayerStats>();
-            if (maxHealth == 0)
+            stats = GetComponent<PlayerStats>();
+
+            if (MaxHealth == 0)
             {
-                throw new NullReferenceException("Max Health has not been set.");
+                Debug.LogError("Max Health has not been set.");
+                return;
             }
 
-            health = maxHealth;
+            if (MaxHealth <= 0)
+            {
+                Debug.LogError("Max Health cannot be negative.");
+                return;
+            }
+
+            Health = MaxHealth;
         }
 
-        public void Init(int _maxHealth)
+        public void Heal(int _amount)
         {
-            if (maxHealth != 0)
+            if (MaxHealth == 0)
             {
-                throw new Exception("Max health has already been set.");
+                Debug.LogError("Max Health has not been set.");
+                return;
             }
 
-            if (_maxHealth <= 0)
+            if (_amount < 0)
             {
-                throw new Exception("Max health must be greater than 0.");
+                Debug.LogError("Heal amount must be greater than 0.");
+                return;
             }
 
-            maxHealth = _maxHealth;
-            health = maxHealth;
+            Health = Mathf.Clamp(Health + _amount, 0, MaxHealth);
+            OnHealthChanged?.Invoke(Health);
         }
 
         public void Damage(int _damage)
         {
-            if (maxHealth == 0)
+            if (MaxHealth == 0)
             {
-                throw new NullReferenceException("Max Health has not been set.");
+                Debug.LogError("Max Health has not been set.");
+                return;
             }
 
             if (_damage < 0)
             {
-                throw new Exception("Damage amount must be greater than 0.");
+                Debug.LogError("Damage amount must be greater than 0.");
+                return;
             }
 
-            if (health == 0)
+            if (Health == 0)
             {
                 return;
             }
 
             OnIncomingDamage?.Invoke();
-            health = Mathf.Clamp(health - _damage, 0, maxHealth);
-            OnHealthChanged?.Invoke(health);
-            if (health == 0)
+            Health = Mathf.Clamp(Health - _damage, 0, MaxHealth);
+            OnHealthChanged?.Invoke(Health);
+            if (Health != 0)
             {
-                OnDeath?.Invoke();
+                return;
             }
+
+            OnDeath?.Invoke();
+            if (GameManager.Instance == null)
+            {
+                Debug.LogError("GameManager.Instance is null !");
+                return;
+            }
+
+            GameManager.Instance.ChangeState(GameStateName.Defeat);
         }
     }
 }
