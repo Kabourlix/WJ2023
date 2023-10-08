@@ -151,6 +151,9 @@ namespace Rezoskour.Content
                     }
 
                     break;
+                case StatName.GlobalAttackRateMultiplier:
+                    playerStats.CurrentStats.globalAttackRateMultiplier *= (1 + _multiplyValue);
+                    break;
             }
 
             GameManager.Instance.ChangeState(GameStateName.Main);
