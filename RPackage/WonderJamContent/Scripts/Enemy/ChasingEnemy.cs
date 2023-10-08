@@ -22,7 +22,7 @@ namespace Rezoskour.Content
     {
         [Range(0, 1)] [SerializeField] private float oilSpawnProbability;
         [Range(0, 1)] [SerializeField] private float expSpawnProbability;
-        [SerializeField] private float maxHealth = 1f;
+        [SerializeField] protected float maxHealth = 1f;
         [SerializeField] private Transform? targetTransform;
         public float speed = 1f;
         public float attackRange = 1f;
@@ -31,9 +31,9 @@ namespace Rezoskour.Content
         private bool isOut = true;
         public Animator animator;
         public int damage = 1;
-        
 
-        private Action? releaseCallback;
+
+        protected Action? releaseCallback;
         
         protected struct ChasingEnemyJob : IJobParallelForTransform
         {
@@ -48,7 +48,7 @@ namespace Rezoskour.Content
             {
                 Vector3 enemyToPlayer = -playerPosition + _transform.position;
                 float sqrDistance = Vector3.SqrMagnitude(enemyToPlayer);
-
+                Debug.Log(sqrDistance);
                 if (sqrDistance > attackRange * attackRange)
                 {
                     Vector3 direction = (playerPosition - _transform.position).normalized;
@@ -57,6 +57,7 @@ namespace Rezoskour.Content
                 }
                 else
                 {
+                    Debug.Log("atteint");
                     triggerAttackArray[0] = true;
                 }
 
@@ -99,62 +100,59 @@ namespace Rezoskour.Content
             };
             if(triggerAttackArray[0])
             {
+                Debug.Log("PerformedAttack");
                 PerformAttack();
             }
             chasingJobHandle = chasingJob.Schedule(transformAccessArray);
         }
-
         
-
-        
-
         private void OnDestroy()
         {
             chasingJobHandle.Complete();
             transformAccessArray.Dispose();
             triggerAttackArray.Dispose();
         }
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-
-            if (other.CompareTag("Player"))
-            {
-                animator.SetFloat("Speed", 0);
-                isOut = false;
-
-                StartCoroutine(StayInRange(other));
-            }
-        }
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                animator.SetBool("isAttacking", false);
-                isOut = true;
-                StopCoroutine(StayInRange(other));
-            }
-        }
-
-        private IEnumerator StayInRange(Collider2D other)
-        {
-            yield return new WaitForSeconds(0.5f);
-            animator.SetBool("isAttacking", true);
-            if (!isDistanceEnemy)
-            {
-                if (other.TryGetComponent(out IHealth health))
-                {
-                    health.Damage(damage);
-                }
-            }
-
-            yield return new WaitForSeconds(0.5f);
-            animator.SetBool("isAttacking", false);
-            yield return new WaitForSeconds(2f);
-            if (!isOut)
-            {
-                OnTriggerEnter2D(player.GetComponent<Collider2D>());
-            }
-        }
+        // private void OnTriggerEnter2D(Collider2D other)
+        // {
+        //
+        //     if (other.CompareTag("Player"))
+        //     {
+        //         animator.SetFloat("Speed", 0);
+        //         isOut = false;
+        //
+        //         StartCoroutine(StayInRange(other));
+        //     }
+        // }
+        // private void OnTriggerExit2D(Collider2D other)
+        // {
+        //     if (other.CompareTag("Player"))
+        //     {
+        //         animator.SetBool("isAttacking", false);
+        //         isOut = true;
+        //         StopCoroutine(StayInRange(other));
+        //     }
+        // }
+        //
+        // private IEnumerator StayInRange(Collider2D other)
+        // {
+        //     yield return new WaitForSeconds(0.5f);
+        //     animator.SetBool("isAttacking", true);
+        //     if (!isDistanceEnemy)
+        //     {
+        //         if (other.TryGetComponent(out IHealth health))
+        //         {
+        //             health.Damage(damage);
+        //         }
+        //     }
+        //
+        //     yield return new WaitForSeconds(0.5f);
+        //     animator.SetBool("isAttacking", false);
+        //     yield return new WaitForSeconds(2f);
+        //     if (!isOut)
+        //     {
+        //         OnTriggerEnter2D(player.GetComponent<Collider2D>());
+        //     }
+        // }
 
         public void Init(Action? _action)
         {
@@ -166,7 +164,7 @@ namespace Rezoskour.Content
             
         }
 
-        public void Damage(int _amount)
+        public virtual void Damage(int _amount)
         {
             maxHealth -= _amount;
             if (maxHealth <= 0)

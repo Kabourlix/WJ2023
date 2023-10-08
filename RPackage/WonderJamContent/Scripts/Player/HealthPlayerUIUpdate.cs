@@ -38,7 +38,7 @@ namespace Rezoskour.Content
             else
             {
                 hpBar.value = healthManager.HealthPercent;
-                Debug.Log(hpBar.value);
+                // Debug.Log(hpBar.value);
                 healthTxt.text = $"{_newHealth}/{healthManager.MaxHealth}";
             }
         }

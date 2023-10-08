@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7353164895262664462}
   - component: {fileID: 861870894775281419}
-  - component: {fileID: 1039686732504363940}
   - component: {fileID: 4916576112524810266}
   - component: {fileID: 5990308876268460501}
+  - component: {fileID: 5447851060288806664}
   m_Layer: 7
   m_Name: NuggetsEnemy
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &861870894775281419
 SpriteRenderer:
@@ -87,28 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1039686732504363940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5239846605713864092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d770e6b51346a4a9fb83d48b2b8417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  oilSpawnProbability: 0.4
-  expSpawnProbability: 0.6
-  maxHealth: 20
-  targetTransform: {fileID: 0}
-  speed: 3
-  attackRange: 1
-  player: {fileID: 0}
-  isDistanceEnemy: 0
-  animator: {fileID: 5990308876268460501}
-  damage: 0
 --- !u!61 &4916576112524810266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -175,3 +153,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5447851060288806664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239846605713864092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb952b000ee140c9938360e0ca950707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oilSpawnProbability: 0.2
+  expSpawnProbability: 0.8
+  maxHealth: 1
+  targetTransform: {fileID: 0}
+  speed: 3
+  attackRange: 0.1
+  player: {fileID: 0}
+  isDistanceEnemy: 0
+  animator: {fileID: 5990308876268460501}
+  damage: 3

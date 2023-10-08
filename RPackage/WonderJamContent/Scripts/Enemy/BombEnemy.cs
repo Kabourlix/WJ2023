@@ -1,34 +1,20 @@
-﻿using Rezoskour.Content.Misc;
+﻿using Rezoskour.Content.Collectable;
+using Rezoskour.Content.Misc;
 
 namespace Rezoskour.Content
 {
     public class BombEnemy : ChasingEnemy
     {
+        // ReSharper disable Unity.PerformanceAnalysis
         protected override void PerformAttack()
         {
-            if (CoolDownSystem.Instance != null)
+            animator.SetBool("isAttacking", true);
+            if (player.TryGetComponent(out IHealth health))
             {
-                CoolDownSystem.Instance.TryRegisterCoolDown("Attack", 0.5f, true);
-                CoolDownSystem.Instance.StartTimer("Attack");
+                health.Damage(damage);
             }
-
-            if(triggerAttackArray[0])
-            {
-                animator.SetBool("isAttacking", true);
-                if (player.TryGetComponent(out IHealth health))
-                {
-                    health.Damage(damage);
-                }
-                if (CoolDownSystem.Instance != null)
-                {
-                    CoolDownSystem.Instance.TryRegisterCoolDown("Attack", 2f, true);
-                    CoolDownSystem.Instance.StartTimer("Attack");
-                }
-            }
-            else
-            {
-                animator.SetBool("isAttacking", false);
-            }
+            Damage(100);
         }
+        
     }
 }
