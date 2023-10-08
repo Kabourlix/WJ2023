@@ -21,7 +21,7 @@ namespace Rezoskour.Content
         private Vector2 moveVector = Vector2.zero;
         private Rigidbody2D rb = null!;
         private bool facingRight = true;
-
+        private CollectItem collectItem = null!;
         private GameManager? GameManager => GameManager.Instance;
 
         private void Awake()
@@ -60,6 +60,8 @@ namespace Rezoskour.Content
         private void OnEnable()
         {
             input.Enable();
+            collectItem = GetComponent<CollectItem>();
+            collectItem.OnGetMeleeWeapon += MeleeWeaponAnim;
             input.PauseCtx.Disable();
             input.Player.Movement.performed += OnMovementPerformed;
             input.Player.Movement.canceled += OnMovementCanceled;
@@ -69,14 +71,20 @@ namespace Rezoskour.Content
             input.PauseCtx.Pause.performed += OnStopPause;
         }
 
+        private void MeleeWeaponAnim(bool obj)
+        {
+            animator.SetBool("CAC", obj);
+        }
+
 
         private void OnDisable()
         {
             input.Disable();
+            
             input.Player.Movement.performed -= OnMovementPerformed;
             input.Player.Movement.canceled -= OnMovementCanceled;
             input.Player.Berserk.performed -= OnBerzerkPerformed;
-
+            collectItem.OnGetMeleeWeapon -= MeleeWeaponAnim;
             input.Player.Pause.performed -= OnStartPause;
             input.PauseCtx.Pause.performed -= OnStopPause;
         }

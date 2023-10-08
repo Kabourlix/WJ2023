@@ -14,6 +14,7 @@ namespace Rezoskour.Content
     {
         public override IEnumerator PerformCoroutine()
         {
+            
             if (UserTransform == null)
             {
                 Debug.LogError("Player transform is null.");
@@ -52,7 +53,7 @@ namespace Rezoskour.Content
                         continue;
                     }
 
-
+        
                     float damage = data.damage;
                     if (playerStats != null)
                     {

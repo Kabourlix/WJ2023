@@ -23,9 +23,10 @@ namespace Rezoskour.Content
         private Xp _xp;
         private OilComponent _oil;
         private AttackManager _weapon;
-
+        public event Action<Boolean>? OnGetMeleeWeapon;
         private void Start()
         {
+            OnGetMeleeWeapon?.Invoke(false);
             _stats = GetComponentInParent<PlayerStats>();
             _healthManager = GetComponentInParent<HealthManager>();
             _xp = GetComponentInParent<Xp>();
@@ -53,6 +54,7 @@ namespace Rezoskour.Content
                         obj.gainCallback = () => _oil.RefillOil(obj.Value);
                         break;
                     case CollectableType.Weapon:
+                        OnGetMeleeWeapon?.Invoke(true);
                         obj.gainCallback = () => _weapon.TryAddAttack((AttackName)obj.Value,true);
                         break;
                 }
