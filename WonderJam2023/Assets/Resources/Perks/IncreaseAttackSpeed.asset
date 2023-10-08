@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e910793b9aaf494e97d71cc2b038d755, type: 3}
   m_Name: IncreaseAttackSpeed
   m_EditorClassIdentifier: 
-  statImage: {fileID: 0}
-  statTitle: 
-  statDescription: 
-  statName: 0
-  multiplier: 0
+  statImage: {fileID: 21300000, guid: c9014fb2b81965c4f94f7398eedeeead, type: 3}
+  statTitle: Increase Attack speed
+  statDescription: +20% Attack speed
+  statName: 10
+  multiplier: 0.2
   addValue: 0
