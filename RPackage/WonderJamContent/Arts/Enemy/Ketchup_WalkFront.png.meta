@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9233611f58b26b64cb9890dafda68c13
+guid: e012f26562a32bf4b889f63862d48e79
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,12 +136,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nuggets_Throw_0
+      name: Ketchup_WalkFront_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 40
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -150,19 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99299070a5ccb8d4cb1e265db1903e1e
-      internalID: -741364616
+      spriteID: 91d1e5c1f65e05146a0aafbd870a9475
+      internalID: -118854836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_1
+      name: Ketchup_WalkFront_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 40
         y: 0
-        width: 32
+        width: 40
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,19 +171,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e041f7f87e904b4b9c0c590af2946c0
-      internalID: 90391990
+      spriteID: 373fcf5cbc49e8f49aca71107d37122d
+      internalID: -201684266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_2
+      name: Ketchup_WalkFront_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 80
         y: 0
-        width: 32
+        width: 40
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,19 +192,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f3a748bea595c04086fda628f9d469d
-      internalID: -1070943847
+      spriteID: b97be08a0abd953479344ec2ee8a0df8
+      internalID: -883113606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_3
+      name: Ketchup_WalkFront_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 120
         y: 0
-        width: 32
+        width: 40
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -213,19 +213,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719b5718cbda8bd479fb97c503b0d9a0
-      internalID: 1338136380
+      spriteID: 176846cf463dcaf42b3ec9de945656cc
+      internalID: -1635047550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_4
+      name: Ketchup_WalkFront_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 0
-        width: 32
+        width: 40
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -234,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f78cf684abc051c4e99497acc01e39ba
-      internalID: 1550917667
+      spriteID: 2c925e7d2b89ce643be4eed51e26b3e1
+      internalID: 1075392478
       vertices: []
       indices: 
       edges: []
@@ -243,7 +243,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4393595ce3ab1ca49b97277b4824dea9
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -251,11 +251,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Nuggets_Throw_0: -741364616
-      Nuggets_Throw_1: 90391990
-      Nuggets_Throw_2: -1070943847
-      Nuggets_Throw_3: 1338136380
-      Nuggets_Throw_4: 1550917667
+      Ketchup_WalkFront_0: -118854836
+      Ketchup_WalkFront_1: -201684266
+      Ketchup_WalkFront_2: -883113606
+      Ketchup_WalkFront_3: -1635047550
+      Ketchup_WalkFront_4: 1075392478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

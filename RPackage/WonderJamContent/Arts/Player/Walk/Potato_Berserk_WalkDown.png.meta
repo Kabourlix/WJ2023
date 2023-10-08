@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9233611f58b26b64cb9890dafda68c13
+guid: 1e4270ec87b28764d87a4efc8ce00c1b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nuggets_Throw_0
+      name: Potato_Berserk_WalkDown_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99299070a5ccb8d4cb1e265db1903e1e
-      internalID: -741364616
+      spriteID: a986ba19103aef645881ebe9339933bf
+      internalID: 1004981561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_1
+      name: Potato_Berserk_WalkDown_1
       rect:
         serializedVersion: 2
         x: 32
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e041f7f87e904b4b9c0c590af2946c0
-      internalID: 90391990
+      spriteID: 36e2c4fbff3825b439a6e2e42bf557c8
+      internalID: 2049694781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_2
+      name: Potato_Berserk_WalkDown_2
       rect:
         serializedVersion: 2
         x: 64
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f3a748bea595c04086fda628f9d469d
-      internalID: -1070943847
+      spriteID: 0e2b2a839dd37f143b2c4b8614970b5b
+      internalID: -1478250465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_3
+      name: Potato_Berserk_WalkDown_3
       rect:
         serializedVersion: 2
         x: 96
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719b5718cbda8bd479fb97c503b0d9a0
-      internalID: 1338136380
+      spriteID: 9bad136d2770f294083863d59023407f
+      internalID: -1224051418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Throw_4
+      name: Potato_Berserk_WalkDown_4
       rect:
         serializedVersion: 2
         x: 128
@@ -234,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f78cf684abc051c4e99497acc01e39ba
-      internalID: 1550917667
+      spriteID: 8ba382d27e54f1a458378afa2bdb9c61
+      internalID: -464461172
       vertices: []
       indices: 
       edges: []
@@ -243,7 +243,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4393595ce3ab1ca49b97277b4824dea9
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -251,11 +251,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Nuggets_Throw_0: -741364616
-      Nuggets_Throw_1: 90391990
-      Nuggets_Throw_2: -1070943847
-      Nuggets_Throw_3: 1338136380
-      Nuggets_Throw_4: 1550917667
+      Potato_Berserk_WalkDown_0: 1004981561
+      Potato_Berserk_WalkDown_1: 2049694781
+      Potato_Berserk_WalkDown_2: -1478250465
+      Potato_Berserk_WalkDown_3: -1224051418
+      Potato_Berserk_WalkDown_4: -464461172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
