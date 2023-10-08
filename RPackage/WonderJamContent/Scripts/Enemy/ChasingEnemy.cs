@@ -66,7 +66,7 @@ namespace Rezoskour.Content
         private TransformAccessArray transformAccessArray;
         protected NativeArray<bool> triggerAttackArray;
         private JobHandle chasingJobHandle;
-
+        private bool isDying = false;
         protected virtual void Start()
         {
             player = FindObjectOfType<PlayerMovement>().gameObject;
@@ -84,16 +84,20 @@ namespace Rezoskour.Content
                 return;
             }
 
-            ChasingEnemyJob chasingJob = new()
+            
+            if(!isDying)
             {
-                playerPosition = targetTransform.position,
-                speed = speed,
-                attackRange = attackRange,
-                deltaTime = Time.deltaTime,
-                triggerAttackArray = triggerAttackArray
-            };
+                ChasingEnemyJob chasingJob = new()
+                {
+                    playerPosition = targetTransform.position,
+                    speed = speed,
+                    attackRange = attackRange,
+                    deltaTime = Time.deltaTime,
+                    triggerAttackArray = triggerAttackArray
+                };
 
-            chasingJobHandle = chasingJob.Schedule(transformAccessArray);
+                chasingJobHandle = chasingJob.Schedule(transformAccessArray);
+            }
         }
 
         protected void LateUpdate()
@@ -165,6 +169,7 @@ namespace Rezoskour.Content
 
         public void Init(Action? _action)
         {
+            isDying = false;
             releaseCallback = _action;
         }
 
@@ -175,12 +180,13 @@ namespace Rezoskour.Content
             maxHealth -= _amount;
             if (maxHealth <= 0)
             {
+                isDying = true;
                 if (CollectableManager.Instance == null)
                 {
                     Debug.LogError("CollectableManager.Instance is null !");
                     return;
                 }
-
+               
                 float range = oilSpawnProbability + expSpawnProbability;
                 float rand = Random.Range(0, range);
                 if (rand <= oilSpawnProbability)
