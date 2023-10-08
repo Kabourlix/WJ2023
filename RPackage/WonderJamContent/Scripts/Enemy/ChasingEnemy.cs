@@ -29,10 +29,9 @@ namespace Rezoskour.Content
         public float attackRange = 1f;
         public GameObject player;
         public bool isDistanceEnemy = false;
-        private bool isOut = true;
         public Animator animator;
         public int damage = 1;
-
+        public AudioSource audioSource;
 
         protected Action? releaseCallback;
 
@@ -126,6 +125,7 @@ namespace Rezoskour.Content
 
         public void Init(Action? _action)
         {
+            maxHealth = 50f;
             GetComponent<Animator>().SetBool("isDead", false);
             isDying = false;
             releaseCallback = _action;
