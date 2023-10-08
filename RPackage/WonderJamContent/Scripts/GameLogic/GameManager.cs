@@ -112,29 +112,30 @@ namespace Rezoskour.Content
         }
 
 
-        public void ChangeState(GameStateName _stateName)
+        public bool ChangeState(GameStateName _stateName)
         {
             if (!isStateSwitchPossible[(int) currentState, (int) _stateName])
             {
                 Debug.Log($"Switch from {currentState} to {_stateName} is impossible.");
-                return;
+                return false;
             }
 
             if (CoolDownSystem.Instance == null)
             {
                 Debug.LogError("CoolDownSystem.Instance is null !");
-                return;
+                return false;
             }
 
             if (_stateName == GameStateName.Berserk && !CoolDownSystem.Instance.IsCoolDownDone(BERSERK_TIMER))
             {
                 //TODO : Add feedback
-                return; //Berserk in cooldown
+                return false; //Berserk in cooldown
             }
 
             allGameStates[currentState].Exit();
             currentState = _stateName;
             allGameStates[currentState].Enter();
+            return true;
         }
 
         #region ChangeStates Callbacks
