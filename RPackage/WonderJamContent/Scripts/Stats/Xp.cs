@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by alexandre buzon on 06
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
@@ -17,10 +17,17 @@ namespace Rezoskour.Content
     {
         private int currentlevel, totalExperience;
         private int previousLevelExperience, nextLevelExperience;
+
         private bool isBerserk;
-        [SerializeField] private AnimationCurve xpCurve = null!;
+
+        //[SerializeField] private AnimationCurve xpCurve = null!;
         [SerializeField] private Slider? xpBar;
         [SerializeField] private TextMeshProUGUI levelTxt = null!;
+
+        private int XpRequiredForLevel(int _level)
+        {
+            return Mathf.FloorToInt(30 * 5 * Mathf.Pow(2, _level));
+        }
 
         private void Start()
         {
@@ -83,15 +90,15 @@ namespace Rezoskour.Content
 
         private void UpdateLevel()
         {
-            previousLevelExperience = (int)xpCurve.Evaluate(currentlevel);
-            nextLevelExperience = (int)xpCurve.Evaluate(currentlevel + 1);
+            previousLevelExperience = XpRequiredForLevel(currentlevel);
+            nextLevelExperience = XpRequiredForLevel(currentlevel + 1);
             UpdateUI();
         }
 
         private void UpdateUI()
         {
-            var start = previousLevelExperience;
-            var end = nextLevelExperience;
+            int start = previousLevelExperience;
+            int end = nextLevelExperience;
 
             if (xpBar == null)
             {
