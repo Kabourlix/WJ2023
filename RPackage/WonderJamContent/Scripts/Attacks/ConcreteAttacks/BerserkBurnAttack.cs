@@ -13,6 +13,15 @@ namespace Rezoskour.Content
 {
     public class BerserkBurnAttack : RAttack
     {
+        [SerializeField] private ParticleSystem berserkEffect = null!;
+        private Vector3 positionAttack;
+        private Transform berserkCachedTransform = null!;
+
+        private void Awake()
+        {
+            berserkCachedTransform = berserkEffect.transform;
+        }
+
         public override IEnumerator PerformCoroutine()
         {
             if (UserTransform == null)
@@ -25,7 +34,8 @@ namespace Rezoskour.Content
             {
                 Collider2D[] hits =
                     Physics2D.OverlapCircleAll(UserTransform.position, data.attackAreaRange, layerMask);
-
+                positionAttack = transform.position;
+                berserkEffect.Play();
                 if (hits.Length == 0)
                 {
                     yield return waitForAttackRefresh;
@@ -44,6 +54,11 @@ namespace Rezoskour.Content
 
                 yield return waitForAttackRefresh;
             }
+        }
+
+        private void Update()
+        {
+            berserkCachedTransform.position = positionAttack;
         }
 
 #if UNITY_EDITOR

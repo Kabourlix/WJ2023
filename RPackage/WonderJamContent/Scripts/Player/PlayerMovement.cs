@@ -4,15 +4,8 @@
 #nullable enable
 
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
-
-// Copyrighted by team Rézoskour
-// Created by corentin vernel on 06
 
 namespace Rezoskour.Content
 {
@@ -96,7 +89,6 @@ namespace Rezoskour.Content
 
         private void Update()
         {
-            
             animator.SetFloat("ordonne", MathF.Abs(moveVector.y));
         }
 
@@ -121,7 +113,8 @@ namespace Rezoskour.Content
                 animator.SetBool("isRight", false);
                 animator.SetBool("isForward", false);
                 animator.SetBool("isDown", true);
-            }else if (moveVector.x > 0 && !facingRight)
+            }
+            else if (moveVector.x > 0 && !facingRight)
             {
                 animator.SetBool("isRight", true);
                 animator.SetBool("isForward", false);
@@ -135,16 +128,15 @@ namespace Rezoskour.Content
                 animator.SetBool("isDown", false);
                 Flip();
             }
-
-            
         }
 
         private void Flip()
         {
-            Vector3 theScale = transform.localScale;
+            Transform spriteTransform = spriteRenderer.transform;
+            Vector3 theScale = spriteTransform.localScale;
             theScale.x *= -1;
             facingRight = !facingRight;
-            transform.localScale = theScale;
+            spriteTransform.localScale = theScale;
         }
 
         private void OnMovementCanceled(InputAction.CallbackContext _ctx)
