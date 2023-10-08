@@ -1,5 +1,5 @@
 // Copyrighted by team Rézoskour
-// Created by alexandre buzon on 06
+// Created by Kabourlix Cendrée on 05
 
 #nullable enable
 
@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using Rezoskour.Content.Misc;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 namespace Rezoskour.Content
@@ -57,27 +58,27 @@ namespace Rezoskour.Content
 
         private readonly Dictionary<GameStateName, GameState> allGameStates = new()
         {
-            { GameStateName.Entry, new EntryState() },
-            { GameStateName.Main, new MainState() },
+            {GameStateName.Entry, new EntryState()},
+            {GameStateName.Main, new MainState()},
             {
                 GameStateName.Berserk,
                 new BerserkState(() => Instance!.SetBerserk(true), () => Instance!.SetBerserk(false))
             },
-            { GameStateName.Pause, new PauseState() },
-            { GameStateName.LevelUp, new LevelUpState(() => Instance!.OnLevelUp?.Invoke()) },
-            { GameStateName.Defeat, new DefeatState(() => Instance!.OnDefeat?.Invoke()) },
-            { GameStateName.Victory, new VictoryState(() => Instance!.OnVictory?.Invoke()) }
+            {GameStateName.Pause, new PauseState()},
+            {GameStateName.LevelUp, new LevelUpState(() => Instance!.OnLevelUp?.Invoke())},
+            {GameStateName.Defeat, new DefeatState(() => Instance!.OnDefeat?.Invoke())},
+            {GameStateName.Victory, new VictoryState(() => Instance!.OnVictory?.Invoke())}
         };
 
         private bool[,] isStateSwitchPossible =
         {
-            { false, true, false, false, false, false, false }, //Entry
-            { false, false, true, true, true, true, true }, //Main
-            { false, true, false, true, false, true, true }, //Berserk
-            { false, true, true, false, false, false, false }, //Pause
-            { false, true, false, false, false, false, false }, //LevelUp
-            { true, false, false, false, false, false, false }, //Defeat
-            { true, false, false, false, false, false, false } //Victory
+            {false, true, false, false, false, false, false}, //Entry
+            {false, false, true, true, true, true, true}, //Main
+            {false, true, false, true, false, true, true}, //Berserk
+            {false, true, true, false, false, false, false}, //Pause
+            {false, true, false, false, false, false, false}, //LevelUp
+            {true, false, false, false, false, false, false}, //Defeat
+            {true, false, false, false, false, false, false} //Victory
         };
 
         private void Start()
@@ -116,7 +117,7 @@ namespace Rezoskour.Content
 
         public bool ChangeState(GameStateName _stateName)
         {
-            if (!isStateSwitchPossible[(int)currentState, (int)_stateName])
+            if (!isStateSwitchPossible[(int) currentState, (int) _stateName])
             {
                 Debug.Log($"Switch from {currentState} to {_stateName} is impossible.");
                 return false;
@@ -163,5 +164,11 @@ namespace Rezoskour.Content
         }
 
         #endregion
+
+        public void GoToMainMenu()
+        {
+            allGameStates[currentState].Exit();
+            SceneManager.LoadScene(0);
+        }
     }
 }

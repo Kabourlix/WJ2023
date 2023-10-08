@@ -16,7 +16,8 @@ namespace Rezoskour.Content
     {
         Fries,
         Ketchup,
-        Nuggets
+        Nuggets,
+        Poutine
     }
 
     public class EnemyPoolManager : MonoBehaviour
@@ -24,6 +25,7 @@ namespace Rezoskour.Content
         [SerializeField] private ChasingEnemy friesPrefab = null!;
         [SerializeField] private ChasingEnemy ketchupPrefab = null!;
         [SerializeField] private ChasingEnemy nuggetsPrefab = null!;
+        [SerializeField] private ChasingEnemy poutinePrefab = null!;
 
         private Dictionary<EnemyType, ObjectPool<ChasingEnemy>> enemyPools = new();
 
@@ -37,6 +39,9 @@ namespace Rezoskour.Content
                     OnReleaseEnemy));
             enemyPools.Add(EnemyType.Nuggets,
                 new ObjectPool<ChasingEnemy>(() => OnCreateEnemyAbstract(nuggetsPrefab, EnemyType.Nuggets), OnGetEnemy,
+                    OnReleaseEnemy));
+            enemyPools.Add(EnemyType.Poutine,
+                new ObjectPool<ChasingEnemy>(() => OnCreateEnemyAbstract(poutinePrefab, EnemyType.Poutine), OnGetEnemy,
                     OnReleaseEnemy));
         }
 
