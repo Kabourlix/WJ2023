@@ -43,12 +43,12 @@ namespace Rezoskour.Content
             public float attackRange;
             public float deltaTime;
             public NativeArray<bool> triggerAttackArray;
-
+            
             public void Execute(int _index, TransformAccess _transform)
             {
+              
                 Vector3 enemyToPlayer = -playerPosition + _transform.position;
                 float sqrDistance = Vector3.SqrMagnitude(enemyToPlayer);
-                Debug.Log(sqrDistance);
                 if (sqrDistance > attackRange * attackRange)
                 {
                     Vector3 direction = (playerPosition - _transform.position).normalized;
@@ -57,16 +57,9 @@ namespace Rezoskour.Content
                 }
                 else
                 {
-                    Debug.Log("atteint");
                     triggerAttackArray[0] = true;
                 }
-
-                //Update flip logic here
-                // var theScale = _transform.localScale;
-                // theScale.x *= enemyToPlayer.x < 0 ? -1 : 1;
-                // _transform.localScale = theScale;
             }
-
             
         }
         private TransformAccessArray transformAccessArray;

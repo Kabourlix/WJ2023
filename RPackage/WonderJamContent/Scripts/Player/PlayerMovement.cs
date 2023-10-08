@@ -96,7 +96,8 @@ namespace Rezoskour.Content
 
         private void Update()
         {
-            animator.SetFloat("Speed", MathF.Abs(moveVector.x));
+            
+            animator.SetFloat("ordonne", MathF.Abs(moveVector.y));
         }
 
         private void OnMovementPerformed(InputAction.CallbackContext _ctx)
@@ -109,14 +110,33 @@ namespace Rezoskour.Content
 
             moveVector = _ctx.ReadValue<Vector2>();
             GameManager.PlayerLookDirection = moveVector.normalized;
-            if (moveVector.x > 0 && !facingRight)
+            if (moveVector.y > 0)
             {
+                animator.SetBool("isRight", false);
+                animator.SetBool("isForward", true);
+                animator.SetBool("isDown", false);
+            }
+            else if (moveVector.y < 0)
+            {
+                animator.SetBool("isRight", false);
+                animator.SetBool("isForward", false);
+                animator.SetBool("isDown", true);
+            }else if (moveVector.x > 0 && !facingRight)
+            {
+                animator.SetBool("isRight", true);
+                animator.SetBool("isForward", false);
+                animator.SetBool("isDown", false);
                 Flip();
             }
             else if (moveVector.x < 0 && facingRight)
             {
+                animator.SetBool("isRight", true);
+                animator.SetBool("isForward", false);
+                animator.SetBool("isDown", false);
                 Flip();
             }
+
+            
         }
 
         private void Flip()

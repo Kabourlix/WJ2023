@@ -23,7 +23,6 @@ namespace Rezoskour.Content
         private bool firstwave = true;
         private void Awake()
         {
-            CoolDownSystem.Instance.TryRegisterCoolDown("EnemySpawner", 0.5f);
             random = new Random((uint) Environment.TickCount);
         }
 
@@ -67,30 +66,25 @@ namespace Rezoskour.Content
                         float cameraWidth = cameraHeight * playerCamera.aspect;
                         float2 spawnPosition;
                         Vector3 cameraPosition = playerCamera.transform.position;
-                        if (random.NextBool())
+                        do
                         {
-                            // Moitié supérieure
                             spawnPosition =
                                 random.NextFloat2(
-                                    new float2(cameraPosition.x - cameraWidth, cameraPosition.y + cameraWidth),
-                                    new float2(cameraPosition.y, cameraPosition.y + cameraHeight));
-                        }
-                        else
-                        {
-                            // Moitié inférieure
-                            spawnPosition =
-                                random.NextFloat2(
-                                    new float2(cameraPosition.x - cameraWidth, cameraPosition.x + cameraWidth),
-                                    new float2(cameraPosition.y - cameraHeight, cameraPosition.y));
-                        }
-
+                                    new float2(22, 6),
+                                    new float2(-22, -6));
+                        }while (IsInRange(spawnPosition, cameraPosition, cameraWidth, cameraHeight));
                         Vector3 spawnPoint = new(spawnPosition.x, spawnPosition.y, 0f);
                         ChasingEnemy enemyCurve = enemyPoolManager.GetEnemy(index.enemyType);
                         enemyCurve.transform.position = spawnPoint;
-                        if (CoolDownSystem.Instance != null) CoolDownSystem.Instance.StartTimer("EnemySpawner");
                     }
                 }
             }
+        }
+
+        private bool IsInRange(float2 spawnPosition, Vector3 cameraPosition, float cameraWidth, float cameraHeight)
+        {
+            return spawnPosition.x < cameraPosition.x + cameraWidth && spawnPosition.x > cameraPosition.x - cameraWidth &&
+                   spawnPosition.y < cameraPosition.y + cameraHeight && spawnPosition.y > cameraPosition.y - cameraHeight;
         }
     }
 }

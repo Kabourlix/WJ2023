@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &732639736062337144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 506963805690689722}
+  m_Layer: 0
+  m_Name: SpawnArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &506963805690689722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732639736062337144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 215865542570452446}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2111188726550187598
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,9 +60,10 @@ Transform:
   m_LocalPosition: {x: -1.4275916, y: -1.1300105, z: 0.036434565}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 506963805690689722}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2459409638832088291
 MonoBehaviour:
@@ -45,8 +77,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530950a37b7c26349b811fbd66308c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveData: {fileID: 11400000, guid: bbf7bf6802f4b694c9f9ed23869382ea, type: 2}
   enemyPoolManager: {fileID: 6895731602551558137}
-  spawnInterval: 2
+  spawnInterval: 30
 --- !u!114 &6895731602551558137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +92,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05fcd4776e109ae4588b2a66b5ec6d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friesPrefab: {fileID: 3277487655782272068, guid: 050cd94cbf63ab94caac14c64dbda236,
+  friesPrefab: {fileID: 4328989533796829830, guid: 050cd94cbf63ab94caac14c64dbda236,
     type: 3}
-  ketchupPrefab: {fileID: 7862203409757682670, guid: c5fedb2b3f5d27844bf0c94c64f07206,
+  ketchupPrefab: {fileID: 8349145685353028532, guid: c5fedb2b3f5d27844bf0c94c64f07206,
+    type: 3}
+  nuggetsPrefab: {fileID: 5447851060288806664, guid: dae9168e18a2f7b4a879ece4ae5a82c5,
     type: 3}

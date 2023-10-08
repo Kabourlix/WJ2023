@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2823205249337065958}
   - component: {fileID: 8272780438318070906}
-  - component: {fileID: 4328989533796829830}
+  - component: {fileID: 4581122833662048057}
+  - component: {fileID: 8349145685353028532}
   - component: {fileID: 7886552022525197843}
-  - component: {fileID: 5803472808949600037}
+  - component: {fileID: 4936459711333204654}
   m_Layer: 7
-  m_Name: EnemyCAC
+  m_Name: KetchupEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707601012864278628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.88, y: 0.42, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -76,18 +77,18 @@ SpriteRenderer:
   m_SortingLayerID: -144420043
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 535419956, guid: d33b3e8a2b9fabb4fa1cdc9e935f6b92, type: 3}
+  m_Sprite: {fileID: 1043695040, guid: 7af23b2c6918f0f40aba387d76c7fab1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.24, y: 0.22}
+  m_Size: {x: 0.14, y: 0.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4328989533796829830
+--- !u!114 &4581122833662048057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,19 +97,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 707601012864278628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d770e6b51346a4a9fb83d48b2b8417, type: 3}
+  m_Script: {fileID: 11500000, guid: aaf2c3ca316b46f098025f5bd5145590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oilSpawnProbability: 0.4
-  expSpawnProbability: 0.6
-  maxHealth: 20
+  startAttack: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  allAttacks:
+  - {fileID: 3798810017300859789, guid: 53228178c74d24248bde9465c63262ab, type: 3}
+--- !u!114 &8349145685353028532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707601012864278628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df76cb2558ba4304986d436e1e92c545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oilSpawnProbability: 0.5
+  expSpawnProbability: 0.5
+  maxHealth: 1
   targetTransform: {fileID: 0}
   speed: 1
-  attackRange: 1
+  attackRange: 3
   player: {fileID: 0}
-  isDistanceEnemy: 0
-  animator: {fileID: 5803472808949600037}
-  damage: 0
+  isDistanceEnemy: 1
+  animator: {fileID: 4936459711333204654}
+  damage: 1
+  projectilePrefab: {fileID: 447084660911836828, guid: 325b88c097de6364eb26350904d67476,
+    type: 3}
 --- !u!61 &7886552022525197843
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,23 +159,23 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013538934, y: 0.0013792962}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 0.6875}
-    newSize: {x: 0.24, y: 0.22}
+    oldSize: {x: 0.4375, y: 0.71875}
+    newSize: {x: 0.14, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2815525, y: 0.23590216}
+  m_Size: {x: 0.4375, y: 0.71875}
   m_EdgeRadius: 0
---- !u!95 &5803472808949600037
+--- !u!95 &4936459711333204654
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -164,7 +185,7 @@ Animator:
   m_GameObject: {fileID: 707601012864278628}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 302dc53d9dd9969409d576e13f633631, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7de2597d97ec39d4496163dd2bcac100, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
