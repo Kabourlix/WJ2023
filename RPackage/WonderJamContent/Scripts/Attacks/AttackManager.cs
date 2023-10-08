@@ -89,7 +89,7 @@ namespace Rezoskour.Content
 
             currentAttacks.Remove(_name, out RAttack toRemove);
             toRemove.StopAttacking();
-            Destroy(toRemove);
+            Destroy(toRemove.gameObject);
             return true;
         }
 

@@ -132,10 +132,11 @@ namespace Rezoskour.Content
 
         private void Flip()
         {
-            Vector3 theScale = transform.localScale;
+            Transform spriteTransform = spriteRenderer.transform;
+            Vector3 theScale = spriteTransform.localScale;
             theScale.x *= -1;
             facingRight = !facingRight;
-            transform.localScale = theScale;
+            spriteTransform.localScale = theScale;
         }
 
         private void OnMovementCanceled(InputAction.CallbackContext _ctx)

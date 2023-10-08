@@ -40118,6 +40118,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 665446823998649962, guid: e69ef513c220c0f4a8ddcf805c4308a3,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1441524344014977481, guid: e69ef513c220c0f4a8ddcf805c4308a3,
         type: 3}
       propertyPath: oilLossSpeedBerserk
