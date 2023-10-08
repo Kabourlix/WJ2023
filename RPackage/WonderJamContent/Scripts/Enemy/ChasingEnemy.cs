@@ -66,7 +66,7 @@ namespace Rezoskour.Content
         private TransformAccessArray transformAccessArray;
         protected NativeArray<bool> triggerAttackArray;
         private JobHandle chasingJobHandle;
-        private bool isDying = false;
+        protected bool isDying = false;
         protected virtual void Start()
         {
             player = FindObjectOfType<PlayerMovement>().gameObject;
@@ -124,6 +124,7 @@ namespace Rezoskour.Content
 
         public void Init(Action? _action)
         {
+            GetComponent<Animator>().SetBool("isDead", false);
             isDying = false;
             releaseCallback = _action;
         }

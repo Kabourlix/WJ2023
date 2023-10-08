@@ -17,7 +17,8 @@ namespace Rezoskour.Content.Collectable
     {
         Health,
         Oil,
-        Experience
+        Experience,
+        Weapon
     }
 
     public class CollectableItem : MonoBehaviour

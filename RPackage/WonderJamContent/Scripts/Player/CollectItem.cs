@@ -22,6 +22,7 @@ namespace Rezoskour.Content
         private HealthManager _healthManager;
         private Xp _xp;
         private OilComponent _oil;
+        private AttackManager _weapon;
 
         private void Start()
         {
@@ -29,7 +30,7 @@ namespace Rezoskour.Content
             _healthManager = GetComponentInParent<HealthManager>();
             _xp = GetComponentInParent<Xp>();
             _oil = GetComponentInParent<OilComponent>();
-
+            _weapon = GetComponentInParent<AttackManager>();
             collectRangeRadius = _stats.CurrentStats.collectRange;
             collectRange.radius = collectRangeRadius;
         }
@@ -50,6 +51,9 @@ namespace Rezoskour.Content
                         break;
                     case CollectableType.Oil:
                         obj.gainCallback = () => _oil.RefillOil(obj.Value);
+                        break;
+                    case CollectableType.Weapon:
+                        obj.gainCallback = () => _weapon.TryAddAttack((AttackName)obj.Value,true);
                         break;
                 }
 

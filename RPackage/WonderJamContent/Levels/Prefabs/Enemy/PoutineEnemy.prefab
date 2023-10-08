@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9150854900143915012}
   - component: {fileID: 5182030859366578947}
   - component: {fileID: 144115373399967145}
-  - component: {fileID: -9081196658562994359}
+  - component: {fileID: 1880391249410633746}
   m_Layer: 7
   m_Name: PoutineEnemy
   m_TagString: Untagged
@@ -153,7 +153,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-9081196658562994359
+--- !u!114 &1880391249410633746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,16 +162,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5920860710688609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55d770e6b51346a4a9fb83d48b2b8417, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ac9e736458e46a6878a6db59ba3ef2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   oilSpawnProbability: 0
-  expSpawnProbability: 1
-  maxHealth: 15
+  expSpawnProbability: 0
+  maxHealth: 100
   targetTransform: {fileID: 0}
   speed: 0.5
   attackRange: 2
   player: {fileID: 0}
   isDistanceEnemy: 0
   animator: {fileID: 144115373399967145}
-  damage: 2
+  damage: 0

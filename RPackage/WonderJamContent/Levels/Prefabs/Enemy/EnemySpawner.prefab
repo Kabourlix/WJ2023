@@ -48,6 +48,8 @@ MonoBehaviour:
   waveData: {fileID: 11400000, guid: bbf7bf6802f4b694c9f9ed23869382ea, type: 2}
   enemyPoolManager: {fileID: 6895731602551558137}
   spawnInterval: 30
+  width: 22
+  height: 6
 --- !u!114 &6895731602551558137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,5 +68,5 @@ MonoBehaviour:
     type: 3}
   nuggetsPrefab: {fileID: 5447851060288806664, guid: dae9168e18a2f7b4a879ece4ae5a82c5,
     type: 3}
-  poutinePrefab: {fileID: -9081196658562994359, guid: edb804a516fe37648bfe77e8a53fe2b2,
+  poutinePrefab: {fileID: 1880391249410633746, guid: edb804a516fe37648bfe77e8a53fe2b2,
     type: 3}

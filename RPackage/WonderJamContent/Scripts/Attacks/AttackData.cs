@@ -10,10 +10,10 @@ namespace Rezoskour.Content
 {
     public enum AttackName
     {
-        Basic,
-        Range,
-        BerserkBurn,
-        LaMortQuiTue
+        Basic = 0,
+        Range = 1,
+        BerserkBurn = 2,
+        LaMortQuiTue = 3
     }
 
     [CreateAssetMenu(fileName = "AttackData", menuName = "Rezoskour/AttackData", order = 0)]

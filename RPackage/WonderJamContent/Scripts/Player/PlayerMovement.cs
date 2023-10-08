@@ -21,7 +21,6 @@ namespace Rezoskour.Content
         private Vector2 moveVector = Vector2.zero;
         private Rigidbody2D rb = null!;
         private bool facingRight = true;
-        public GameObject enemyPrefab;
 
         private GameManager? GameManager => GameManager.Instance;
 

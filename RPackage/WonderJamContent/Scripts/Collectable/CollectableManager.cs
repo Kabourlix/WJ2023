@@ -21,6 +21,7 @@ namespace Rezoskour.Content.Collectable
         [SerializeField] private GameObject? oilPrefab;
         [SerializeField] private GameObject? experiencePrefab;
         [SerializeField] private GameObject? healPrefab;
+        [SerializeField] private GameObject? weaponPrefab;
 
         private void Awake()
         {
@@ -98,6 +99,10 @@ namespace Rezoskour.Content.Collectable
         public void SpawnHeal(Vector3 _spawnPosition, Quaternion _spawnRotation)
         {
             SpawnObject(healPrefab, _spawnPosition, _spawnRotation);
+        }
+        public void SpawnWeapon(Vector3 _spawnPosition, Quaternion _spawnRotation)
+        {
+            SpawnObject(weaponPrefab, _spawnPosition, _spawnRotation);
         }
     }
 
