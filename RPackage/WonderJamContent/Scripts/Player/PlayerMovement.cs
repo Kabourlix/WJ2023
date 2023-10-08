@@ -90,6 +90,7 @@ namespace Rezoskour.Content
         private void Update()
         {
             animator.SetFloat("ordonne", MathF.Abs(moveVector.y));
+            animator.SetFloat("Speed", MathF.Abs(moveVector.x));
         }
 
         private void OnMovementPerformed(InputAction.CallbackContext _ctx)
@@ -102,30 +103,45 @@ namespace Rezoskour.Content
 
             moveVector = _ctx.ReadValue<Vector2>();
             GameManager.PlayerLookDirection = moveVector.normalized;
-            if (moveVector.y > 0)
+            if (moveVector.y > 0 && moveVector.x == 0)
             {
                 animator.SetBool("isRight", false);
                 animator.SetBool("isForward", true);
                 animator.SetBool("isDown", false);
             }
-            else if (moveVector.y < 0)
+            else if (moveVector.y < 0 && moveVector.x == 0)
             {
                 animator.SetBool("isRight", false);
                 animator.SetBool("isForward", false);
                 animator.SetBool("isDown", true);
             }
-            else if (moveVector.x > 0 && !facingRight)
+            else if (moveVector.x > 0)
             {
                 animator.SetBool("isRight", true);
                 animator.SetBool("isForward", false);
                 animator.SetBool("isDown", false);
+                
+            }
+            else if (moveVector.x < 0)
+            {
+                animator.SetBool("isRight", true);
+                animator.SetBool("isForward", false);
+                animator.SetBool("isDown", false);
+                
+            }
+            else
+            {
+                animator.SetBool("isRight", false);
+                animator.SetBool("isForward", false);
+                animator.SetBool("isDown", false);
+            }
+            
+            if (moveVector.x > 0 && !facingRight)
+            {
                 Flip();
             }
             else if (moveVector.x < 0 && facingRight)
             {
-                animator.SetBool("isRight", true);
-                animator.SetBool("isForward", false);
-                animator.SetBool("isDown", false);
                 Flip();
             }
         }
