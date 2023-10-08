@@ -1,10 +1,11 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 08
+// Created by alexandre buzon on 08
 
 #nullable enable
 
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Rezoskour.Content.UI
 {
@@ -14,6 +15,9 @@ namespace Rezoskour.Content.UI
         [SerializeField] private GameObject hud = null!;
         [SerializeField] private GameObject victoryMessage = null!;
         [SerializeField] private GameObject defeatMessage = null!;
+        [SerializeField] private GameObject menuButton = null!;
+
+        private EventSystem eventSystem = null!;
 
         private GameManager? Manager => GameManager.Instance;
 
@@ -27,6 +31,8 @@ namespace Rezoskour.Content.UI
 
             Manager.OnDefeat += DefeatHandler;
             Manager.OnVictory += VictoryHandler;
+
+            eventSystem = EventSystem.current;
         }
 
         private void OnDestroy()
@@ -58,6 +64,7 @@ namespace Rezoskour.Content.UI
             hud.SetActive(false);
             victoryMessage.SetActive(_isVictory);
             defeatMessage.SetActive(!_isVictory);
+            eventSystem.SetSelectedGameObject(menuButton);
         }
     }
 }
