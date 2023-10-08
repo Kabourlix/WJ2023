@@ -28,6 +28,7 @@
                 maxHealth -= _amount;
                 if (maxHealth <= 0)
                 {
+                    chasingJobHandle.Complete();
                     triggerAttackArray[0] = false;
                     isDying = true;
                     if (CollectableManager.Instance == null)

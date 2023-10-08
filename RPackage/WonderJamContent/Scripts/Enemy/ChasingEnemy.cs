@@ -65,8 +65,9 @@ namespace Rezoskour.Content
 
         private TransformAccessArray transformAccessArray;
         protected NativeArray<bool> triggerAttackArray;
-        private JobHandle chasingJobHandle;
+        protected JobHandle chasingJobHandle;
         protected bool isDying = false;
+
         protected virtual void Start()
         {
             player = FindObjectOfType<PlayerMovement>().gameObject;
@@ -83,7 +84,8 @@ namespace Rezoskour.Content
             {
                 return;
             }
-            if(!isDying)
+
+            if (!isDying)
             {
                 ChasingEnemyJob chasingJob = new()
                 {
@@ -136,6 +138,7 @@ namespace Rezoskour.Content
             maxHealth -= _amount;
             if (maxHealth <= 0)
             {
+                chasingJobHandle.Complete();
                 triggerAttackArray[0] = false;
                 isDying = true;
                 if (CollectableManager.Instance == null)
@@ -143,7 +146,7 @@ namespace Rezoskour.Content
                     Debug.LogError("CollectableManager.Instance is null !");
                     return;
                 }
-               
+
                 float range = oilSpawnProbability + expSpawnProbability;
                 float rand = Random.Range(0, range);
                 if (rand <= oilSpawnProbability)
