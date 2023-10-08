@@ -65,7 +65,7 @@ namespace Rezoskour.Content
 
         private TransformAccessArray transformAccessArray;
         protected NativeArray<bool> triggerAttackArray;
-        private JobHandle chasingJobHandle;
+        protected JobHandle chasingJobHandle;
         protected bool isDying = false;
 
         protected virtual void Start()

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: IncreaseReduceDamage
   m_EditorClassIdentifier: 
   statImage: {fileID: 0}
-  statTitle: Increase Attack
-  statDescription: +20% Attack
+  statTitle: Increase Damage Reduction
+  statDescription: +20% Damage reduction
   statName: 9
-  multiplier: 0
+  multiplier: -0.2
   addValue: 0

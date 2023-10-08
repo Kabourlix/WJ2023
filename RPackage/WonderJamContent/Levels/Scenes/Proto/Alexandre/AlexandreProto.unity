@@ -795,7 +795,6 @@ MonoBehaviour:
   berserkSprite: {fileID: 1498947119, guid: c8ba5a90d6ebc094f92ce138121212ca, type: 3}
   animator: {fileID: 8703923357076955551}
   normalSprite: {fileID: -1346753488, guid: c3db50ba229cc3c439e556b60c1fe533, type: 3}
-  enemyPrefab: {fileID: 0}
 --- !u!114 &2344559531754335375
 MonoBehaviour:
   m_ObjectHideFlags: 0

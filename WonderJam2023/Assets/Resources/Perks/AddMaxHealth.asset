@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statImage: {fileID: -1676396626, guid: 52ea439f0ef9ef74f9e61144fd95efc0, type: 3}
   statTitle: Increase Health
-  statDescription: +10 Max health
+  statDescription: +10 Max health, +10 Health
   statName: 1
   multiplier: 0
   addValue: 10
