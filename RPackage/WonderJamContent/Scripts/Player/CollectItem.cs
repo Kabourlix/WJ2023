@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 07
 
 #nullable enable
 
@@ -23,7 +23,8 @@ namespace Rezoskour.Content
         private Xp _xp;
         private OilComponent _oil;
         private AttackManager _weapon;
-        public event Action<Boolean>? OnGetMeleeWeapon;
+        public event Action<bool>? OnGetMeleeWeapon;
+
         private void Start()
         {
             OnGetMeleeWeapon?.Invoke(false);
@@ -32,6 +33,11 @@ namespace Rezoskour.Content
             _xp = GetComponentInParent<Xp>();
             _oil = GetComponentInParent<OilComponent>();
             _weapon = GetComponentInParent<AttackManager>();
+            UpdateCollectRange();
+        }
+
+        public void UpdateCollectRange()
+        {
             collectRangeRadius = _stats.CurrentStats.collectRange;
             collectRange.radius = collectRangeRadius;
         }
@@ -41,7 +47,7 @@ namespace Rezoskour.Content
             if (collectLayer.Has(_other.gameObject.layer))
             {
                 Debug.Log("Collecting item");
-                CollectableItem? obj = _other.gameObject.GetComponent<CollectableItem>();
+                var obj = _other.gameObject.GetComponent<CollectableItem>();
                 switch (obj.Type)
                 {
                     case CollectableType.Experience:
@@ -55,7 +61,7 @@ namespace Rezoskour.Content
                         break;
                     case CollectableType.Weapon:
                         OnGetMeleeWeapon?.Invoke(true);
-                        obj.gainCallback = () => _weapon.TryAddAttack((AttackName)obj.Value,true);
+                        obj.gainCallback = () => _weapon.TryAddAttack((AttackName)obj.Value, true);
                         break;
                 }
 
