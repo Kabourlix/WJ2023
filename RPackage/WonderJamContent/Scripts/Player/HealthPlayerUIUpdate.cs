@@ -45,25 +45,17 @@ namespace Rezoskour.Content
             {
                 hpBar.value = healthManager.HealthPercent;
                 Debug.Log(hpBar.value);
-                StartCoroutine(BlinkHealth());
+                StopCoroutine(BlinkHealth(1f));
+                StartCoroutine(BlinkHealth(1f));
                 healthTxt.text = $"{_newHealth}";
             }
         }
 
-        private IEnumerator BlinkHealth()
+        private IEnumerator BlinkHealth(float _time)
         {
-            var time = 0f;
-            while (time <= 1f)
-            {
-                time += Time.deltaTime * 1.5f;
-                healthTxt.color = Color.black;
-                healthImage.color = Color.black;
-                yield return new WaitForSeconds(0.2f);
-                healthTxt.color = Color.white;
-                healthImage.color = Color.white;
-                yield return new WaitForSeconds(0.2f);
-            }
-
+            healthTxt.color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time * 1.5f, 1));
+            healthImage.color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time * 1.5f, 1));
+            yield return new WaitForSeconds(_time);
             healthTxt.color = Color.white;
             healthImage.color = Color.white;
         }
