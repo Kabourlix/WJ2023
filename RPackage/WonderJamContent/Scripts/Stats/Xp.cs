@@ -55,8 +55,9 @@ namespace Rezoskour.Content
         public void AddXp(int _xp)
         {
             totalExperience += _xp;
-            xpBar.value = totalExperience;
-            CheckForLevelUp();
+            LeanTween.value(xpBar.value, totalExperience, 0.5f).setOnUpdate((float _value) => { xpBar.value = _value; })
+                .setOnComplete(
+                    () => { CheckForLevelUp(); });
         }
 
         private void CheckForLevelUp()

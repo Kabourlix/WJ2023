@@ -45,8 +45,8 @@ namespace Rezoskour.Content
             {
                 hpBar.value = healthManager.HealthPercent;
                 Debug.Log(hpBar.value);
-                StopCoroutine(BlinkHealth(1f));
-                StartCoroutine(BlinkHealth(1f));
+                //StopCoroutine(BlinkHealth(1f));
+                //StartCoroutine(BlinkHealth(1f));
                 healthTxt.text = $"{_newHealth}";
             }
         }
