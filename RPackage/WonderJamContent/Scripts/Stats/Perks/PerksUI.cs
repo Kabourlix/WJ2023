@@ -16,14 +16,14 @@ namespace Rezoskour.Content
 {
     public class PerksUI : MonoBehaviour
     {
-        public PerksData perksData = null!;
+        public PerksData perksData;
         private PerksUpdateManager perksUpdateManager = null!;
         [SerializeField] private Image perksImage = null!;
         [SerializeField] private TextMeshProUGUI perksTitle = null!;
         [SerializeField] private TextMeshProUGUI perksDescription = null!;
         [SerializeField] private Button button = null!;
 
-        public void Init(PerksUpdateManager _perksUpdateManager, PerksData _perksData)
+        public void Init(PerksUpdateManager _perksUpdateManager)
         {
             perksUpdateManager = _perksUpdateManager;
             perksImage.sprite = perksData.StatImage;

@@ -51,13 +51,13 @@ namespace Rezoskour.Content
                 copyListPerksData.RemoveAt(randomIndex);
             }
 
+            PerksUI.SetActive(true);
             foreach (var rndPerks in randomPerks)
             {
                 var perks = Instantiate(PerksPrefab, PerksParent.transform);
-                perks.GetComponent<PerksUI>().Init(this, rndPerks);
+                perks.GetComponent<PerksUI>().perksData = rndPerks;
+                perks.GetComponent<PerksUI>().Init(this);
             }
-
-            PerksUI.SetActive(true);
         }
 
         private string GetStatsTxt()
@@ -153,13 +153,14 @@ namespace Rezoskour.Content
                     break;
             }
 
-            PerksUI.SetActive(false);
             GameManager.Instance.ChangeState(GameStateName.Main);
             //Delete all perks prefab in PerksParent
             foreach (Transform child in PerksParent.transform)
             {
                 Destroy(child.gameObject);
             }
+
+            PerksUI.SetActive(false);
         }
     }
 }
