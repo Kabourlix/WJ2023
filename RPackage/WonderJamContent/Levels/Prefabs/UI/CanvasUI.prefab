@@ -329,7 +329,6 @@ GameObject:
   - component: {fileID: 406385779988076350}
   - component: {fileID: 8685228127041939047}
   - component: {fileID: 145556192945255823}
-  - component: {fileID: 3380549704878610543}
   - component: {fileID: 1876894168929451982}
   m_Layer: 5
   m_Name: PlayerHP
@@ -407,23 +406,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!114 &3380549704878610543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989259439218636849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &1876894168929451982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2407,6 @@ GameObject:
   - component: {fileID: 3918858356842906736}
   - component: {fileID: 557255594379615382}
   - component: {fileID: 1945434782296692555}
-  - component: {fileID: 6138828586874919439}
   - component: {fileID: 5745932365770711096}
   m_Layer: 5
   m_Name: PlayerHungry
@@ -2505,23 +2486,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!114 &6138828586874919439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7660125879874712870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &5745932365770711096
 MonoBehaviour:
   m_ObjectHideFlags: 0

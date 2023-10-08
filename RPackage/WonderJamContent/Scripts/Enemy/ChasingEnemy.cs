@@ -83,8 +83,6 @@ namespace Rezoskour.Content
             {
                 return;
             }
-
-            
             if(!isDying)
             {
                 ChasingEnemyJob chasingJob = new()
@@ -123,47 +121,6 @@ namespace Rezoskour.Content
         protected abstract void PerformAttack();
 
         protected virtual void StopPerform() { }
-        // private void OnTriggerEnter2D(Collider2D other)
-        // {
-        //
-        //     if (other.CompareTag("Player"))
-        //     {
-        //         animator.SetFloat("Speed", 0);
-        //         isOut = false;
-        //
-        //         StartCoroutine(StayInRange(other));
-        //     }
-        // }
-        // private void OnTriggerExit2D(Collider2D other)
-        // {
-        //     if (other.CompareTag("Player"))
-        //     {
-        //         animator.SetBool("isAttacking", false);
-        //         isOut = true;
-        //         StopCoroutine(StayInRange(other));
-        //     }
-        // }
-        //
-        // private IEnumerator StayInRange(Collider2D other)
-        // {
-        //     yield return new WaitForSeconds(0.5f);
-        //     animator.SetBool("isAttacking", true);
-        //     if (!isDistanceEnemy)
-        //     {
-        //         if (other.TryGetComponent(out IHealth health))
-        //         {
-        //             health.Damage(damage);
-        //         }
-        //     }
-        //
-        //     yield return new WaitForSeconds(0.5f);
-        //     animator.SetBool("isAttacking", false);
-        //     yield return new WaitForSeconds(2f);
-        //     if (!isOut)
-        //     {
-        //         OnTriggerEnter2D(player.GetComponent<Collider2D>());
-        //     }
-        // }
 
         public void Init(Action? _action)
         {
@@ -178,6 +135,7 @@ namespace Rezoskour.Content
             maxHealth -= _amount;
             if (maxHealth <= 0)
             {
+                triggerAttackArray[0] = false;
                 isDying = true;
                 if (CollectableManager.Instance == null)
                 {

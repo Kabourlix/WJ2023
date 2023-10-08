@@ -57,8 +57,6 @@ namespace Rezoskour.Content
             enemy.name = $"Enemy {_prefab.name + 1}";
             enemy.Init(() => OnEnemyDeath(enemy, _type));
             
-            //Jouer mon animation
-            
             return enemy;
         }
 

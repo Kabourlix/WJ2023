@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oilSpawnProbability: 0.5
   expSpawnProbability: 0.5
-  maxHealth: 200
+  maxHealth: 20
   targetTransform: {fileID: 0}
   speed: 1
   attackRange: 3
@@ -130,6 +130,9 @@ MonoBehaviour:
   isDistanceEnemy: 1
   animator: {fileID: 4936459711333204654}
   damage: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &7886552022525197843
 BoxCollider2D:
   m_ObjectHideFlags: 0
