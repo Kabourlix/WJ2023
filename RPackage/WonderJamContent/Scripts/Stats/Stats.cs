@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 06
 
 #nullable enable
 
@@ -19,7 +19,6 @@ namespace Rezoskour.Content
         MaxHealth,
         Oil,
         MaxOil,
-        Attack,
         CollectRange,
         Range,
         Speed,
@@ -39,16 +38,14 @@ namespace Rezoskour.Content
 
         public int maxOil;
 
-        public int attack;
-
-        [Min(1)] public float collectRange;
+        [Range(1, 4)] public float collectRange;
 
         public int range;
 
         public float speed;
 
         [HideInInspector] public float globalDamageMultiplier = 1;
-        [HideInInspector] public float globalDamageReductor = 1;
+        [Range(0.5f, 1f)] [HideInInspector] public float globalDamageReductor = 1;
         [HideInInspector] public float globalAttackRateMultiplier = 1;
 
         /*
@@ -88,7 +85,6 @@ namespace Rezoskour.Content
 
         public void BerserkMode()
         {
-            attack *= 3;
             collectRange *= 3;
             range *= 3;
             speed *= 3;

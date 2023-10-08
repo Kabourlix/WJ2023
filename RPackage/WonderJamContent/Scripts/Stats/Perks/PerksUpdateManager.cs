@@ -9,6 +9,7 @@ using System.Linq;
 using Rezoskour.Content.Perks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Rezoskour.Content
@@ -21,7 +22,12 @@ namespace Rezoskour.Content
         [SerializeField] private GameObject PerksPrefab = null!;
         [SerializeField] private GameObject PerksParent = null!;
 
-        [SerializeField] private PlayerStats playerStats = null!;
+        private PlayerStats playerStats = null!;
+        private AttackManager attackManager = null!;
+        private CollectItem collectItem = null!;
+        private HealthManager healthManager = null!;
+        private OilComponent oilComponent = null!;
+        private EventSystem eventSystem = null!;
 
         [SerializeField] private TextMeshProUGUI playerStatsTxt = null!;
 
@@ -30,7 +36,13 @@ namespace Rezoskour.Content
         {
             listPerksData = Resources.LoadAll<PerksData>("Perks/").ToList();
             GameManager.Instance.OnLevelUp += LootPerks;
-            playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
+            var player = GameObject.FindWithTag("Player");
+            playerStats = player.GetComponent<PlayerStats>();
+            attackManager = player.GetComponent<AttackManager>();
+            collectItem = player.GetComponentInChildren<CollectItem>();
+            healthManager = player.GetComponent<HealthManager>();
+            oilComponent = player.GetComponent<OilComponent>();
+            eventSystem = FindObjectOfType<EventSystem>();
         }
 
         private void OnDestroy()
@@ -58,6 +70,8 @@ namespace Rezoskour.Content
                 perks.GetComponent<PerksUI>().perksData = rndPerks;
                 perks.GetComponent<PerksUI>().Init(this);
             }
+
+            eventSystem.SetSelectedGameObject(PerksParent.transform.GetChild(0).gameObject);
         }
 
         private string GetStatsTxt()
@@ -66,10 +80,11 @@ namespace Rezoskour.Content
             statsTxt += "Max Health: " + playerStats.CurrentStats.maxHealth + "\n";
             statsTxt += "Max Oil: " + playerStats.CurrentStats.maxOil + "\n";
 
-            statsTxt += "Attack: " + playerStats.CurrentStats.attack + "\n";
+            statsTxt += "Attack: " + playerStats.CurrentStats.globalDamageMultiplier + "\n";
             statsTxt += "Attack Range: " + playerStats.CurrentStats.range + "\n";
 
             statsTxt += "Speed: " + playerStats.CurrentStats.speed + "\n";
+            statsTxt += "Damage Reduction: " + playerStats.CurrentStats.globalDamageReductor + "\n";
             statsTxt += "Collect Range: " + playerStats.CurrentStats.collectRange + "\n";
             return statsTxt;
         }
@@ -83,26 +98,17 @@ namespace Rezoskour.Content
 
             switch (_name)
             {
-                case StatName.Attack:
-                    if (_addValue > 0)
-                    {
-                        playerStats.CurrentStats.attack += (int)_addValue;
-                    }
-                    else
-                    {
-                        playerStats.CurrentStats.attack = (int)(playerStats.CurrentStats.attack * (1 + _multiplyValue));
-                    }
-
-                    break;
                 case StatName.MaxHealth:
                     if (_addValue > 0)
                     {
                         playerStats.CurrentStats.maxHealth += (int)_addValue;
+                        healthManager.Heal((int)_addValue);
                     }
                     else
                     {
                         playerStats.CurrentStats.maxHealth =
                             (int)(playerStats.CurrentStats.maxHealth * (1 + _multiplyValue));
+                        healthManager.Heal((int)(playerStats.CurrentStats.maxHealth * _multiplyValue));
                     }
 
                     break;
@@ -110,10 +116,12 @@ namespace Rezoskour.Content
                     if (_addValue > 0)
                     {
                         playerStats.CurrentStats.maxOil += (int)_addValue;
+                        oilComponent.RefillOil((int)_addValue);
                     }
                     else
                     {
                         playerStats.CurrentStats.maxOil = (int)(playerStats.CurrentStats.maxOil * (1 + _multiplyValue));
+                        oilComponent.RefillOil((int)(playerStats.CurrentStats.maxOil * _multiplyValue));
                     }
 
                     break;
@@ -139,6 +147,13 @@ namespace Rezoskour.Content
                             (int)(playerStats.CurrentStats.collectRange * (1 + _multiplyValue));
                     }
 
+                    //safe check CollectRange max value
+                    if (playerStats.CurrentStats.collectRange > 4f)
+                    {
+                        playerStats.CurrentStats.collectRange = 4f;
+                    }
+
+                    collectItem.UpdateCollectRange();
                     break;
                 case StatName.Range:
                     if (_addValue > 0)
@@ -152,11 +167,29 @@ namespace Rezoskour.Content
 
                     break;
                 case StatName.GlobalAttackRateMultiplier:
-                    playerStats.CurrentStats.globalAttackRateMultiplier *= (1 + _multiplyValue);
+                    playerStats.CurrentStats.globalAttackRateMultiplier *= 1 + _multiplyValue;
+                    attackManager.UpdateAttackStats();
+                    break;
+                case StatName.GlobalDamageMultiplier:
+                    playerStats.CurrentStats.globalDamageMultiplier *= 1 + _multiplyValue;
+                    attackManager.UpdateAttackStats();
+                    break;
+                case StatName.GlobalDamageReductor:
+                    playerStats.CurrentStats.globalDamageReductor *= 1 + _multiplyValue;
+                    //safe check
+                    if (playerStats.CurrentStats.globalDamageReductor < 0.5f)
+                    {
+                        playerStats.CurrentStats.globalDamageReductor = 0.5f;
+                    }
+
                     break;
             }
 
-            GameManager.Instance.ChangeState(GameStateName.Main);
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.ChangeState(GameStateName.Main);
+            }
+
             //Delete all perks prefab in PerksParent
             foreach (Transform child in PerksParent.transform)
             {
