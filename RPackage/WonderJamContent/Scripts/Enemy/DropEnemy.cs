@@ -37,7 +37,9 @@
                         return;
                     }
                     Transform? transform1 = transform;
+                    
                     CollectableManager.Instance.SpawnWeapon(transform1.position, transform1.rotation);
+                    
                     
                     releaseCallback?.Invoke();
                 }
