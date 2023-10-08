@@ -55,6 +55,7 @@ namespace Rezoskour.Content
 
         public void Fire()
         {
+            
             isMoving = true;
             if (CdSystem == null)
             {

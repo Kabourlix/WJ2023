@@ -15,6 +15,7 @@ namespace Rezoskour.Content
 {
     public class DistantAttack : RAttack
     {
+        [SerializeField] AudioSource audioSource = null!;
         [SerializeField] private Projectile projectilePrefab = null!;
         private ObjectPool<Projectile> projectilesPool = null!;
 
@@ -67,10 +68,11 @@ namespace Rezoskour.Content
             {
                 Projectile proj = projectilesPool.Get();
                 float angle = Vector2.SignedAngle(Vector2.right, GetLookDirection());
-
+        
                 proj.transform.SetPositionAndRotation(UserTransform.position + data.range
                     * (Vector3) GetLookDirection(),
                     Quaternion.Euler(0, 0, angle));
+                audioSource.Play();
                 proj.Fire();
 
                 yield return waitForAttackRefresh;
