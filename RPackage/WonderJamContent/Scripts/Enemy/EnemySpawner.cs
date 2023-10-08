@@ -73,8 +73,8 @@ namespace Rezoskour.Content
                         {
                             spawnPosition =
                                 random.NextFloat2(
-                                    new float2(height, width),
-                                    new float2(-height, -width));
+                                    new float2(width, height),
+                                    new float2(-width, -height));
                         }while (IsInRange(spawnPosition, cameraPosition, cameraWidth, cameraHeight));
                         Vector3 spawnPoint = new(spawnPosition.x, spawnPosition.y, 0f);
                         ChasingEnemy enemyCurve = enemyPoolManager.GetEnemy(index.enemyType);
