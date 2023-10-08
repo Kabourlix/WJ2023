@@ -33,6 +33,11 @@ namespace Rezoskour.Content
             playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
         }
 
+        private void OnDestroy()
+        {
+            GameManager.Instance.OnLevelUp -= LootPerks;
+        }
+
         private void LootPerks()
         {
             playerStatsTxt.text = GetStatsTxt();
