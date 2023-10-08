@@ -36,7 +36,7 @@
                         return;
                     }
                     Transform? transform1 = transform;
-                    CollectableManager.Instance.SpawnOil(transform1.position, transform1.rotation);
+                    CollectableManager.Instance.SpawnWeapon(transform1.position, transform1.rotation);
                     
                     releaseCallback?.Invoke();
                 }
