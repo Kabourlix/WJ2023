@@ -25,9 +25,33 @@ namespace Rezoskour.Content
         }
 
 
+        public override void PerformOneShotAttack()
+        {
+            if (UserTransform == null)
+            {
+                Debug.LogError("Player transform is null.");
+                return;
+            }
+
+            if (Manager == null)
+            {
+                Debug.LogError("GAMEMANAGER IS NULL!");
+                return;
+            }
+
+            Projectile proj = projectilesPool.Get();
+            float angle = Vector2.SignedAngle(Vector2.right, GetLookDirection());
+
+            proj.transform.SetPositionAndRotation(UserTransform.position + data.range
+                * (Vector3) GetLookDirection(),
+                Quaternion.Euler(0, 0, angle));
+            proj.Fire();
+            //OnAttackEnd?.Invoke();
+        }
+
         public override IEnumerator PerformCoroutine()
         {
-            if (PlayerTransform == null)
+            if (UserTransform == null)
             {
                 Debug.LogError("Player transform is null.");
                 yield break;
@@ -42,10 +66,10 @@ namespace Rezoskour.Content
             while (true)
             {
                 Projectile proj = projectilesPool.Get();
-                float angle = Vector2.SignedAngle(Vector2.right, Manager.PlayerLookDirection);
+                float angle = Vector2.SignedAngle(Vector2.right, GetLookDirection());
 
-                proj.transform.SetPositionAndRotation(PlayerTransform.position + data.range
-                    * Manager.PlayerLookDirection,
+                proj.transform.SetPositionAndRotation(UserTransform.position + data.range
+                    * (Vector3) GetLookDirection(),
                     Quaternion.Euler(0, 0, angle));
                 proj.Fire();
                 yield return waitForAttackRefresh;
@@ -83,13 +107,13 @@ namespace Rezoskour.Content
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
-            if (PlayerTransform == null || Manager == null)
+            if (UserTransform == null || Manager == null)
             {
                 return;
             }
 
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(PlayerTransform.position + data.range * Manager.PlayerLookDirection, 0.2f);
+            Gizmos.DrawWireSphere(UserTransform.position + data.range * (Vector3) GetLookDirection(), 0.2f);
         }
 #endif
     }

@@ -15,7 +15,7 @@ namespace Rezoskour.Content
     {
         public override IEnumerator PerformCoroutine()
         {
-            if (PlayerTransform == null)
+            if (UserTransform == null)
             {
                 Debug.LogError("Player transform is null.");
                 yield break;
@@ -24,7 +24,7 @@ namespace Rezoskour.Content
             while (true)
             {
                 Collider2D[] hits =
-                    Physics2D.OverlapCircleAll(PlayerTransform.position, data.attackAreaRange, layerMask);
+                    Physics2D.OverlapCircleAll(UserTransform.position, data.attackAreaRange, layerMask);
 
                 if (hits.Length == 0)
                 {
@@ -49,13 +49,13 @@ namespace Rezoskour.Content
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
-            if (PlayerTransform == null)
+            if (UserTransform == null)
             {
                 return;
             }
 
             Gizmos.color = Color.red;
-            Vector3 position = PlayerTransform.position;
+            Vector3 position = UserTransform.position;
 
             Gizmos.DrawWireSphere(position, data.attackAreaRange);
             Handles.color = Color.red;

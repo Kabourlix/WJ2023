@@ -14,7 +14,7 @@ namespace Rezoskour.Content
     {
         public override IEnumerator PerformCoroutine()
         {
-            if (PlayerTransform == null)
+            if (UserTransform == null)
             {
                 Debug.LogError("Player transform is null.");
                 yield break;
@@ -28,7 +28,7 @@ namespace Rezoskour.Content
 
             while (true)
             {
-                Vector3 targetPos = PlayerTransform.position + data.range * Manager.PlayerLookDirection;
+                Vector3 targetPos = UserTransform.position + data.range * (Vector3) GetLookDirection();
 
                 Collider2D[] hits = Physics2D.OverlapCircleAll(targetPos, data.attackAreaRange, layerMask);
                 if (hits.Length == 0) //No hit
@@ -55,13 +55,13 @@ namespace Rezoskour.Content
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
-            if (PlayerTransform == null || Manager == null)
+            if (UserTransform == null || Manager == null)
             {
                 return;
             }
 
             Gizmos.color = Color.green;
-            Vector3 targetPos = PlayerTransform.position + data.range * Manager.PlayerLookDirection;
+            Vector3 targetPos = UserTransform.position + data.range * Manager.PlayerLookDirection;
             Gizmos.DrawWireSphere(targetPos, data.attackAreaRange);
             Handles.color = Color.green;
             Handles.Label(targetPos, "Attack Basic");

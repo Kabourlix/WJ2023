@@ -9,6 +9,7 @@ using Rezoskour.Content.Collectable;
 using Rezoskour.Content.Misc;
 using Unity.Collections;
 using Unity.Jobs;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Jobs;
 using Random = UnityEngine.Random;
@@ -23,7 +24,7 @@ namespace Rezoskour.Content
         [Range(0, 1)] [SerializeField] private float oilSpawnProbability;
         [Range(0, 1)] [SerializeField] private float expSpawnProbability;
         [SerializeField] protected float maxHealth = 1f;
-        [SerializeField] private Transform? targetTransform;
+        [SerializeField] protected Transform targetTransform = null!;
         public float speed = 1f;
         public float attackRange = 1f;
         public GameObject player;
@@ -34,7 +35,7 @@ namespace Rezoskour.Content
 
 
         protected Action? releaseCallback;
-        
+
         protected struct ChasingEnemyJob : IJobParallelForTransform
         {
             //Use only value types here
@@ -43,10 +44,10 @@ namespace Rezoskour.Content
             public float attackRange;
             public float deltaTime;
             public NativeArray<bool> triggerAttackArray;
-            
+
+
             public void Execute(int _index, TransformAccess _transform)
             {
-              
                 Vector3 enemyToPlayer = -playerPosition + _transform.position;
                 float sqrDistance = Vector3.SqrMagnitude(enemyToPlayer);
                 if (sqrDistance > attackRange * attackRange)
@@ -60,13 +61,13 @@ namespace Rezoskour.Content
                     triggerAttackArray[0] = true;
                 }
             }
-            
         }
+
         private TransformAccessArray transformAccessArray;
         protected NativeArray<bool> triggerAttackArray;
         private JobHandle chasingJobHandle;
 
-        private void Start()
+        protected virtual void Start()
         {
             player = FindObjectOfType<PlayerMovement>().gameObject;
             transformAccessArray = new TransformAccessArray(1);
@@ -74,10 +75,10 @@ namespace Rezoskour.Content
             transformAccessArray.Add(transform);
             targetTransform = player.transform;
         }
-        protected abstract void PerformAttack();
+
+
         private void Update()
         {
-            chasingJobHandle.Complete();
             if (targetTransform == null)
             {
                 return;
@@ -91,20 +92,35 @@ namespace Rezoskour.Content
                 deltaTime = Time.deltaTime,
                 triggerAttackArray = triggerAttackArray
             };
-            if(triggerAttackArray[0])
+
+            chasingJobHandle = chasingJob.Schedule(transformAccessArray);
+        }
+
+        protected void LateUpdate()
+        {
+            chasingJobHandle.Complete();
+            if (triggerAttackArray[0])
             {
                 Debug.Log("PerformedAttack");
                 PerformAttack();
             }
-            chasingJobHandle = chasingJob.Schedule(transformAccessArray);
+            else
+            {
+                Debug.Log("StoppedAttack");
+                StopPerform();
+            }
         }
-        
+
         private void OnDestroy()
         {
             chasingJobHandle.Complete();
             transformAccessArray.Dispose();
             triggerAttackArray.Dispose();
         }
+
+        protected abstract void PerformAttack();
+
+        protected virtual void StopPerform() { }
         // private void OnTriggerEnter2D(Collider2D other)
         // {
         //
@@ -152,10 +168,7 @@ namespace Rezoskour.Content
             releaseCallback = _action;
         }
 
-        public void Heal(int _amount)
-        {
-            
-        }
+        public void Heal(int _amount) { }
 
         public virtual void Damage(int _amount)
         {
@@ -168,22 +181,22 @@ namespace Rezoskour.Content
                     return;
                 }
 
-                var range = oilSpawnProbability + expSpawnProbability;
-                var rand = Random.Range(0, range);
+                float range = oilSpawnProbability + expSpawnProbability;
+                float rand = Random.Range(0, range);
                 if (rand <= oilSpawnProbability)
                 {
-                    Debug.Log("au debut : "+transform.position);
-                    var transform1 = transform;
+                    Debug.Log("au debut : " + transform.position);
+                    Transform? transform1 = transform;
                     CollectableManager.Instance.SpawnOil(transform1.position, transform1.rotation);
                 }
                 else
                 {
-                    var transform1 = transform;
+                    Transform? transform1 = transform;
                     CollectableManager.Instance.SpawnXp(transform1.position, transform1.rotation);
                 }
+
                 releaseCallback?.Invoke();
             }
-            
         }
     }
 }

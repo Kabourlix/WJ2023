@@ -21,10 +21,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  health: 100
-  maxHealth: 100
+  health: 400
+  maxHealth: 400
   oil: 100
-  maxOil: 100
+  maxOil: 190
   attack: 1
   collectRange: 0.25
   range: 2

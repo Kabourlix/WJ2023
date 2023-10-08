@@ -15,7 +15,8 @@ namespace Rezoskour.Content
         [SerializeField] protected AttackData data = null!;
 
         public AttackName Name => data.attackName;
-        public Transform? PlayerTransform { get; set; }
+        public float AttackCooldown => data.attackCooldown;
+        public Transform? UserTransform { get; set; }
         protected GameManager? Manager => GameManager.Instance;
 
         protected LayerMask layerMask;
@@ -23,9 +24,16 @@ namespace Rezoskour.Content
         private Coroutine? runningCoroutine;
         protected WaitForSeconds waitForAttackRefresh = null!;
 
-        public virtual void Initialize(Transform _userTf, LayerMask _layerMask, bool _startCoroutine = true)
+        protected Func<Vector2> GetLookDirection = null!;
+        protected Action? OnAttackEnd = null!;
+
+        public virtual void Initialize(Transform _userTf,
+            LayerMask _layerMask,
+            Func<Vector2> _lookDirectionMethod,
+            bool _startCoroutine = true,
+            Action? _attackEndCallback = null)
         {
-            if (PlayerTransform != null)
+            if (UserTransform != null)
             {
                 Debug.LogError($"Cannot initialize twice Player transform on {name}.");
                 return;
@@ -33,7 +41,9 @@ namespace Rezoskour.Content
 
             layerMask = _layerMask;
             waitForAttackRefresh = new WaitForSeconds(data.attackCooldown);
-            PlayerTransform = _userTf;
+            UserTransform = _userTf;
+            GetLookDirection = _lookDirectionMethod;
+            OnAttackEnd = _attackEndCallback;
 
             if (_startCoroutine)
             {
@@ -72,5 +82,6 @@ namespace Rezoskour.Content
 
 
         public abstract IEnumerator PerformCoroutine();
+        public virtual void PerformOneShotAttack() { }
     }
 }

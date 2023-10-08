@@ -33,7 +33,7 @@ namespace Rezoskour.Content.Misc
 
         private Dictionary<string, bool> registeredCoolDowns = new();
         private Dictionary<string, float> registeredCoolDownDurations = new();
-        
+
         private Dictionary<string, bool>
             registeredCdWithNotification = new(); //The list of cd that will notify each time it is updated.
 
@@ -44,7 +44,7 @@ namespace Rezoskour.Content.Misc
         {
             return registeredCoolDowns.ContainsKey(_timerName) || registeredCoolDownDurations.ContainsKey(_timerName);
         }
-        
+
 
         public bool TryRegisterCoolDown(string _timerName, float _duration, bool _notifyOnUpdate = false)
         {
@@ -86,7 +86,18 @@ namespace Rezoskour.Content.Misc
             return registeredCoolDowns[_timerName];
         }
 
-        public void StartTimer(string _timerName, bool _overrideCurrent = true)
+        public void SetCoolDownTime(string _timerName, float _newValue)
+        {
+            if (!ContainsTimer(_timerName))
+            {
+                Debug.LogError($"[REZOSKOUR] {_timerName} is not registered in the cd system.");
+                return;
+            }
+
+            registeredCoolDownTimers[_timerName] = _newValue;
+        }
+
+        public void StartCoolDown(string _timerName, bool _overrideCurrent = true)
         {
             if (!ContainsTimer(_timerName))
             {
@@ -97,7 +108,7 @@ namespace Rezoskour.Content.Misc
             if (!_overrideCurrent && !registeredCoolDowns[_timerName])
             {
                 Debug.LogWarning(
-                    $"[REZOSKOUR] {_timerName} is already running. Use StartTimer({_timerName},true) if you want to override the current one.");
+                    $"[REZOSKOUR] {_timerName} is already running. Use StartCoolDown({_timerName},true) if you want to override the current one.");
                 return;
             }
 
@@ -117,12 +128,13 @@ namespace Rezoskour.Content.Misc
             registeredCoolDowns[_timerName] = false;
         }
 
-        public void StopTimer(string _timerName)
+        public void StopCoolDown(string _timerName)
         {
             if (!ContainsTimer(_timerName))
             {
                 return;
             }
+
 
             registeredCoolDowns[_timerName] = true;
             registeredCoolDownTimers.Remove(_timerName);

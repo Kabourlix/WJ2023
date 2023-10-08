@@ -62,7 +62,7 @@ namespace Rezoskour.Content
                 return;
             }
 
-            CdSystem.StartTimer(TimerName);
+            CdSystem.StartCoolDown(TimerName);
         }
 
         private void Release()
@@ -74,7 +74,7 @@ namespace Rezoskour.Content
                 return;
             }
 
-            CdSystem.StopTimer(TimerName);
+            CdSystem.StopCoolDown(TimerName);
             releaseCallback?.Invoke();
         }
 

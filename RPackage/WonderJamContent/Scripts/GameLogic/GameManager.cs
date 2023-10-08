@@ -92,7 +92,7 @@ namespace Rezoskour.Content
             //Init game timer
             CoolDownSystem.Instance.TryRegisterCoolDown(GAME_TIMER, DurationToSurviveInSeconds, true);
             CoolDownSystem.Instance.TryRegisterCoolDown(BERSERK_TIMER, berserkCdInSeconds);
-            CoolDownSystem.Instance.StartTimer(GAME_TIMER, false);
+            CoolDownSystem.Instance.StartCoolDown(GAME_TIMER, false);
 
             ChangeState(GameStateName.Main);
         }
@@ -156,7 +156,7 @@ namespace Rezoskour.Content
             else
             {
                 playerAttack.TryRemoveAttack(AttackName.BerserkBurn);
-                CoolDownSystem.Instance.StartTimer(BERSERK_TIMER);
+                CoolDownSystem.Instance.StartCoolDown(BERSERK_TIMER);
             }
         }
 

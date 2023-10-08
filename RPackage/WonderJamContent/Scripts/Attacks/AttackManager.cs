@@ -14,6 +14,7 @@ namespace Rezoskour.Content
         [SerializeField] private AttackName startAttack;
         [SerializeField] private LayerMask layerMask;
         [SerializeField] private RAttack[] allAttacks = null!;
+        [SerializeField] private bool isPlayer = true;
         private readonly Dictionary<AttackName, RAttack> allPrefabAttacksDict = new();
         private readonly Dictionary<AttackName, RAttack> currentAttacks = new();
 
@@ -27,7 +28,7 @@ namespace Rezoskour.Content
 
         private void Start()
         {
-            TryAddAttack(startAttack);
+            TryAddAttack(startAttack, isPlayer);
         }
 
         public void ResumeAttacking()
@@ -60,9 +61,21 @@ namespace Rezoskour.Content
                 return false;
             }
 
+            if (GameManager.Instance == null)
+            {
+                Debug.LogError("GameManager.Instance is null !");
+                return false;
+            }
+
+
             RAttack newAttack = Instantiate(allPrefabAttacksDict[_name], transform);
             currentAttacks.Add(_name, newAttack);
-            newAttack.Initialize(transform, layerMask, _startAttackCoroutine);
+
+            Func<Vector2> getLookDirectionFunc = isPlayer
+                ? () => GameManager.Instance!.PlayerLookDirection.normalized
+                : () => (GameManager.Instance!.PlayerTf.position - tf.position).normalized;
+
+            newAttack.Initialize(transform, layerMask, getLookDirectionFunc, _startAttackCoroutine);
             return true;
         }
 
@@ -88,7 +101,7 @@ namespace Rezoskour.Content
                 allPrefabAttacksDict.Add(aName, attack);
             }
 
-            Debug.Log($"{allPrefabAttacksDict.Count} attacks has been loaded.");
+            //Debug.Log($"{allPrefabAttacksDict.Count} attacks has been loaded.");
         }
     }
 }
