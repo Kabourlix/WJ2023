@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9150854900143915012
 SpriteRenderer:
@@ -170,7 +170,7 @@ MonoBehaviour:
   maxHealth: 15
   targetTransform: {fileID: 0}
   speed: 0.5
-  attackRange: 1
+  attackRange: 2
   player: {fileID: 0}
   isDistanceEnemy: 0
   animator: {fileID: 144115373399967145}

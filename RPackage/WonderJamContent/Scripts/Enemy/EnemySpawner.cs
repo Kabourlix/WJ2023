@@ -58,6 +58,7 @@ namespace Rezoskour.Content
             foreach (var index in waveData.chasingEnemies)
             {
                 var res = (int) index.curve.Evaluate(WaveCounter);
+                Debug.Log(index.enemyType +" " + res);
                 if (res > 0)
                 {
                     for (int i = 0; i < res; i++)

@@ -5477,6 +5477,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 6895731602551558137, guid: e57424149d93ac541bb126c5bf943575,
+        type: 3}
+      propertyPath: poutinePrefab
+      value: 
+      objectReference: {fileID: -9081196658562994359, guid: edb804a516fe37648bfe77e8a53fe2b2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 732639736062337144, guid: e57424149d93ac541bb126c5bf943575, type: 3}
