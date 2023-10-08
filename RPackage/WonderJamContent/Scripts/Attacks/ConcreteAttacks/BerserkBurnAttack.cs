@@ -13,6 +13,8 @@ namespace Rezoskour.Content
 {
     public class BerserkBurnAttack : RAttack
     {
+        [SerializeField] private ParticleSystem berserkEffect = null!;
+
         public override IEnumerator PerformCoroutine()
         {
             if (UserTransform == null)
@@ -25,7 +27,7 @@ namespace Rezoskour.Content
             {
                 Collider2D[] hits =
                     Physics2D.OverlapCircleAll(UserTransform.position, data.attackAreaRange, layerMask);
-
+                berserkEffect.Play(true);
                 if (hits.Length == 0)
                 {
                     yield return waitForAttackRefresh;
