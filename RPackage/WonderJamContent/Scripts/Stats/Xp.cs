@@ -1,9 +1,10 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 06
 
 #nullable enable
 
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,8 +18,9 @@ namespace Rezoskour.Content
         private int currentlevel, totalExperience;
         private int previousLevelExperience, nextLevelExperience;
         private bool isBerserk;
-        [SerializeField] private AnimationCurve xpCurve;
+        [SerializeField] private AnimationCurve xpCurve = null!;
         [SerializeField] private Slider? xpBar;
+        [SerializeField] private TextMeshProUGUI levelTxt = null!;
 
         private void Start()
         {
@@ -76,15 +78,15 @@ namespace Rezoskour.Content
 
         private void UpdateLevel()
         {
-            previousLevelExperience = (int) xpCurve.Evaluate(currentlevel);
-            nextLevelExperience = (int) xpCurve.Evaluate(currentlevel + 1);
+            previousLevelExperience = (int)xpCurve.Evaluate(currentlevel);
+            nextLevelExperience = (int)xpCurve.Evaluate(currentlevel + 1);
             UpdateUI();
         }
 
         private void UpdateUI()
         {
-            int start = previousLevelExperience;
-            int end = nextLevelExperience;
+            var start = previousLevelExperience;
+            var end = nextLevelExperience;
 
             if (xpBar == null)
             {
@@ -95,6 +97,7 @@ namespace Rezoskour.Content
             xpBar.maxValue = end;
 
             xpBar.value = previousLevelExperience;
+            levelTxt.text = $"Lvl {currentlevel}";
         }
     }
 }

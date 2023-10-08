@@ -178,7 +178,7 @@ Transform:
   - {fileID: 4335957039996360570}
   - {fileID: 5996448272871680499}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1441524344014977481
 MonoBehaviour:
@@ -223,7 +223,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 1.006646
+      time: 1.0000014
       value: 0
       inSlope: 350.9491
       outSlope: 350.9491
@@ -232,7 +232,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.06301271
     - serializedVersion: 3
-      time: 1.9999635
+      time: 1.9999993
       value: 199.8319
       inSlope: 144.22115
       outSlope: 144.22115
@@ -240,6 +240,15 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0.0837567
       outWeight: 0.041482687
+    - serializedVersion: 3
+      time: 3.0000277
+      value: 402.96155
+      inSlope: 162.82791
+      outSlope: 162.82791
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 100.04623
       value: 500608.7
@@ -253,6 +262,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   xpBar: {fileID: 0}
+  levelTxt: {fileID: 0}
 --- !u!114 &3477831332902485690
 MonoBehaviour:
   m_ObjectHideFlags: 0

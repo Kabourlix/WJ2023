@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 07
 
 #nullable enable
 
@@ -12,10 +12,12 @@ namespace Rezoskour.Content
     {
         public event Action? OnOilExhausted;
         public event Action<int>? OnOilModified; //new value of oilFloat as parameter
+        public event Action<bool>? OnOilCritical;
 
         private PlayerStats stats = null!;
 
         private float oilFloat;
+        private bool isCritical;
 
         public int Oil
         {
@@ -25,7 +27,7 @@ namespace Rezoskour.Content
 
         public int MaxOil => stats.CurrentStats.maxOil;
 
-        public float OilPercentage => (float) Oil / MaxOil;
+        public float OilPercentage => (float)Oil / MaxOil;
 
         private void Start()
         {
@@ -66,6 +68,12 @@ namespace Rezoskour.Content
                 return;
             }
 
+            if (!isCritical && Oil <= MaxOil / 4)
+            {
+                isCritical = true;
+                OnOilCritical?.Invoke(true);
+            }
+
             OnOilModified?.Invoke(Oil);
             oilFloat = Mathf.Clamp(oilFloat - _amount, 0, MaxOil);
             Oil = Mathf.CeilToInt(oilFloat);
@@ -98,6 +106,12 @@ namespace Rezoskour.Content
             {
                 Debug.LogError("Heal amount must be greater than 0.");
                 return;
+            }
+
+            if (isCritical && Oil >= MaxOil / 4)
+            {
+                isCritical = false;
+                OnOilCritical?.Invoke(false);
             }
 
             oilFloat = Mathf.Clamp(oilFloat + _amount, 0, MaxOil);
