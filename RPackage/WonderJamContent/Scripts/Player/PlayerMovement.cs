@@ -38,7 +38,7 @@ namespace Rezoskour.Content
                 Debug.LogError("GameManager.Instance is null !");
                 return;
             }
-
+            collectItem = GetComponent<CollectItem>();
             GameManager.Instance.OnVictory += OnGameEnds;
             GameManager.Instance.OnDefeat += OnGameEnds;
             GameManager.Instance.OnBerserkModeChange += BerserkStatusChangedHandler;
@@ -60,7 +60,7 @@ namespace Rezoskour.Content
         private void OnEnable()
         {
             input.Enable();
-            collectItem = GetComponent<CollectItem>();
+            
             collectItem.OnGetMeleeWeapon += MeleeWeaponAnim;
             input.PauseCtx.Disable();
             input.Player.Movement.performed += OnMovementPerformed;
