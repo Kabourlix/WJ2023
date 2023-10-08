@@ -131,6 +131,13 @@ namespace Rezoskour.Content
             releaseCallback = _action;
         }
 
+        private void OnEnable()
+        {
+            currentHealth = maxHealth;
+            GetComponent<Animator>().SetBool("isDead", false);
+            isDying = false;
+        }
+
         public void Heal(int _amount) { }
 
         public virtual void Damage(int _amount)
