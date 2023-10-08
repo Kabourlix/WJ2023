@@ -15,18 +15,21 @@ namespace Rezoskour.Content
     public enum EnemyType
     {
         Fries,
-        Ketchup
+        Ketchup,
+        Nuggets
     }
     public class EnemyPoolManager : MonoBehaviour
     {
         [SerializeField] private ChasingEnemy friesPrefab = null!;
         [SerializeField] private ChasingEnemy ketchupPrefab = null!;
+        [SerializeField] private ChasingEnemy nuggetsPrefab = null!;
 
         private Dictionary<EnemyType, ObjectPool<ChasingEnemy>> enemyPools = new();
         private void Awake()
         {
             enemyPools.Add( EnemyType.Fries, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(friesPrefab,EnemyType.Fries), OnGetEnemy, OnReleaseEnemy));
             enemyPools.Add( EnemyType.Ketchup, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(ketchupPrefab,EnemyType.Ketchup), OnGetEnemy, OnReleaseEnemy));
+            enemyPools.Add( EnemyType.Nuggets, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(nuggetsPrefab,EnemyType.Nuggets), OnGetEnemy, OnReleaseEnemy));
         }
 
         private ChasingEnemy OnCreateEnemyAbstract(ChasingEnemy _prefab, EnemyType _type)
@@ -70,6 +73,7 @@ namespace Rezoskour.Content
 
         public ChasingEnemy GetEnemy()
         {
+            return enemyPools[EnemyType.Nuggets].Get();
             Random random = new Random((uint) Environment.TickCount);
             if (random.NextInt(0, 2) == 0)
                 return enemyPools[EnemyType.Ketchup].Get();

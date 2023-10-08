@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8728202a0e166c442a81267a36178628
+guid: 8e7ca213e70c56142a589b41b906feb9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nuggets_Walk_0
+      name: Fries_WalkUp_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 9
+        y: 8
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84a36b9fe1021af42b7bbe7517e0d811
-      internalID: -1759189139
+      spriteID: d756a333014f5374b8b502f74ed94a99
+      internalID: 1178536898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Walk_1
+      name: Fries_WalkUp_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 49
+        y: 9
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c22922e3a206354bb99ef839df7fe38
-      internalID: 609045139
+      spriteID: ff7441e5b3ed42a43842155ede1d287c
+      internalID: 2044975170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Walk_2
+      name: Fries_WalkUp_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 89
+        y: 9
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14f90c184bdecc74091ef09bfe817d3a
-      internalID: -463120674
+      spriteID: 7036d72c5e8b7de448cf467bcf2c9817
+      internalID: 319500998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Walk_3
+      name: Fries_WalkUp_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 129
+        y: 8
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 339bfc33da465994eb582a7163a9b4bf
-      internalID: 1370519402
+      spriteID: 48578facae0b31441b86621be8280e5b
+      internalID: 854155269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Walk_4
+      name: Fries_WalkUp_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
+        x: 169
+        y: 8
+        width: 24
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,8 +234,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e915cd120de0441458f3356cdb5d0def
-      internalID: 1615732898
+      spriteID: b4310c4644d68aa4bbb706fa08a5b51f
+      internalID: -1178324572
       vertices: []
       indices: 
       edges: []
@@ -243,7 +243,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7bfa05d5d6d99634f9510fa8321326e3
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -251,11 +251,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Nuggets_Walk_0: -1759189139
-      Nuggets_Walk_1: 609045139
-      Nuggets_Walk_2: -463120674
-      Nuggets_Walk_3: 1370519402
-      Nuggets_Walk_4: 1615732898
+      Fries_WalkUp_0: 1178536898
+      Fries_WalkUp_1: 2044975170
+      Fries_WalkUp_2: 319500998
+      Fries_WalkUp_3: 854155269
+      Fries_WalkUp_4: -1178324572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

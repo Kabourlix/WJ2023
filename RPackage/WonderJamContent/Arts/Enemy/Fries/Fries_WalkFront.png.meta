@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c56a8845dacce564f8c76184f7a0393b
+guid: dc82c97ef35448047b32d3c62c57459a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -134,18 +134,128 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fries_WalkFront_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 8
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5aab08dae04934f97dd93f5ad245c9
+      internalID: -927722871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_WalkFront_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 9
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48849a2d2af5a7a4881098ea435c7ed7
+      internalID: 682147242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_WalkFront_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 9
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff62c7811b97ac4f83d7eed4f20d37b
+      internalID: 315575267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_WalkFront_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 8
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee5b864cd4cdaf44b9ef132c3bab2f2
+      internalID: 1748149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_WalkFront_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 8
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5bbaf5bf927754ab4ff179a90d87d7
+      internalID: -179934971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fries_WalkFront_0: -927722871
+      Fries_WalkFront_1: 682147242
+      Fries_WalkFront_2: 315575267
+      Fries_WalkFront_3: 1748149
+      Fries_WalkFront_4: -179934971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
