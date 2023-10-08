@@ -2173,25 +2173,15 @@ PrefabInstance:
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 1913479393}
-    - target: {fileID: 2179613251662337344, guid: 31ca4915676c2024d80bd12437e3f957,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2179613251662337344, guid: 31ca4915676c2024d80bd12437e3f957,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5132266370194291888, guid: 31ca4915676c2024d80bd12437e3f957,
+    - target: {fileID: 4819719660199965645, guid: 31ca4915676c2024d80bd12437e3f957,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5670650088844844718, guid: 31ca4915676c2024d80bd12437e3f957,
+    - target: {fileID: 5498746789754914830, guid: 31ca4915676c2024d80bd12437e3f957,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5745932365770711096, guid: 31ca4915676c2024d80bd12437e3f957,
         type: 3}
@@ -2402,6 +2392,7 @@ MonoBehaviour:
   - {fileID: 9146795929773332143, guid: 86d574ec686bdab419e777449f7c7ae5, type: 3}
   - {fileID: 5879188706866820869, guid: 76ec96c1084bf2f46871c277766b46d0, type: 3}
   - {fileID: 3798810017300859789, guid: ada2aac1c20902141862de165435cdc8, type: 3}
+  isPlayer: 1
 --- !u!1 &8570815272036408298
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ namespace Rezoskour.Content
         private void SwitchMode(bool _obj)
         {
             isBerserk = _obj;
-            if (!isBerserk)
+            if (!isBerserk && GameManager.Instance.CurrentState == GameStateName.Main)
             {
                 CheckForLevelUp();
             }
@@ -74,6 +74,10 @@ namespace Rezoskour.Content
                 //sound
 
                 //Loot
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.ChangeState(GameStateName.LevelUp);
+                }
             }
         }
 

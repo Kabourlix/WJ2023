@@ -1,29 +1,31 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 06
 
 #nullable enable
 using System;
+using UnityEngine;
 
 namespace Rezoskour.Content
 {
     public class LevelUpState : GameState
     {
         public LevelUpState(Action? _onEnterCallback = null, Action? _onExitCallback = null) :
-            base(_onEnterCallback, _onExitCallback) { }
+            base(_onEnterCallback, _onExitCallback)
+        {
+        }
 
         public override void Enter()
         {
-            throw new NotImplementedException();
+            Time.timeScale = 0;
         }
 
         public override void Process()
         {
-            throw new NotImplementedException();
         }
 
         public override void Exit()
         {
-            throw new NotImplementedException();
+            Time.timeScale = 1;
         }
     }
 }

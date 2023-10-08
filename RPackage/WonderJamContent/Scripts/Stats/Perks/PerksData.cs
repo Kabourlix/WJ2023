@@ -1,13 +1,24 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by alexandre buzon on 07
 
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Rezoskour.Content.Perks
 {
     [CreateAssetMenu(fileName = "Perks", menuName = "Rezoskour/PerksData", order = 0)]
     public class PerksData : ScriptableObject
     {
+        [SerializeField] private Sprite statImage;
+        public Sprite StatImage => statImage;
+
+        [SerializeField] private string statTitle;
+        public string StatTitle => statTitle;
+
+        [SerializeField] private string statDescription;
+        public string StatDescription => statDescription;
+
         [SerializeField] private StatName statName;
         public StatName StatName => statName;
 
