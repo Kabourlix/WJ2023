@@ -105,12 +105,10 @@ namespace Rezoskour.Content
             chasingJobHandle.Complete();
             if (triggerAttackArray[0])
             {
-                Debug.Log("PerformedAttack");
                 PerformAttack();
             }
             else
             {
-                Debug.Log("StoppedAttack");
                 StopPerform();
             }
         }
