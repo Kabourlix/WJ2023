@@ -21,6 +21,8 @@ namespace Rezoskour.Content
         private Random random = new(1);
         private int WaveCounter = 0 ;
         private bool firstwave = true;
+        public int width = 22;
+        public int height = 6;
         private void Awake()
         {
             random = new Random((uint) Environment.TickCount);
@@ -71,8 +73,8 @@ namespace Rezoskour.Content
                         {
                             spawnPosition =
                                 random.NextFloat2(
-                                    new float2(22, 6),
-                                    new float2(-22, -6));
+                                    new float2(height, width),
+                                    new float2(-height, -width));
                         }while (IsInRange(spawnPosition, cameraPosition, cameraWidth, cameraHeight));
                         Vector3 spawnPoint = new(spawnPosition.x, spawnPosition.y, 0f);
                         ChasingEnemy enemyCurve = enemyPoolManager.GetEnemy(index.enemyType);
