@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64876dc96df8464d99830b52674ec9db, type: 3}
   m_Name: WaveData
   m_EditorClassIdentifier: 
-  waveNumber: 0
-  attackCooldown: 0
   chasingEnemies:
   - enemyType: 0
     curve:
@@ -22,11 +20,29 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0
         value: 0
+        inSlope: 3.9921129
+        outSlope: 3.9921129
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.9992636
+        value: 3.989173
         inSlope: 3.9921126
         outSlope: 3.9921126
         tangentMode: 34
         weightedMode: 0
-        inWeight: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 2.0062187
+        value: 8.009051
+        inSlope: 3.9921126
+        outSlope: 3.9921126
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 10.022572
@@ -63,10 +79,10 @@ MonoBehaviour:
         inWeight: 0.26015893
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 2.0051289
-        value: 5.03671
-        inSlope: 1.748139
-        outSlope: 1.748139
+        time: 1.9999534
+        value: 5.006188
+        inSlope: 1.8685249
+        outSlope: 1.8685249
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
@@ -74,8 +90,8 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 10.017039
         value: 29.990932
-        inSlope: 3.114641
-        outSlope: 3.114641
+        inSlope: 3.1164372
+        outSlope: 3.1164372
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -96,6 +112,15 @@ MonoBehaviour:
         weightedMode: 0
         inWeight: 0
         outWeight: 0.31666666
+      - serializedVersion: 3
+        time: 0.99936044
+        value: 0.0034617288
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       - serializedVersion: 3
         time: 3.0001435
         value: 50.02422

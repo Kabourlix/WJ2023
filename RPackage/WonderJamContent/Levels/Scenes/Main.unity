@@ -2343,6 +2343,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2459409638832088291, guid: e57424149d93ac541bb126c5bf943575,
+        type: 3}
+      propertyPath: waveData
+      value: 
+      objectReference: {fileID: 11400000, guid: bbf7bf6802f4b694c9f9ed23869382ea,
+        type: 2}
+    - target: {fileID: 2459409638832088291, guid: e57424149d93ac541bb126c5bf943575,
+        type: 3}
+      propertyPath: spawnInterval
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6895731602551558137, guid: e57424149d93ac541bb126c5bf943575,
         type: 3}
       propertyPath: friesPrefab
