@@ -32,7 +32,7 @@ namespace Rezoskour.Content
         public Animator animator;
         public int damage = 1;
         public AudioSource audioSource;
-
+        private float currentHealth;
         protected Action? releaseCallback;
 
         protected struct ChasingEnemyJob : IJobParallelForTransform
@@ -125,7 +125,7 @@ namespace Rezoskour.Content
 
         public void Init(Action? _action)
         {
-            maxHealth = 50f;
+            currentHealth = maxHealth;
             GetComponent<Animator>().SetBool("isDead", false);
             isDying = false;
             releaseCallback = _action;
@@ -135,8 +135,8 @@ namespace Rezoskour.Content
 
         public virtual void Damage(int _amount)
         {
-            maxHealth -= _amount;
-            if (maxHealth <= 0)
+            currentHealth -= _amount;
+            if (currentHealth <= 0)
             {
                 chasingJobHandle.Complete();
                 triggerAttackArray[0] = false;
