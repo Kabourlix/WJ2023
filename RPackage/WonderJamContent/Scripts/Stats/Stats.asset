@@ -26,7 +26,7 @@ MonoBehaviour:
   oil: 100
   maxOil: 190
   attack: 1
-  collectRange: 1
+  collectRange: 2
   range: 2
   speed: 2
   globalDamageMultiplier: 1

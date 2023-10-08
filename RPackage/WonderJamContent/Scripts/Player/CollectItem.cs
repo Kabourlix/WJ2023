@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by alexandre buzon on 07
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
@@ -39,21 +39,22 @@ namespace Rezoskour.Content
             if (collectLayer.Has(_other.gameObject.layer))
             {
                 Debug.Log("Collecting item");
-                var obj = _other.gameObject.GetComponent<CollectableItem>();
+                CollectableItem? obj = _other.gameObject.GetComponent<CollectableItem>();
                 switch (obj.Type)
                 {
                     case CollectableType.Experience:
-                        _xp.AddXp(obj.Value);
+                        obj.gainCallback = () => _xp.AddXp(obj.Value);
                         break;
                     case CollectableType.Health:
-                        _healthManager.Heal(obj.Value);
+                        obj.gainCallback = () => _healthManager.Heal(obj.Value);
                         break;
                     case CollectableType.Oil:
-                        _oil.RefillOil(obj.Value);
+                        obj.gainCallback = () => _oil.RefillOil(obj.Value);
                         break;
                 }
 
-                obj.ReturnToPool();
+                obj.GoToPlayer = true;
+                //obj.ReturnToPool();
             }
         }
     }
