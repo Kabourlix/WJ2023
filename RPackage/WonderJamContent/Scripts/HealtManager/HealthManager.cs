@@ -107,8 +107,10 @@ namespace Rezoskour.Content
                 return;
             }
 
+            int realDamage = Mathf.FloorToInt(_damage * stats.CurrentStats.globalDamageMultiplier);
+
             OnIncomingDamage?.Invoke();
-            Health = Mathf.Clamp(Health - _damage, 0, MaxHealth);
+            Health = Mathf.Clamp(Health - realDamage, 0, MaxHealth);
             OnHealthChanged?.Invoke(Health);
             if (Health != 0)
             {

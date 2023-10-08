@@ -29,7 +29,7 @@ namespace Rezoskour.Content
             }
 
             timerName = ATTACK_TIMER_CD + Guid.NewGuid();
-            CoolDownSystem.Instance.TryRegisterCoolDown(timerName, attack.AttackCooldown, false);
+            CoolDownSystem.Instance.TryRegisterCoolDown(timerName, attack.AttackSpeed, false);
         }
 
         protected override void PerformAttack()

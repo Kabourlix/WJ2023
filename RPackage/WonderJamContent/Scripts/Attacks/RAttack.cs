@@ -13,9 +13,9 @@ namespace Rezoskour.Content
     public abstract class RAttack : MonoBehaviour
     {
         [SerializeField] protected AttackData data = null!;
-
+        protected Stats? playerStats;
         public AttackName Name => data.attackName;
-        public float AttackCooldown => data.attackCooldown;
+        public float AttackSpeed => data.attackSpeed;
         public Transform? UserTransform { get; set; }
         protected GameManager? Manager => GameManager.Instance;
 
@@ -31,7 +31,8 @@ namespace Rezoskour.Content
             LayerMask _layerMask,
             Func<Vector2> _lookDirectionMethod,
             bool _startCoroutine = true,
-            Action? _attackEndCallback = null)
+            Action? _attackEndCallback = null,
+            Stats _playerStats = null)
         {
             if (UserTransform != null)
             {
@@ -40,10 +41,11 @@ namespace Rezoskour.Content
             }
 
             layerMask = _layerMask;
-            waitForAttackRefresh = new WaitForSeconds(data.attackCooldown);
+            waitForAttackRefresh = new WaitForSeconds(1 / data.attackSpeed);
             UserTransform = _userTf;
             GetLookDirection = _lookDirectionMethod;
             OnAttackEnd = _attackEndCallback;
+            playerStats = _playerStats;
 
             if (_startCoroutine)
             {
@@ -51,11 +53,18 @@ namespace Rezoskour.Content
             }
         }
 
-        public void UpdateStats(AttackData _data)
+        public void UpdateStats(Stats? _stats)
         {
             StopAttacking();
-            data = _data;
-            waitForAttackRefresh = new WaitForSeconds(data.attackCooldown);
+            playerStats = _stats;
+            float rate = data.attackSpeed;
+            if (_stats != null)
+            {
+                rate *= _stats.globalAttackRateMultiplier;
+            }
+
+            //data = _data;
+            waitForAttackRefresh = new WaitForSeconds(1 / rate);
             StopAttacking();
         }
 

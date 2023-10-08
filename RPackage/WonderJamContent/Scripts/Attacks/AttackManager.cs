@@ -18,11 +18,14 @@ namespace Rezoskour.Content
         private readonly Dictionary<AttackName, RAttack> allPrefabAttacksDict = new();
         private readonly Dictionary<AttackName, RAttack> currentAttacks = new();
 
+        private PlayerStats playerStats;
+
         private Transform tf = null!;
 
         private void Awake()
         {
             tf = transform;
+            playerStats = GetComponent<PlayerStats>();
             InitializeAllAttacks();
         }
 
@@ -44,6 +47,14 @@ namespace Rezoskour.Content
             foreach (KeyValuePair<AttackName, RAttack> kv in currentAttacks)
             {
                 kv.Value.StopAttacking();
+            }
+        }
+
+        public void UpdateAttackStats()
+        {
+            foreach (KeyValuePair<AttackName, RAttack> kv in currentAttacks)
+            {
+                kv.Value.UpdateStats(playerStats.CurrentStats);
             }
         }
 

@@ -30,7 +30,14 @@ namespace Rezoskour.Content
             {
                 Vector3 targetPos = UserTransform.position + data.range * (Vector3) GetLookDirection();
 
-                Collider2D[] hits = Physics2D.OverlapCircleAll(targetPos, data.attackAreaRange, layerMask);
+                float rangeAttack = data.attackAreaRange;
+                if (playerStats != null)
+                {
+                    //TODO
+                    //rangeAttack *= playerStats.;
+                }
+
+                Collider2D[] hits = Physics2D.OverlapCircleAll(targetPos, rangeAttack, layerMask);
                 if (hits.Length == 0) //No hit
                 {
                     yield return waitForAttackRefresh;
@@ -45,7 +52,14 @@ namespace Rezoskour.Content
                         continue;
                     }
 
-                    health.Damage(data.damage);
+
+                    float damage = data.damage;
+                    if (playerStats != null)
+                    {
+                        damage *= playerStats.globalDamageMultiplier;
+                    }
+
+                    health.Damage(Mathf.FloorToInt(damage));
                 }
 
                 yield return waitForAttackRefresh;

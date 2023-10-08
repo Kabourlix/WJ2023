@@ -21,7 +21,9 @@ namespace Rezoskour.Content
     {
         public AttackName attackName;
         public int damage;
-        [FormerlySerializedAs("attackRate")] public float attackCooldown;
+
+        [FormerlySerializedAs("attackCooldown")] [FormerlySerializedAs("attackRate")]
+        public float attackSpeed;
 
         [Header("Melee")] [FormerlySerializedAs("maxRange")]
         public float range;
