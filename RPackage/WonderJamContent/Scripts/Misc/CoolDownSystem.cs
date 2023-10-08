@@ -33,7 +33,7 @@ namespace Rezoskour.Content.Misc
 
         private Dictionary<string, bool> registeredCoolDowns = new();
         private Dictionary<string, float> registeredCoolDownDurations = new();
-
+        
         private Dictionary<string, bool>
             registeredCdWithNotification = new(); //The list of cd that will notify each time it is updated.
 
@@ -44,6 +44,7 @@ namespace Rezoskour.Content.Misc
         {
             return registeredCoolDowns.ContainsKey(_timerName) || registeredCoolDownDurations.ContainsKey(_timerName);
         }
+        
 
         public bool TryRegisterCoolDown(string _timerName, float _duration, bool _notifyOnUpdate = false)
         {

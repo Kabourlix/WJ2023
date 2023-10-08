@@ -71,14 +71,10 @@ namespace Rezoskour.Content
         }
 
 
-        public ChasingEnemy GetEnemy()
+        public ChasingEnemy GetEnemy(EnemyType _type)
         {
-            return enemyPools[EnemyType.Nuggets].Get();
-            Random random = new Random((uint) Environment.TickCount);
-            if (random.NextInt(0, 2) == 0)
-                return enemyPools[EnemyType.Ketchup].Get();
-            else
-                return enemyPools[EnemyType.Fries].Get();
+            return enemyPools[_type].Get();
         }
+        
     }
 }
