@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2130873194662532650
 MonoBehaviour:
@@ -50,5 +50,7 @@ MonoBehaviour:
     type: 3}
   healPrefab: {fileID: 2655947880866946026, guid: 49f5be4b001a3a4438881d6167c6d4ae,
     type: 3}
-  weaponPrefab: {fileID: 8666260828580205355, guid: d1d96b36875e82740b137cb2f37a195c,
+  meleeWeaponPrefab: {fileID: 8666260828580205355, guid: d1d96b36875e82740b137cb2f37a195c,
+    type: 3}
+  tourniquetWeaponPrefab: {fileID: 8666260828580205355, guid: cc8adde8c2e7d654694c6f97928ad6a8,
     type: 3}

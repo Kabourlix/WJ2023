@@ -21,7 +21,8 @@ namespace Rezoskour.Content.Collectable
         [SerializeField] private GameObject? oilPrefab;
         [SerializeField] private GameObject? experiencePrefab;
         [SerializeField] private GameObject? healPrefab;
-        [SerializeField] private GameObject? weaponPrefab;
+        [SerializeField] private GameObject? meleeWeaponPrefab;
+        [SerializeField] private GameObject? tourniquetWeaponPrefab;
 
         private void Awake()
         {
@@ -64,7 +65,6 @@ namespace Rezoskour.Content.Collectable
                 pool.InactiveObjects.Remove(spawnableObject);
                 spawnableObject.SetActive(true);
             }
-            Debug.Log("A la fin : "+spawnPosition);
 
             return spawnableObject;
         }
@@ -92,7 +92,6 @@ namespace Rezoskour.Content.Collectable
 
         public void SpawnOil(Vector3 _spawnPosition, Quaternion _spawnRotation)
         {
-            Debug.Log("au milieu : "+_spawnPosition);
             SpawnObject(oilPrefab, _spawnPosition, _spawnRotation);
         }
 
@@ -102,7 +101,11 @@ namespace Rezoskour.Content.Collectable
         }
         public void SpawnWeapon(Vector3 _spawnPosition, Quaternion _spawnRotation)
         {
-            SpawnObject(weaponPrefab, _spawnPosition, _spawnRotation);
+            int rand = Random.Range(0, 2);
+            if(rand == 0)
+                SpawnObject(meleeWeaponPrefab, _spawnPosition, _spawnRotation);
+            if(rand == 1)
+                SpawnObject(tourniquetWeaponPrefab, _spawnPosition, _spawnRotation);
         }
     }
 
