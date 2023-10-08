@@ -1,5 +1,5 @@
 // Copyrighted by team Rézoskour
-// Created by Kabourlix Cendrée on 07
+// Created by Kabourlix Cendrée on 08
 
 using System;
 using System.Collections;
@@ -8,8 +8,8 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.Serialization;
-
 using Random = Unity.Mathematics.Random;
+
 namespace Rezoskour.Content
 {
     public enum EnemyType
@@ -18,6 +18,7 @@ namespace Rezoskour.Content
         Ketchup,
         Nuggets
     }
+
     public class EnemyPoolManager : MonoBehaviour
     {
         [SerializeField] private ChasingEnemy friesPrefab = null!;
@@ -25,16 +26,23 @@ namespace Rezoskour.Content
         [SerializeField] private ChasingEnemy nuggetsPrefab = null!;
 
         private Dictionary<EnemyType, ObjectPool<ChasingEnemy>> enemyPools = new();
+
         private void Awake()
         {
-            enemyPools.Add( EnemyType.Fries, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(friesPrefab,EnemyType.Fries), OnGetEnemy, OnReleaseEnemy));
-            enemyPools.Add( EnemyType.Ketchup, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(ketchupPrefab,EnemyType.Ketchup), OnGetEnemy, OnReleaseEnemy));
-            enemyPools.Add( EnemyType.Nuggets, new ObjectPool<ChasingEnemy>(()=>OnCreateEnemyAbstract(nuggetsPrefab,EnemyType.Nuggets), OnGetEnemy, OnReleaseEnemy));
+            enemyPools.Add(EnemyType.Fries,
+                new ObjectPool<ChasingEnemy>(() => OnCreateEnemyAbstract(friesPrefab, EnemyType.Fries), OnGetEnemy,
+                    OnReleaseEnemy));
+            enemyPools.Add(EnemyType.Ketchup,
+                new ObjectPool<ChasingEnemy>(() => OnCreateEnemyAbstract(ketchupPrefab, EnemyType.Ketchup), OnGetEnemy,
+                    OnReleaseEnemy));
+            enemyPools.Add(EnemyType.Nuggets,
+                new ObjectPool<ChasingEnemy>(() => OnCreateEnemyAbstract(nuggetsPrefab, EnemyType.Nuggets), OnGetEnemy,
+                    OnReleaseEnemy));
         }
 
         private ChasingEnemy OnCreateEnemyAbstract(ChasingEnemy _prefab, EnemyType _type)
         {
-            if (GameManager.Instance == null)  
+            if (GameManager.Instance == null)
             {
                 Debug.LogError("GAMEMANAGER IS NULL!");
                 return default!;
@@ -43,6 +51,8 @@ namespace Rezoskour.Content
             ChasingEnemy enemy = Instantiate(_prefab, GameManager.Instance.transform).GetComponent<ChasingEnemy>();
             enemy.name = $"Enemy {_prefab.name + 1}";
             enemy.Init(() => enemyPools[_type].Release(enemy));
+            //Jouer mon animation
+            //LeanTween.value(enemy.gameObject,0,1,time).setOnComplete(() => enemyPools[_type].Release(enemy))
             return enemy;
         }
 
@@ -75,6 +85,5 @@ namespace Rezoskour.Content
         {
             return enemyPools[_type].Get();
         }
-        
     }
 }
