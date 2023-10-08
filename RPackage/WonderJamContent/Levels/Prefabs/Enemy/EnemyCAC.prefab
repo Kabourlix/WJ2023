@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d770e6b51346a4a9fb83d48b2b8417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oilSpawnProbability: 0.4
+  expSpawnProbability: 0.6
   maxHealth: 20
   targetTransform: {fileID: 0}
   speed: 2

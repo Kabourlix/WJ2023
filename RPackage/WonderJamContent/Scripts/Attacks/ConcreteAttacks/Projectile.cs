@@ -55,7 +55,6 @@ namespace Rezoskour.Content
 
         public void Fire()
         {
-            Debug.Log("FFFFFFFFFFFFFFFFFFFFFFFFFFFIIIREE");
             isMoving = true;
             if (CdSystem == null)
             {
@@ -102,7 +101,7 @@ namespace Rezoskour.Content
 
         private void OnTriggerEnter2D(Collider2D _other)
         {
-            Debug.Log($"Projectile hit something with layer {_other.gameObject.layer}");
+            //Debug.Log($"Projectile hit something with layer {_other.gameObject.layer}");
             //Check if other belongs to layerMask
             if (layerMask.HasNot(_other.gameObject.layer))
             {

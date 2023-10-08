@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d359e888eb045529ec3aba0e190b09e, type: 3}
   m_Name: Ketchup
   m_EditorClassIdentifier: 
-  attackName: 0
+  attackName: 1
   damage: 0
   attackCooldown: 0
   range: 0

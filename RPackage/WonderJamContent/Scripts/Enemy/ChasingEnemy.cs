@@ -5,11 +5,13 @@
 
 using System;
 using System.Collections;
+using Rezoskour.Content.Collectable;
 using Rezoskour.Content.Misc;
 using Unity.Collections;
 using Unity.Jobs;
 using UnityEngine;
 using UnityEngine.Jobs;
+using Random = UnityEngine.Random;
 
 // Copyrighted by team Rézoskour
 // Created by Kabourlix Cendrée on 07
@@ -18,6 +20,8 @@ namespace Rezoskour.Content
 {
     public abstract class ChasingEnemy : MonoBehaviour, IHealth
     {
+        [Range(0, 1)] [SerializeField] private float oilSpawnProbability;
+        [Range(0, 1)] [SerializeField] private float expSpawnProbability;
         [SerializeField] private float maxHealth = 1f;
         [SerializeField] private Transform? targetTransform;
         public float speed = 1f;
@@ -112,7 +116,6 @@ namespace Rezoskour.Content
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("Trigger");
 
             if (other.CompareTag("Player"))
             {
@@ -124,8 +127,6 @@ namespace Rezoskour.Content
         }
         private void OnTriggerExit2D(Collider2D other)
         {
-            Debug.Log("Exit");
-
             if (other.CompareTag("Player"))
             {
                 animator.SetBool("isAttacking", false);
@@ -170,6 +171,25 @@ namespace Rezoskour.Content
             maxHealth -= _amount;
             if (maxHealth <= 0)
             {
+                if (CollectableManager.Instance == null)
+                {
+                    Debug.LogError("CollectableManager.Instance is null !");
+                    return;
+                }
+
+                var range = oilSpawnProbability + expSpawnProbability;
+                var rand = Random.Range(0, range);
+                if (rand <= oilSpawnProbability)
+                {
+                    Debug.Log("au debut : "+transform.position);
+                    var transform1 = transform;
+                    CollectableManager.Instance.SpawnOil(transform1.position, transform1.rotation);
+                }
+                else
+                {
+                    var transform1 = transform;
+                    CollectableManager.Instance.SpawnXp(transform1.position, transform1.rotation);
+                }
                 releaseCallback?.Invoke();
             }
             

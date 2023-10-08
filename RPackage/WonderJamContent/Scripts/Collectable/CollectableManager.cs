@@ -63,6 +63,7 @@ namespace Rezoskour.Content.Collectable
                 pool.InactiveObjects.Remove(spawnableObject);
                 spawnableObject.SetActive(true);
             }
+            Debug.Log("A la fin : "+spawnPosition);
 
             return spawnableObject;
         }
@@ -90,6 +91,7 @@ namespace Rezoskour.Content.Collectable
 
         public void SpawnOil(Vector3 _spawnPosition, Quaternion _spawnRotation)
         {
+            Debug.Log("au milieu : "+_spawnPosition);
             SpawnObject(oilPrefab, _spawnPosition, _spawnRotation);
         }
 
