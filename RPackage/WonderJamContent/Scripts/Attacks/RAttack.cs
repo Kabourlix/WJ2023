@@ -16,6 +16,21 @@ namespace Rezoskour.Content
         protected Stats? playerStats;
         public AttackName Name => data.attackName;
         public float AttackSpeed => data.attackSpeed;
+
+        public float AttackDamage
+        {
+            get
+            {
+                float dmg = data.damage;
+                if (playerStats != null)
+                {
+                    dmg *= playerStats.globalDamageMultiplier;
+                }
+
+                return dmg;
+            }
+        }
+
         public Transform? UserTransform { get; set; }
         protected GameManager? Manager => GameManager.Instance;
 

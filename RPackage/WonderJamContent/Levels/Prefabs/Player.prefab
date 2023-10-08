@@ -280,7 +280,6 @@ MonoBehaviour:
   berserkSprite: {fileID: 1498947119, guid: c8ba5a90d6ebc094f92ce138121212ca, type: 3}
   animator: {fileID: 6213068741966506897}
   normalSprite: {fileID: -1346753488, guid: c3db50ba229cc3c439e556b60c1fe533, type: 3}
-  enemyPrefab: {fileID: 0}
 --- !u!114 &6583994185966591971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +300,7 @@ MonoBehaviour:
   - {fileID: 9146795929773332143, guid: 86d574ec686bdab419e777449f7c7ae5, type: 3}
   - {fileID: 5879188706866820869, guid: 76ec96c1084bf2f46871c277766b46d0, type: 3}
   - {fileID: 3798810017300859789, guid: ada2aac1c20902141862de165435cdc8, type: 3}
+  - {fileID: 1431312805348200225, guid: 8ed3fff90abe14641b9dd204ef61e69a, type: 3}
   isPlayer: 1
 --- !u!114 &1345168382612994489
 MonoBehaviour:
