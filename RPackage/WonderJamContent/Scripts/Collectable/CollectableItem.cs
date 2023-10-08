@@ -62,7 +62,6 @@ namespace Rezoskour.Content.Collectable
             {
                 return;
             }
-
             Vector2 target = Vector2.SmoothDamp(transform.position, playerTf.position, ref velocity, smoothTime);
             transform.position = target;
         }
