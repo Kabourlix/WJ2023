@@ -34,6 +34,7 @@ namespace Rezoskour.Content
 
         protected override void PerformAttack()
         {
+            audioSource.Play();
             if (CoolDownSystem.Instance == null)
             {
                 Debug.LogError("CoolDownSystem.Instance is null !");

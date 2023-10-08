@@ -51,7 +51,7 @@ namespace Rezoskour.Content
         public Transform PlayerTf => playerTransform;
         private AttackManager playerAttack = null!;
         public Vector3 PlayerLookDirection { get; set; } = Vector3.right;
-
+        public AudioSource audioSource;
 
         private GameStateName currentState = GameStateName.Entry;
         public GameStateName CurrentState => currentState;
@@ -83,6 +83,7 @@ namespace Rezoskour.Content
 
         private void Start()
         {
+            audioSource.Play();
             //TODO : REMOVE THIS
             if (CoolDownSystem.Instance == null)
             {

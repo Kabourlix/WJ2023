@@ -8,6 +8,7 @@ namespace Rezoskour.Content
         // ReSharper disable Unity.PerformanceAnalysis
         protected override void PerformAttack()
         {
+            
             animator.SetBool("isAttacking", true);
             if (player.TryGetComponent(out IHealth health))
             {

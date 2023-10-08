@@ -11,16 +11,13 @@
             
                 if(triggerAttackArray[0])
                 {
-                    animator.SetBool("isAttacking", true);
+                    
                     if (player.TryGetComponent(out IHealth health))
                     {
                         health.Damage(damage);
                     }
                 }
-                else
-                {
-                    animator.SetBool("isAttacking", false);
-                }
+                
             }
 
             public override void Damage(int _amount)
