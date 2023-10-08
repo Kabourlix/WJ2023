@@ -178,7 +178,7 @@ Transform:
   - {fileID: 4335957039996360570}
   - {fileID: 5996448272871680499}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1441524344014977481
 MonoBehaviour:
@@ -301,6 +301,7 @@ MonoBehaviour:
   - {fileID: 9146795929773332143, guid: 86d574ec686bdab419e777449f7c7ae5, type: 3}
   - {fileID: 5879188706866820869, guid: 76ec96c1084bf2f46871c277766b46d0, type: 3}
   - {fileID: 3798810017300859789, guid: ada2aac1c20902141862de165435cdc8, type: 3}
+  isPlayer: 1
 --- !u!114 &1345168382612994489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,4 +588,4 @@ MonoBehaviour:
   collectLayer:
     serializedVersion: 2
     m_Bits: 8
-  collectRangeRadius: 1
+  collectRangeRadius: 1.5

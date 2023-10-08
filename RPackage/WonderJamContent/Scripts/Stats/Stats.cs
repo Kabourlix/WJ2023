@@ -41,7 +41,7 @@ namespace Rezoskour.Content
 
         public int attack;
 
-        [Range(0, 1)] public float collectRange;
+        [Min(1)] public float collectRange;
 
         public int range;
 
