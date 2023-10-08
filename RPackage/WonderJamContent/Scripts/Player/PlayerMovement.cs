@@ -111,13 +111,13 @@ namespace Rezoskour.Content
             Vector2 readValue = _ctx.ReadValue<Vector2>().normalized;
             moveVector = readValue != Vector2.zero ? readValue : moveVector;
             GameManager.PlayerLookDirection = moveVector.normalized;
-            if (moveVector.y > 0)
+            if (moveVector.y > 0 && moveVector.x == 0)
             {
                 animator.SetBool("isRight", false);
                 animator.SetBool("isForward", true);
                 animator.SetBool("isDown", false);
             }
-            else if (moveVector.y < 0)
+            else if (moveVector.y < 0 && moveVector.x == 0)
             {
                 animator.SetBool("isRight", false);
                 animator.SetBool("isForward", false);

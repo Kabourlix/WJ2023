@@ -72,6 +72,7 @@ namespace Rezoskour.Content
                     * (Vector3) GetLookDirection(),
                     Quaternion.Euler(0, 0, angle));
                 proj.Fire();
+
                 yield return waitForAttackRefresh;
             }
         }
