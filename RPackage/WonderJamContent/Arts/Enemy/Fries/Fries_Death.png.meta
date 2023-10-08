@@ -139,10 +139,10 @@ TextureImporter:
       name: Fries_Death_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 40
-        height: 32
+        x: 5
+        y: 7
+        width: 28
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,34 +157,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fries_Death_1
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 0
-        width: 40
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 084b1f9ebeae20845a6ebfedb979d8c2
-      internalID: -649802151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Fries_Death_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 40
-        height: 32
+        x: 42
+        y: 5
+        width: 30
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +181,10 @@ TextureImporter:
       name: Fries_Death_3
       rect:
         serializedVersion: 2
-        x: 120
-        y: 0
-        width: 40
-        height: 32
+        x: 81
+        y: 4
+        width: 31
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +202,10 @@ TextureImporter:
       name: Fries_Death_4
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 40
-        height: 32
+        x: 120
+        y: 6
+        width: 34
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,6 +215,27 @@ TextureImporter:
       bones: []
       spriteID: 09dbfce89b565804fb9145b3ab5497e9
       internalID: 1948445784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fries_Death_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce717abf912d9d4092a7f7e4e513786
+      internalID: 1350149655
       vertices: []
       indices: 
       edges: []
@@ -256,6 +256,9 @@ TextureImporter:
       Fries_Death_2: -415666720
       Fries_Death_3: -1736783569
       Fries_Death_4: 1948445784
+      Fries_Death_5: 1350149655
+      Fries_Death_6: -355391308
+      Fries_Death_7: 137650646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

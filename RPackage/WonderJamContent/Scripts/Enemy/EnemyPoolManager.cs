@@ -50,12 +50,20 @@ namespace Rezoskour.Content
 
             ChasingEnemy enemy = Instantiate(_prefab, GameManager.Instance.transform).GetComponent<ChasingEnemy>();
             enemy.name = $"Enemy {_prefab.name + 1}";
-            enemy.Init(() => enemyPools[_type].Release(enemy));
+            enemy.Init(() => OnEnemyDeath(enemy, _type));
+            
             //Jouer mon animation
-            //LeanTween.value(enemy.gameObject,0,1,time).setOnComplete(() => enemyPools[_type].Release(enemy))
+            
             return enemy;
         }
 
+        public void OnEnemyDeath(ChasingEnemy enemy, EnemyType _type)
+        {
+            enemy.gameObject.GetComponent<Animator>().SetBool("isDead", true);
+            
+            LeanTween.value(enemy.gameObject, 0, 1,1).setOnComplete(() => enemyPools[_type].Release(enemy)); 
+            
+        }
         // private ChasingEnemy OnCreateEnemy()
         // {
         //     if (GameManager.Instance == null)
