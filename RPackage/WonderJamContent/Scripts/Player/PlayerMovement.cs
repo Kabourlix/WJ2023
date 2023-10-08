@@ -61,7 +61,7 @@ namespace Rezoskour.Content
         {
             input.Enable();
             
-            collectItem.OnGetMeleeWeapon += MeleeWeaponAnim;
+            
             input.PauseCtx.Disable();
             input.Player.Movement.performed += OnMovementPerformed;
             input.Player.Movement.canceled += OnMovementCanceled;
@@ -84,7 +84,6 @@ namespace Rezoskour.Content
             input.Player.Movement.performed -= OnMovementPerformed;
             input.Player.Movement.canceled -= OnMovementCanceled;
             input.Player.Berserk.performed -= OnBerzerkPerformed;
-            collectItem.OnGetMeleeWeapon -= MeleeWeaponAnim;
             input.Player.Pause.performed -= OnStartPause;
             input.PauseCtx.Pause.performed -= OnStopPause;
         }

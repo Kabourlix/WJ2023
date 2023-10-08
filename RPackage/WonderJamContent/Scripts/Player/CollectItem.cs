@@ -25,9 +25,14 @@ namespace Rezoskour.Content
         private AttackManager _weapon;
         public event Action<bool>? OnGetMeleeWeapon;
 
-        private void Start()
+        private void Awake()
         {
             OnGetMeleeWeapon?.Invoke(false);
+        }
+
+        private void Start()
+        {
+            
             _stats = GetComponentInParent<PlayerStats>();
             _healthManager = GetComponentInParent<HealthManager>();
             _xp = GetComponentInParent<Xp>();
