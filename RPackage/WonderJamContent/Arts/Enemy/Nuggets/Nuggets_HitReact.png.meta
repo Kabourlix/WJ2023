@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59ddcb64902f7df4991eae18e0f7f5f3
+guid: b39930115eebcb84cb255011aad21f74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nuggets_Explosion_0
+      name: Nuggets_HitReact_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6303f2405b4baee4d9b6f60fdc320149
-      internalID: 2124140199
+      spriteID: 7155c72e5f7857d4db519ab440376aec
+      internalID: -644586309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Explosion_1
+      name: Nuggets_HitReact_1
       rect:
         serializedVersion: 2
         x: 32
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3bb533e6a33abe4f98e7fe6ff32324b
-      internalID: 165098157
+      spriteID: 205d82df776f6b94ab745c51302deff4
+      internalID: -1707099244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nuggets_Explosion_2
+      name: Nuggets_HitReact_2
       rect:
         serializedVersion: 2
         x: 64
@@ -192,71 +192,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f66600475d73534a97d90046b9103fa
-      internalID: 385580498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Nuggets_Explosion_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffbda1dd4a25cc142be6070ad7580ddb
-      internalID: -2030773512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Nuggets_Explosion_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7b50242908e3eb47a6db7a51a2bda2b
-      internalID: 1635243541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Nuggets_Explosion_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19393691ba17619408ae9e8f0c02b4a6
-      internalID: -327083610
+      spriteID: 2502939cfb7ecbf4b8f3a088e7bfa4a4
+      internalID: 840750508
       vertices: []
       indices: 
       edges: []
@@ -272,12 +209,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Nuggets_Explosion_0: 2124140199
-      Nuggets_Explosion_1: 165098157
-      Nuggets_Explosion_2: 385580498
-      Nuggets_Explosion_3: -2030773512
-      Nuggets_Explosion_4: 1635243541
-      Nuggets_Explosion_5: -327083610
+      Nuggets_HitReact_0: -644586309
+      Nuggets_HitReact_1: -1707099244
+      Nuggets_HitReact_2: 840750508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
