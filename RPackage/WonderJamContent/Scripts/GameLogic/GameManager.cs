@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using Rezoskour.Content.Misc;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 
 namespace Rezoskour.Content

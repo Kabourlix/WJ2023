@@ -59,7 +59,15 @@ namespace Rezoskour.Content
                 return;
             }
 
-            Health = MaxHealth;
+            Heal(MaxHealth);
+
+            GetComponent<OilComponent>().OnOilExhausted += OnOilExhaustedCallback;
+        }
+
+        private void OnOilExhaustedCallback()
+        {
+            Health = 0;
+            OnHealthChanged?.Invoke(Health);
         }
 
         public void Heal(int _amount)

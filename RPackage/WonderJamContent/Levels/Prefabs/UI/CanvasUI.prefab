@@ -215,7 +215,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14.75
+  m_fontSize: 14
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -294,7 +294,7 @@ RectTransform:
   - {fileID: 7616665937762179305}
   - {fileID: 8508017407526814525}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -511,10 +511,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -1543170595, guid: 84e8370555167da41a0d16ac7310c450, type: 3}
-  m_Type: 2
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -2101,12 +2101,12 @@ MonoBehaviour:
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillMethod: 0
+  m_FillAmount: 0.8468
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1.29
+  m_PixelsPerUnitMultiplier: 1.5
 --- !u!1 &4567613530358947079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,7 +3055,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 10000
   m_WholeNumbers: 1
-  m_Value: 10000
+  m_Value: 6163
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3369,7 +3369,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.2
+  m_fontSize: 18
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3716,7 +3716,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5315678157282849595}
   m_FillRect: {fileID: 5800246577746581338}
   m_HandleRect: {fileID: 0}
-  m_Direction: 2
+  m_Direction: 3
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
@@ -3929,12 +3929,12 @@ MonoBehaviour:
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 0
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1.29
+  m_PixelsPerUnitMultiplier: 1.5
 --- !u!1 &7815785866497563059
 GameObject:
   m_ObjectHideFlags: 0
@@ -4254,15 +4254,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -1676396626, guid: 52ea439f0ef9ef74f9e61144fd95efc0, type: 3}
-  m_Type: 2
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.96
 --- !u!1 &9123165964565744883
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,7 +4357,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.6
+  m_fontSize: 14.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
