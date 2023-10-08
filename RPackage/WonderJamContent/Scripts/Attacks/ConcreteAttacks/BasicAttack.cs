@@ -12,9 +12,17 @@ namespace Rezoskour.Content
 {
     public class BasicAttack : RAttack
     {
+        [SerializeField] private ParticleSystem basicEffect = null!;
+        private Vector3 positionAttack;
+        private Transform basicCachedTransform = null!;
+
+        private void Start()
+        {
+            basicCachedTransform = basicEffect.transform;
+        }
+
         public override IEnumerator PerformCoroutine()
         {
-            
             if (UserTransform == null)
             {
                 Debug.LogError("Player transform is null.");
@@ -38,7 +46,9 @@ namespace Rezoskour.Content
                     //rangeAttack *= playerStats.;
                 }
 
+                positionAttack = targetPos;
                 Collider2D[] hits = Physics2D.OverlapCircleAll(targetPos, rangeAttack, layerMask);
+                basicEffect.Play();
                 if (hits.Length == 0) //No hit
                 {
                     yield return waitForAttackRefresh;
@@ -53,7 +63,7 @@ namespace Rezoskour.Content
                         continue;
                     }
 
-        
+
                     float damage = data.damage;
                     if (playerStats != null)
                     {
@@ -65,6 +75,11 @@ namespace Rezoskour.Content
 
                 yield return waitForAttackRefresh;
             }
+        }
+
+        private void Update()
+        {
+            basicCachedTransform.position = positionAttack;
         }
 
 #if UNITY_EDITOR

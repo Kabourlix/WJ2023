@@ -38,6 +38,7 @@ namespace Rezoskour.Content
                 Debug.LogError("GameManager.Instance is null !");
                 return;
             }
+
             collectItem = GetComponent<CollectItem>();
             GameManager.Instance.OnVictory += OnGameEnds;
             GameManager.Instance.OnDefeat += OnGameEnds;
@@ -60,8 +61,8 @@ namespace Rezoskour.Content
         private void OnEnable()
         {
             input.Enable();
-            
-            
+
+
             input.PauseCtx.Disable();
             input.Player.Movement.performed += OnMovementPerformed;
             input.Player.Movement.canceled += OnMovementCanceled;
@@ -80,7 +81,7 @@ namespace Rezoskour.Content
         private void OnDisable()
         {
             input.Disable();
-            
+
             input.Player.Movement.performed -= OnMovementPerformed;
             input.Player.Movement.canceled -= OnMovementCanceled;
             input.Player.Berserk.performed -= OnBerzerkPerformed;
@@ -107,15 +108,16 @@ namespace Rezoskour.Content
                 return;
             }
 
-            moveVector = _ctx.ReadValue<Vector2>();
+            Vector2 readValue = _ctx.ReadValue<Vector2>().normalized;
+            moveVector = readValue != Vector2.zero ? readValue : moveVector;
             GameManager.PlayerLookDirection = moveVector.normalized;
-            if (moveVector.y > 0 && moveVector.x == 0)
+            if (moveVector.y > 0)
             {
                 animator.SetBool("isRight", false);
                 animator.SetBool("isForward", true);
                 animator.SetBool("isDown", false);
             }
-            else if (moveVector.y < 0 && moveVector.x == 0)
+            else if (moveVector.y < 0)
             {
                 animator.SetBool("isRight", false);
                 animator.SetBool("isForward", false);
@@ -126,14 +128,12 @@ namespace Rezoskour.Content
                 animator.SetBool("isRight", true);
                 animator.SetBool("isForward", false);
                 animator.SetBool("isDown", false);
-                
             }
             else if (moveVector.x < 0)
             {
                 animator.SetBool("isRight", true);
                 animator.SetBool("isForward", false);
                 animator.SetBool("isDown", false);
-                
             }
             else
             {
@@ -141,7 +141,7 @@ namespace Rezoskour.Content
                 animator.SetBool("isForward", false);
                 animator.SetBool("isDown", false);
             }
-            
+
             if (moveVector.x > 0 && !facingRight)
             {
                 Flip();

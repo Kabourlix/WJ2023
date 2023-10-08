@@ -192,8 +192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c27a440952455eb35e3ffcba40965e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oilLossSpeedNormal: 1
-  oilLossSpeedBerserk: 40
+  oilLossSpeedNormal: 5
+  oilLossSpeedBerserk: 50
 --- !u!114 &3238884439302999183
 MonoBehaviour:
   m_ObjectHideFlags: 0

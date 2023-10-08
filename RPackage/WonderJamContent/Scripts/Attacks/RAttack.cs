@@ -80,7 +80,7 @@ namespace Rezoskour.Content
 
             //data = _data;
             waitForAttackRefresh = new WaitForSeconds(1 / rate);
-            StopAttacking();
+            StartAttacking();
         }
 
         public void StartAttacking()
@@ -102,6 +102,7 @@ namespace Rezoskour.Content
             }
 
             StopCoroutine(runningCoroutine);
+            runningCoroutine = null;
         }
 
 
