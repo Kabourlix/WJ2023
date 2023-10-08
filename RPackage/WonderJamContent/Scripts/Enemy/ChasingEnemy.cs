@@ -29,7 +29,6 @@ namespace Rezoskour.Content
         public float attackRange = 1f;
         public GameObject player;
         public bool isDistanceEnemy = false;
-        private bool isOut = true;
         public Animator animator;
         public int damage = 1;
         public AudioSource audioSource;
