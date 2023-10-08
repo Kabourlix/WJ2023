@@ -600,6 +600,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 6895731602551558137, guid: e57424149d93ac541bb126c5bf943575,
+        type: 3}
+      propertyPath: friesPrefab
+      value: 
+      objectReference: {fileID: 4328989533796829830, guid: 050cd94cbf63ab94caac14c64dbda236,
+        type: 3}
+    - target: {fileID: 6895731602551558137, guid: e57424149d93ac541bb126c5bf943575,
+        type: 3}
+      propertyPath: ketchupPrefab
+      value: 
+      objectReference: {fileID: 8349145685353028532, guid: c5fedb2b3f5d27844bf0c94c64f07206,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

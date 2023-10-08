@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2823205249337065958}
   - component: {fileID: 8272780438318070906}
-  - component: {fileID: 7862203409757682670}
+  - component: {fileID: 4581122833662048057}
+  - component: {fileID: 8349145685353028532}
   - component: {fileID: 7886552022525197843}
   - component: {fileID: 4936459711333204654}
   - component: {fileID: -7545863510719527400}
@@ -88,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7862203409757682670
+--- !u!114 &4581122833662048057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,10 +98,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 707601012864278628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58b681ea19464fed9a6c65e1b79c9ee1, type: 3}
+  m_Script: {fileID: 11500000, guid: aaf2c3ca316b46f098025f5bd5145590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 0}
+  startAttack: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  allAttacks:
+  - {fileID: 3798810017300859789, guid: 53228178c74d24248bde9465c63262ab, type: 3}
+--- !u!114 &8349145685353028532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707601012864278628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df76cb2558ba4304986d436e1e92c545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   maxHealth: 1
   targetTransform: {fileID: 0}
   speed: 1
@@ -109,6 +127,8 @@ MonoBehaviour:
   isDistanceEnemy: 1
   animator: {fileID: 4936459711333204654}
   damage: 1
+  projectilePrefab: {fileID: 447084660911836828, guid: 325b88c097de6364eb26350904d67476,
+    type: 3}
 --- !u!61 &7886552022525197843
 BoxCollider2D:
   m_ObjectHideFlags: 0

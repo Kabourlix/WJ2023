@@ -16,9 +16,8 @@ using UnityEngine.Jobs;
 
 namespace Rezoskour.Content
 {
-    public class ChasingEnemy : MonoBehaviour, IHealth
+    public abstract class ChasingEnemy : MonoBehaviour, IHealth
     {
-        [SerializeField] private Projectile projectilePrefab = null!;
         [SerializeField] private float maxHealth = 1f;
         [SerializeField] private Transform? targetTransform;
         public float speed = 1f;
@@ -54,7 +53,6 @@ namespace Rezoskour.Content
                 }
                 else
                 {
-                    
                     triggerAttackArray[0] = true;
                 }
 
@@ -67,7 +65,7 @@ namespace Rezoskour.Content
             
         }
         private TransformAccessArray transformAccessArray;
-        private NativeArray<bool> triggerAttackArray;
+        protected NativeArray<bool> triggerAttackArray;
         private JobHandle chasingJobHandle;
 
         private void Start()
@@ -78,9 +76,10 @@ namespace Rezoskour.Content
             transformAccessArray.Add(transform);
             targetTransform = player.transform;
         }
-
+        protected abstract void PerformAttack();
         private void Update()
         {
+            chasingJobHandle.Complete();
             if (targetTransform == null)
             {
                 return;
@@ -94,34 +93,16 @@ namespace Rezoskour.Content
                 deltaTime = Time.deltaTime,
                 triggerAttackArray = triggerAttackArray
             };
-
+            if(triggerAttackArray[0])
+            {
+                PerformAttack();
+            }
             chasingJobHandle = chasingJob.Schedule(transformAccessArray);
         }
 
-        private void LateUpdate()
-        {
-            chasingJobHandle.Complete();
-            if(triggerAttackArray[0])
-            {
-                animator.SetBool("isAttacking", true);
-                if (!isDistanceEnemy)
-                {
-                    if (player.TryGetComponent(out IHealth health))
-                    {
-                        health.Damage(damage);
-                    }
-                }
-            }
-            else
-            {
-                animator.SetBool("isAttacking", false);
-            }
-        }
+        
 
-        protected virtual void PerformAttack()
-        {
-
-        }
+        
 
         private void OnDestroy()
         {
