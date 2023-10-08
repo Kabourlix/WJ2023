@@ -13,7 +13,7 @@ namespace Rezoskour.Content
         Basic = 0,
         Range = 1,
         BerserkBurn = 2,
-        LaMortQuiTue = 3
+        Tourniquet = 3
     }
 
     [CreateAssetMenu(fileName = "AttackData", menuName = "Rezoskour/AttackData", order = 0)]
