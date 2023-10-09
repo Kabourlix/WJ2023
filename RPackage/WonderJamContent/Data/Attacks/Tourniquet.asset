@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tourniquet
   m_EditorClassIdentifier: 
   attackName: 3
-  damage: 20
-  attackSpeed: 0.2
+  damage: 25
+  attackSpeed: 0.3
   range: 0.48
   attackAreaRange: 3

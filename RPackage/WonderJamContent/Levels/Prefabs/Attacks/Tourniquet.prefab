@@ -33,7 +33,7 @@ Transform:
   - {fileID: 6450452572945516571}
   - {fileID: 567269655839759935}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1431312805348200225
 MonoBehaviour:
@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 5479544231894129362}
   - {fileID: 6919984833449199290}
   - {fileID: 8735841966005296740}
-  duration: 3
+  duration: 5
 --- !u!1 &5479544231894129362
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 384
   initAngle: 0
-  rotationSpeed: 100
+  rotationSpeed: 180
   radius: 2
 --- !u!212 &5195084794385621411
 SpriteRenderer:
@@ -271,7 +271,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 384
   initAngle: 120
-  rotationSpeed: 100
+  rotationSpeed: 180
   radius: 2
 --- !u!212 &6264021269150918974
 SpriteRenderer:
@@ -438,7 +438,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 384
   initAngle: 240
-  rotationSpeed: 100
+  rotationSpeed: 180
   radius: 2
 --- !u!212 &2346014358835986067
 SpriteRenderer:
