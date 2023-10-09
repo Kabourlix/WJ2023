@@ -23,6 +23,7 @@ namespace Rezoskour.Content
 
         public override void Exit()
         {
+            Time.timeScale = 1;
             base.Exit();
         }
     }
