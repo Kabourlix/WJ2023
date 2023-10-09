@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by alexandre buzon on 08
+// Created by Kabourlix Cendrée on 08
 
 #nullable enable
 
@@ -39,7 +39,7 @@ namespace Rezoskour.Content.UI
         {
             if (Manager == null)
             {
-                Debug.LogError("Manager is null !");
+                Debug.LogError("Manager is null ONDESTROY!");
                 return;
             }
 

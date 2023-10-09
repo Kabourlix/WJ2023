@@ -1,5 +1,5 @@
 ﻿// Copyrighted by team Rézoskour
-// Created by alexandre buzon on 07
+// Created by Kabourlix Cendrée on 07
 
 #nullable enable
 
@@ -36,7 +36,7 @@ namespace Rezoskour.Content
         {
             listPerksData = Resources.LoadAll<PerksData>("Perks/").ToList();
             GameManager.Instance.OnLevelUp += LootPerks;
-            var player = GameObject.FindWithTag("Player");
+            GameObject? player = GameObject.FindWithTag("Player");
             playerStats = player.GetComponent<PlayerStats>();
             attackManager = player.GetComponent<AttackManager>();
             collectItem = player.GetComponentInChildren<CollectItem>();
@@ -47,6 +47,12 @@ namespace Rezoskour.Content
 
         private void OnDestroy()
         {
+            if (GameManager.Instance == null)
+            {
+                Debug.LogError("GameManager.Instance is null !");
+                return;
+            }
+
             GameManager.Instance.OnLevelUp -= LootPerks;
         }
 
@@ -54,19 +60,19 @@ namespace Rezoskour.Content
         {
             playerStatsTxt.text = GetStatsTxt();
 
-            var copyListPerksData = new List<PerksData>(listPerksData);
-            var randomPerks = new List<PerksData>();
-            for (var i = 0; i < 3; i++)
+            List<PerksData> copyListPerksData = new List<PerksData>(listPerksData);
+            List<PerksData> randomPerks = new List<PerksData>();
+            for (int i = 0; i < 3; i++)
             {
-                var randomIndex = UnityEngine.Random.Range(0, copyListPerksData.Count);
+                int randomIndex = UnityEngine.Random.Range(0, copyListPerksData.Count);
                 randomPerks.Add(copyListPerksData[randomIndex]);
                 copyListPerksData.RemoveAt(randomIndex);
             }
 
             PerksUI.SetActive(true);
-            foreach (var rndPerks in randomPerks)
+            foreach (PerksData? rndPerks in randomPerks)
             {
-                var perks = Instantiate(PerksPrefab, PerksParent.transform);
+                GameObject? perks = Instantiate(PerksPrefab, PerksParent.transform);
                 perks.GetComponent<PerksUI>().perksData = rndPerks;
                 perks.GetComponent<PerksUI>().Init(this);
             }
@@ -76,7 +82,7 @@ namespace Rezoskour.Content
 
         private string GetStatsTxt()
         {
-            var statsTxt = "";
+            string statsTxt = "";
             statsTxt += "Max Health: " + playerStats.CurrentStats.maxHealth + "\n";
             statsTxt += "Max Oil: " + playerStats.CurrentStats.maxOil + "\n";
 
@@ -101,50 +107,51 @@ namespace Rezoskour.Content
                 case StatName.MaxHealth:
                     if (_addValue > 0)
                     {
-                        playerStats.CurrentStats.maxHealth += (int)_addValue;
-                        healthManager.Heal((int)_addValue);
+                        playerStats.CurrentStats.maxHealth += (int) _addValue;
+                        healthManager.Heal((int) _addValue);
                     }
                     else
                     {
                         playerStats.CurrentStats.maxHealth =
-                            (int)(playerStats.CurrentStats.maxHealth * (1 + _multiplyValue));
-                        healthManager.Heal((int)(playerStats.CurrentStats.maxHealth * _multiplyValue));
+                            (int) (playerStats.CurrentStats.maxHealth * (1 + _multiplyValue));
+                        healthManager.Heal((int) (playerStats.CurrentStats.maxHealth * _multiplyValue));
                     }
 
                     break;
                 case StatName.MaxOil:
                     if (_addValue > 0)
                     {
-                        playerStats.CurrentStats.maxOil += (int)_addValue;
-                        oilComponent.RefillOil((int)_addValue);
+                        playerStats.CurrentStats.maxOil += (int) _addValue;
+                        oilComponent.RefillOil((int) _addValue);
                     }
                     else
                     {
-                        playerStats.CurrentStats.maxOil = (int)(playerStats.CurrentStats.maxOil * (1 + _multiplyValue));
-                        oilComponent.RefillOil((int)(playerStats.CurrentStats.maxOil * _multiplyValue));
+                        playerStats.CurrentStats.maxOil =
+                            (int) (playerStats.CurrentStats.maxOil * (1 + _multiplyValue));
+                        oilComponent.RefillOil((int) (playerStats.CurrentStats.maxOil * _multiplyValue));
                     }
 
                     break;
                 case StatName.Speed:
                     if (_addValue > 0)
                     {
-                        playerStats.CurrentStats.speed += (int)_addValue;
+                        playerStats.CurrentStats.speed += (int) _addValue;
                     }
                     else
                     {
-                        playerStats.CurrentStats.speed = (int)(playerStats.CurrentStats.speed * (1 + _multiplyValue));
+                        playerStats.CurrentStats.speed = (int) (playerStats.CurrentStats.speed * (1 + _multiplyValue));
                     }
 
                     break;
                 case StatName.CollectRange:
                     if (_addValue > 0)
                     {
-                        playerStats.CurrentStats.collectRange += (int)_addValue;
+                        playerStats.CurrentStats.collectRange += (int) _addValue;
                     }
                     else
                     {
                         playerStats.CurrentStats.collectRange =
-                            (int)(playerStats.CurrentStats.collectRange * (1 + _multiplyValue));
+                            (int) (playerStats.CurrentStats.collectRange * (1 + _multiplyValue));
                     }
 
                     //safe check CollectRange max value
@@ -158,11 +165,11 @@ namespace Rezoskour.Content
                 case StatName.Range:
                     if (_addValue > 0)
                     {
-                        playerStats.CurrentStats.range += (int)_addValue;
+                        playerStats.CurrentStats.range += (int) _addValue;
                     }
                     else
                     {
-                        playerStats.CurrentStats.range = (int)(playerStats.CurrentStats.range * (1 + _multiplyValue));
+                        playerStats.CurrentStats.range = (int) (playerStats.CurrentStats.range * (1 + _multiplyValue));
                     }
 
                     break;

@@ -16,7 +16,7 @@ namespace Rezoskour.Content
         public override void Enter()
         {
             base.Enter();
-
+            Time.timeScale = 1;
             Debug.Log("Enter MainState");
         }
 

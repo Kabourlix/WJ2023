@@ -31,6 +31,12 @@ namespace Rezoskour.Content
             playerAttack = PlayerTf.GetComponent<AttackManager>();
         }
 
+        private void OnDestroy()
+        {
+            LeanTween.reset();
+            Instance = null;
+        }
+
         #endregion
 
         public const string GAME_TIMER = "GameTimer";
