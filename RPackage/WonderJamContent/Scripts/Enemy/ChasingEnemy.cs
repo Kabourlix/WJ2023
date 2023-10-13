@@ -11,6 +11,7 @@ using Unity.Collections;
 using Unity.Jobs;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Jobs;
 using Random = UnityEngine.Random;
 
@@ -21,6 +22,7 @@ namespace Rezoskour.Content
 {
     public abstract class ChasingEnemy : MonoBehaviour, IHealth
     {
+        [SerializeField] private UnityEvent? OnEnemyDie;
         [Range(0, 1)] [SerializeField] private float oilSpawnProbability;
         [Range(0, 1)] [SerializeField] private float expSpawnProbability;
         [SerializeField] protected float maxHealth = 1f;
@@ -121,7 +123,9 @@ namespace Rezoskour.Content
 
         protected abstract void PerformAttack();
 
-        protected virtual void StopPerform() { }
+        protected virtual void StopPerform()
+        {
+        }
 
         public void Init(Action? _action)
         {
@@ -138,7 +142,9 @@ namespace Rezoskour.Content
             isDying = false;
         }
 
-        public void Heal(int _amount) { }
+        public void Heal(int _amount)
+        {
+        }
 
         public virtual void Damage(int _amount)
         {
@@ -168,6 +174,7 @@ namespace Rezoskour.Content
                     CollectableManager.Instance.SpawnXp(transform1.position, transform1.rotation);
                 }
 
+                OnEnemyDie?.Invoke();
                 releaseCallback?.Invoke();
             }
         }
